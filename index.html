@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hệ thống gợi ý sản phẩm</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Trang chủ">
+        <span class="brand-mark">RS</span>
+        <span>Product Recommender</span>
+      </a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#overview">Tổng quan</a>
+        <a href="#methods">Phương pháp</a>
+        <a href="#demo">Demo</a>
+        <a href="#architecture">Kiến trúc</a>
+        <a href="#database">CSDL</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Báo cáo thực tập cơ sở ngành - Nhóm 09</p>
+          <h1>Hệ thống gợi ý sản phẩm cho ứng dụng mua sắm trực tuyến</h1>
+          <p>
+            Website mô phỏng cách hệ thống phân tích dữ liệu người dùng, sản phẩm và
+            hành vi tương tác để tạo ra danh sách đề xuất cá nhân hóa.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#demo">Xem demo gợi ý</a>
+            <a class="secondary-btn" href="#workflow">Xem quy trình</a>
+          </div>
+          <dl class="metrics" aria-label="Chỉ số nổi bật">
+            <div>
+              <dt>3</dt>
+              <dd>nguồn dữ liệu</dd>
+            </div>
+            <div>
+              <dt>Hybrid</dt>
+              <dd>mô hình đề xuất</dd>
+            </div>
+            <div>
+              <dt>Top-N</dt>
+              <dd>kết quả gợi ý</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/recommendation-hero.png" alt="Giao diện minh họa hệ thống gợi ý sản phẩm" />
+        </figure>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Tổng quan</p>
+          <h2>Vì sao cần hệ thống gợi ý?</h2>
+          <p>
+            Khi số lượng sản phẩm trên Shopee, Lazada, Tiki hoặc TikTok Shop tăng nhanh,
+            người dùng dễ mất thời gian tìm kiếm. Hệ thống gợi ý đóng vai trò trung gian,
+            giúp khách hàng khám phá sản phẩm phù hợp hơn và giúp doanh nghiệp tăng hiệu
+            quả kinh doanh.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="mini-icon">01</span>
+            <h3>Cá nhân hóa trải nghiệm</h3>
+            <p>Phân tích lịch sử xem, click, mua hàng, đánh giá và sở thích để đề xuất sản phẩm sát nhu cầu từng người dùng.</p>
+          </article>
+          <article>
+            <span class="mini-icon">02</span>
+            <h3>Tăng hiệu quả kinh doanh</h3>
+            <p>Hỗ trợ cross-sell, up-sell, tăng tỷ lệ chuyển đổi và giữ chân khách hàng bằng các đề xuất đúng ngữ cảnh.</p>
+          </article>
+          <article>
+            <span class="mini-icon">03</span>
+            <h3>Tối ưu tìm kiếm</h3>
+            <p>Rút ngắn hành trình lựa chọn sản phẩm bằng cách xếp hạng những sản phẩm có khả năng phù hợp cao nhất.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="methods" class="section section-band">
+        <div class="section-heading compact">
+          <p class="eyebrow">Phương pháp</p>
+          <h2>Các hướng tiếp cận chính</h2>
+        </div>
+        <div class="method-layout">
+          <article class="method-card active" data-method="content">
+            <h3>Content-Based Filtering</h3>
+            <p>Dựa trên đặc trưng sản phẩm như danh mục, thương hiệu, mô tả, tags và lịch sử quan tâm của người dùng.</p>
+            <ul>
+              <li>Gợi ý tốt cho sản phẩm mới nếu có metadata.</li>
+              <li>Phù hợp với sở thích cá nhân rõ ràng.</li>
+              <li>Dễ bị giới hạn trong nhóm sản phẩm quen thuộc.</li>
+            </ul>
+          </article>
+          <article class="method-card" data-method="collaborative">
+            <h3>Collaborative Filtering</h3>
+            <p>Dựa trên hành vi của cộng đồng: người dùng giống nhau thường có xu hướng thích sản phẩm giống nhau.</p>
+            <ul>
+              <li>Có thể khai thác rating, view, click, purchase.</li>
+              <li>Gồm User-Based và Item-Based Collaborative Filtering.</li>
+              <li>Gặp khó khăn với dữ liệu thưa và cold start.</li>
+            </ul>
+          </article>
+          <article class="method-card" data-method="hybrid">
+            <h3>Hybrid Recommendation</h3>
+            <p>Kết hợp Content-Based và Collaborative Filtering để tận dụng ưu điểm và giảm hạn chế của từng phương pháp.</p>
+            <ul>
+              <li>Weighted: kết hợp điểm bằng trọng số.</li>
+              <li>Switching: chọn thuật toán theo điều kiện.</li>
+              <li>Mixed: hiển thị nhiều nguồn gợi ý cùng lúc.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="demo" class="section demo-section">
+        <div class="section-heading">
+          <p class="eyebrow">Demo tương tác</p>
+          <h2>Gợi ý sản phẩm theo hồ sơ người dùng</h2>
+          <p>Chọn một hồ sơ mẫu để xem hệ thống tạo điểm phù hợp từ hành vi và đặc trưng sản phẩm.</p>
+        </div>
+        <div class="demo-shell">
+          <aside class="profile-panel" aria-label="Chọn hồ sơ người dùng">
+            <h3>Hồ sơ người dùng</h3>
+            <div class="profile-list" id="profileList"></div>
+            <div class="score-box">
+              <span>Trọng số Hybrid</span>
+              <div class="weight-row">
+                <label for="cfWeight">CF</label>
+                <input id="cfWeight" type="range" min="20" max="80" value="55" />
+                <strong id="weightValue">55%</strong>
+              </div>
+            </div>
+          </aside>
+          <section class="recommendation-panel" aria-live="polite">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Top-N Recommendation</p>
+                <h3 id="activeProfileName">Đang tải...</h3>
+              </div>
+              <span id="activeProfileTag" class="status-pill">Hybrid</span>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="workflow" class="section section-band">
+        <div class="section-heading compact">
+          <p class="eyebrow">Quy trình</p>
+          <h2>Từ hành vi đến danh sách gợi ý</h2>
+        </div>
+        <div class="timeline">
+          <div><span>1</span><h3>Người dùng tương tác</h3><p>Xem sản phẩm, tìm kiếm, thêm vào giỏ, mua hàng hoặc đánh giá.</p></div>
+          <div><span>2</span><h3>Thu thập dữ liệu</h3><p>Ghi nhận user data, item data và interaction data từ frontend.</p></div>
+          <div><span>3</span><h3>Tiền xử lý</h3><p>Làm sạch, chuẩn hóa, mã hóa đặc trưng, tạo ma trận User-Item.</p></div>
+          <div><span>4</span><h3>Tính điểm</h3><p>Áp dụng cosine similarity, KNN, Matrix Factorization hoặc mô hình Hybrid.</p></div>
+          <div><span>5</span><h3>Hiển thị Top-N</h3><p>Xếp hạng, lọc sản phẩm đã mua/hết hàng và trả kết quả về giao diện.</p></div>
+        </div>
+      </section>
+
+      <section id="architecture" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Thiết kế hệ thống</p>
+          <h2>Kiến trúc đề xuất</h2>
+          <p>Kiến trúc tách biệt từng thành phần để dễ mở rộng, bảo trì và thay đổi thuật toán gợi ý.</p>
+        </div>
+        <div class="architecture">
+          <article><h3>User</h3><p>Cung cấp dữ liệu hành vi và nhận các đề xuất cá nhân hóa.</p></article>
+          <article><h3>Frontend</h3><p>Hiển thị sản phẩm, thu thập tương tác và gọi API gợi ý.</p></article>
+          <article><h3>Backend API</h3><p>Xử lý nghiệp vụ, xác thực, truy vấn dữ liệu và điều phối yêu cầu.</p></article>
+          <article><h3>Recommendation Engine</h3><p>Huấn luyện mô hình, tính điểm và sinh danh sách đề xuất.</p></article>
+          <article><h3>Database</h3><p>Lưu user, product, interaction và recommendation data.</p></article>
+        </div>
+      </section>
+
+      <section id="database" class="section section-band">
+        <div class="section-heading compact">
+          <p class="eyebrow">Cơ sở dữ liệu</p>
+          <h2>Các bảng cốt lõi</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Bảng</th>
+                <th>Vai trò</th>
+                <th>Trường quan trọng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>users</td>
+                <td>Lưu hồ sơ và thông tin nhân khẩu học.</td>
+                <td>user_id, username, email, gender, location, created_at</td>
+              </tr>
+              <tr>
+                <td>products</td>
+                <td>Lưu đặc trưng sản phẩm cho Content-Based Filtering.</td>
+                <td>product_id, name, category_id, price, tags, created_at</td>
+              </tr>
+              <tr>
+                <td>user_interactions</td>
+                <td>Trái tim của hệ thống, lưu feedback ẩn và hiện.</td>
+                <td>interaction_id, user_id, product_id, event_type, event_value, timestamp</td>
+              </tr>
+              <tr>
+                <td>recommendations</td>
+                <td>Lưu kết quả đã tính để frontend truy xuất nhanh.</td>
+                <td>id, user_id, product_id, score, algo_type, updated_at</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Đề tài: Xây dựng hệ thống gợi ý sản phẩm áp dụng cho các ứng dụng mua sắm trực tuyến.</p>
+      <p>Nhóm 09 - IT6046.1 - Hà Nội, 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
