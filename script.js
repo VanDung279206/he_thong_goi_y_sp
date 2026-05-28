@@ -43,6 +43,7 @@ const products = [
 let activeProfile = profiles[0];
 let activeCategory = "Tất cả";
 let selectedProductId = 1;
+let hybridWeight = 55;
 let cart = [];
 let behavior = {
   viewed: [1, 2],
@@ -72,13 +73,28 @@ function behaviorScore(product) {
   return Math.min(1, matches / product.tags.length + behavior.added.includes(product.id) * 0.2);
 }
 
+function collaborativeScore(product) {
+  const behaviorFit = behaviorScore(product);
+  const popularity = Math.min(product.sold / 3000, 1);
+  return product.cf * 0.68 + behaviorFit * 0.22 + popularity * 0.1;
+}
+
+function contentBasedScore(product) {
+  const profileFit = tagScore(product);
+  const priceFit = 1 - Math.abs(product.price / 9000000 - activeProfile.priceBias) * 0.45;
+  return profileFit * 0.78 + priceFit * 0.22;
+}
+
+function hybridScore(product) {
+  const cfRatio = hybridWeight / 100;
+  const cbRatio = 1 - cfRatio;
+  return collaborativeScore(product) * cfRatio + contentBasedScore(product) * cbRatio;
+}
+
 function recommendationScore(product) {
-  const contentBased = tagScore(product);
-  const collaborative = product.cf;
   const trend = Math.min(product.sold / 3000, 1);
   const behaviorFit = behaviorScore(product);
-  const priceFit = 1 - Math.abs(product.price / 9000000 - activeProfile.priceBias) * 0.45;
-  return contentBased * 0.34 + collaborative * 0.24 + behaviorFit * 0.2 + trend * 0.12 + priceFit * 0.1;
+  return hybridScore(product) * 0.82 + behaviorFit * 0.1 + trend * 0.08;
 }
 
 function getRecommendations(limit = 4) {
@@ -116,6 +132,8 @@ function renderProfiles() {
 
 function productCard(product, context = "grid") {
   const percent = Math.round((product.score ?? recommendationScore(product)) * 100);
+  const cf = Math.round(collaborativeScore(product) * 100);
+  const cb = Math.round(contentBasedScore(product) * 100);
   return `
     <article class="product-card ${context === "recommendation" ? "recommended" : ""}" data-product="${product.id}">
       <button class="product-visual" style="background:${product.color}" data-view="${product.id}" type="button" aria-label="Xem ${product.name}">
@@ -129,6 +147,10 @@ function productCard(product, context = "grid") {
         </div>
         <h3>${product.name}</h3>
         <p>${formatPrice(product.price)}</p>
+        <div class="model-scores">
+          <span>CF ${cf}%</span>
+          <span>CB ${cb}%</span>
+        </div>
         <div class="score-meter" aria-label="Điểm gợi ý ${percent}%"><span style="width:${percent}%"></span></div>
         <div class="card-actions">
           <button data-cart="${product.id}" type="button">Thêm giỏ</button>
@@ -175,6 +197,43 @@ function renderCategories() {
 function renderProfileInsight() {
   document.querySelector("#profileDescription").textContent = activeProfile.description;
   document.querySelector("#preferenceTags").innerHTML = activeProfile.interests.map((tag) => `<span>${tag}</span>`).join("");
+}
+
+function renderHybridModule() {
+  const cfRatio = hybridWeight / 100;
+  const cbRatio = 1 - cfRatio;
+  document.querySelector("#cfWeightText").textContent = `${hybridWeight}% CF`;
+  document.querySelector("#cbWeightText").textContent = `${100 - hybridWeight}% CB`;
+  document.querySelector("#hybridFormula").textContent = `${cfRatio.toFixed(2)} × CF + ${cbRatio.toFixed(2)} × CB`;
+
+  const rows = products
+    .map((product) => ({
+      ...product,
+      cfScore: collaborativeScore(product),
+      cbScore: contentBasedScore(product),
+      hybrid: hybridScore(product),
+    }))
+    .sort((a, b) => b.hybrid - a.hybrid)
+    .slice(0, 6);
+
+  document.querySelector("#hybridRows").innerHTML = rows
+    .map((product) => {
+      const cf = Math.round(product.cfScore * 100);
+      const cb = Math.round(product.cbScore * 100);
+      const hybrid = Math.round(product.hybrid * 100);
+      return `
+        <div class="hybrid-row">
+          <div>
+            <strong>${product.name}</strong>
+            <span>${product.category}</span>
+          </div>
+          <span>${cf}%</span>
+          <span>${cb}%</span>
+          <strong>${hybrid}%</strong>
+        </div>
+      `;
+    })
+    .join("");
 }
 
 function renderSimilar() {
@@ -229,6 +288,7 @@ function render() {
   renderProfiles();
   renderCategories();
   renderProfileInsight();
+  renderHybridModule();
   renderRecommendations();
   renderProducts();
   renderSimilar();
@@ -240,6 +300,11 @@ document.querySelector("#searchInput").addEventListener("input", (event) => {
   behavior.searched = event.target.value;
   renderProducts();
   attachProductEvents();
+});
+
+document.querySelector("#hybridWeight").addEventListener("input", (event) => {
+  hybridWeight = Number(event.target.value);
+  render();
 });
 
 document.querySelector(".cart-button").addEventListener("click", () => {

@@ -20,6 +20,7 @@
 
       <nav class="main-nav" aria-label="Điều hướng">
         <a href="#recommendations">Dành cho bạn</a>
+        <a href="#hybrid">Hybrid</a>
         <a href="#products">Sản phẩm</a>
         <a href="#engine">Hệ thống gợi ý</a>
       </nav>
@@ -95,6 +96,41 @@
             </div>
           </aside>
           <div class="recommendation-grid" id="recommendationGrid"></div>
+        </div>
+      </section>
+
+      <section id="hybrid" class="shop-section hybrid-section">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">Hybrid module</p>
+            <h2>Kết hợp Collaborative Filtering và Content-Based</h2>
+          </div>
+          <p class="section-note">Điểm gợi ý cuối cùng được tính bằng cách trộn hành vi cộng đồng với độ khớp đặc trưng sản phẩm.</p>
+        </div>
+        <div class="hybrid-panel">
+          <div class="hybrid-control">
+            <h3>Trọng số mô hình</h3>
+            <p>Điều chỉnh tỷ lệ để xem danh sách gợi ý thay đổi theo CF hoặc CB.</p>
+            <label for="hybridWeight">Collaborative Filtering</label>
+            <div class="hybrid-slider-row">
+              <span id="cbWeightText">45% CB</span>
+              <input id="hybridWeight" type="range" min="0" max="100" value="55" />
+              <span id="cfWeightText">55% CF</span>
+            </div>
+            <div class="formula-box">
+              <span>Hybrid Score</span>
+              <strong id="hybridFormula">0.55 × CF + 0.45 × CB</strong>
+            </div>
+          </div>
+          <div class="hybrid-results">
+            <div class="hybrid-result-header">
+              <span>Sản phẩm</span>
+              <span>CF</span>
+              <span>CB</span>
+              <span>Hybrid</span>
+            </div>
+            <div id="hybridRows"></div>
+          </div>
         </div>
       </section>
 
