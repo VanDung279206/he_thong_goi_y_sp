@@ -3,210 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShopSmart - Mua sắm có gợi ý thông minh</title>
+    <title>SendoAI Shop - Gợi ý sản phẩm thông minh</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="shop-header">
-      <a class="brand" href="#home" aria-label="ShopSmart">
-        <span class="brand-mark">S</span>
-        <span>ShopSmart</span>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="SendoAI Shop">
+        <span class="brand-logo">S</span>
+        <span>SendoAI Shop</span>
       </a>
 
-      <form class="search-bar" role="search">
+      <form class="search" role="search">
         <span aria-hidden="true">⌕</span>
-        <input id="searchInput" type="search" placeholder="Tìm điện thoại, giày, mỹ phẩm..." />
+        <input id="searchInput" type="search" placeholder="Tìm sản phẩm, danh mục, thương hiệu..." />
       </form>
 
-      <nav class="main-nav" aria-label="Điều hướng">
-        <a href="#recommendations">Dành cho bạn</a>
-        <a href="#hybrid">Hybrid</a>
+      <nav class="nav-links" aria-label="Điều hướng">
+        <a href="#recommendations">Gợi ý</a>
         <a href="#products">Sản phẩm</a>
-        <a href="#engine">Hệ thống gợi ý</a>
+        <a href="#model">Mô hình</a>
       </nav>
 
-      <button class="cart-button" type="button" aria-label="Giỏ hàng">
+      <button class="ghost-button" id="loginButton" type="button">Đăng nhập</button>
+      <button class="cart-button" id="cartButton" type="button" aria-label="Mở giỏ hàng">
         <span>Giỏ hàng</span>
         <strong id="cartCount">0</strong>
       </button>
     </header>
 
     <main id="home">
-      <section class="store-hero">
+      <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Online shopping demo</p>
-          <h1>Mua sắm trực tuyến với gợi ý sản phẩm cá nhân hóa</h1>
+          <p class="eyebrow">Marketplace demo</p>
+          <h1>Mua sắm như Shopee, có gợi ý sản phẩm bằng AI</h1>
           <p>
-            Hệ thống theo dõi hành vi xem, tìm kiếm, yêu thích và thêm giỏ để cập nhật
-            danh sách sản phẩm phù hợp theo thời gian thực.
+            Trang web dùng dataset Olist, huấn luyện Collaborative Filtering 5 epoch và
+            kết hợp Content-Based để tạo gợi ý Hybrid cho từng người dùng.
           </p>
           <div class="hero-actions">
-            <a class="primary-btn" href="#recommendations">Xem gợi ý</a>
-            <a class="secondary-btn" href="#products">Mua ngay</a>
+            <button class="primary-button" id="heroLoginButton" type="button">Đăng nhập để cá nhân hóa</button>
+            <a class="secondary-button" href="#products">Xem sản phẩm</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong id="statProducts">0</strong><span>sản phẩm</span></div>
+            <div><strong id="statUsers">0</strong><span>user train</span></div>
+            <div><strong>5</strong><span>epoch</span></div>
           </div>
         </div>
-        <div class="hero-dashboard" aria-label="Bảng mô phỏng gợi ý">
-          <div class="hero-dashboard-top">
-            <span>Recommendation Engine</span>
-            <strong id="heroScore">92%</strong>
+
+        <div class="login-card" aria-label="Giao diện đăng nhập">
+          <div class="login-card-header">
+            <span>SendoAI Account</span>
+            <strong>Hybrid RS</strong>
           </div>
-          <img src="assets/recommendation-hero.png" alt="Giao diện mua sắm trực tuyến có hệ thống gợi ý" />
-          <div class="signal-row">
-            <span>view</span>
-            <span>click</span>
-            <span>cart</span>
-            <span>rating</span>
-          </div>
+          <label>
+            Email hoặc số điện thoại
+            <input type="text" value="khachhang@demo.vn" readonly />
+          </label>
+          <label>
+            Mật khẩu
+            <input type="password" value="12345678" readonly />
+          </label>
+          <button class="primary-button" type="button">Đăng nhập mẫu</button>
+          <p>Đăng nhập để hệ thống lấy lịch sử mua hàng và cập nhật gợi ý theo CF + CB.</p>
         </div>
       </section>
 
-      <section class="quick-strip" aria-label="Điểm nổi bật">
-        <article>
-          <strong>Hybrid AI</strong>
-          <span>Kết hợp hành vi người dùng và đặc trưng sản phẩm</span>
-        </article>
-        <article>
-          <strong>Top-N</strong>
-          <span>Xếp hạng sản phẩm có khả năng mua cao nhất</span>
-        </article>
-        <article>
-          <strong>Real-time</strong>
-          <span>Cập nhật gợi ý sau mỗi lượt xem hoặc thêm giỏ</span>
-        </article>
-      </section>
+      <section class="category-strip" id="categoryStrip" aria-label="Danh mục nổi bật"></section>
 
-      <section id="recommendations" class="shop-section">
-        <div class="section-title">
+      <section id="recommendations" class="section">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">Cá nhân hóa</p>
-            <h2>Dành cho bạn</h2>
+            <p class="eyebrow">Hybrid recommendations</p>
+            <h2>Gợi ý dành cho bạn</h2>
           </div>
-          <div class="profile-switcher" id="profileSwitcher" aria-label="Chọn hồ sơ mua sắm"></div>
+          <div class="profile-tabs" id="profileTabs"></div>
         </div>
 
-        <div class="recommendation-layout">
-          <aside class="insight-panel">
-            <h3>Hồ sơ hiện tại</h3>
-            <p id="profileDescription">Đang phân tích...</p>
-            <div class="preference-tags" id="preferenceTags"></div>
-            <div class="engine-meter">
-              <span>Độ phù hợp trung bình</span>
-              <strong id="fitScore">0%</strong>
-              <div><span id="fitBar"></span></div>
+        <div class="recommendation-shell">
+          <aside class="profile-panel">
+            <h3 id="activeProfileName">Khách hàng</h3>
+            <p id="activeProfileDescription"></p>
+            <div class="tag-list" id="interestTags"></div>
+            <div class="weight-control">
+              <div>
+                <span>Trọng số Hybrid</span>
+                <strong id="weightLabel">55% CF / 45% CB</strong>
+              </div>
+              <input id="hybridWeight" type="range" min="0" max="100" value="55" />
+            </div>
+            <div class="formula">
+              <span>Công thức</span>
+              <strong id="formulaText">Hybrid = 0.55 × CF + 0.45 × CB</strong>
             </div>
           </aside>
-          <div class="recommendation-grid" id="recommendationGrid"></div>
+
+          <div class="product-grid recommendation-grid" id="recommendationGrid"></div>
         </div>
       </section>
 
-      <section id="hybrid" class="shop-section hybrid-section">
-        <div class="section-title">
+      <section id="products" class="section soft-section">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">Hybrid module</p>
-            <h2>Kết hợp Collaborative Filtering và Content-Based</h2>
+            <p class="eyebrow">Gian hàng</p>
+            <h2>Sản phẩm mới</h2>
           </div>
-          <p class="section-note">Điểm gợi ý cuối cùng được tính bằng cách trộn hành vi cộng đồng với độ khớp đặc trưng sản phẩm.</p>
-        </div>
-        <div class="hybrid-panel">
-          <div class="hybrid-control">
-            <h3>Trọng số mô hình</h3>
-            <p>Điều chỉnh tỷ lệ để xem danh sách gợi ý thay đổi theo CF hoặc CB.</p>
-            <label for="hybridWeight">Collaborative Filtering</label>
-            <div class="hybrid-slider-row">
-              <span id="cbWeightText">45% CB</span>
-              <input id="hybridWeight" type="range" min="0" max="100" value="55" />
-              <span id="cfWeightText">55% CF</span>
-            </div>
-            <div class="formula-box">
-              <span>Hybrid Score</span>
-              <strong id="hybridFormula">0.55 × CF + 0.45 × CB</strong>
-            </div>
-          </div>
-          <div class="hybrid-results">
-            <div class="hybrid-result-header">
-              <span>Sản phẩm</span>
-              <span>CF</span>
-              <span>CB</span>
-              <span>Hybrid</span>
-            </div>
-            <div id="hybridRows"></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="products" class="shop-section muted-section">
-        <div class="section-title">
-          <div>
-            <p class="eyebrow">Cửa hàng</p>
-            <h2>Tất cả sản phẩm</h2>
-          </div>
-          <div class="category-tabs" id="categoryTabs" aria-label="Lọc danh mục"></div>
+          <div class="filter-tabs" id="filterTabs"></div>
         </div>
         <div class="product-grid" id="productGrid"></div>
       </section>
 
-      <section class="shop-section">
-        <div class="section-title">
+      <section class="section">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">Item-Based Filtering</p>
+            <p class="eyebrow">Item similarity</p>
             <h2>Sản phẩm tương tự</h2>
           </div>
-          <p class="section-note" id="similarNote">Nhấp vào một sản phẩm để xem gợi ý liên quan.</p>
+          <p class="section-note" id="similarNote">Chọn một sản phẩm để xem gợi ý tương tự.</p>
         </div>
-        <div class="similar-grid" id="similarGrid"></div>
+        <div class="product-grid compact-grid" id="similarGrid"></div>
       </section>
 
-      <section id="engine" class="shop-section engine-section">
-        <div class="section-title">
+      <section id="model" class="section model-section">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">Bên trong hệ thống</p>
-            <h2>Luồng dữ liệu gợi ý</h2>
+            <p class="eyebrow">Training report</p>
+            <h2>Hệ thống gợi ý đã huấn luyện</h2>
           </div>
+          <p class="section-note">CF dùng Matrix Factorization, CB dùng danh mục, giá và độ phổ biến sản phẩm.</p>
         </div>
-        <div class="engine-grid">
+        <div class="model-grid">
           <article>
-            <span>1</span>
-            <h3>Thu thập hành vi</h3>
-            <p>Ghi nhận lượt xem, tìm kiếm, yêu thích, thêm giỏ, mua hàng và đánh giá.</p>
+            <span>01</span>
+            <h3>Dataset</h3>
+            <p id="datasetName">Olist Brazilian E-Commerce Public Dataset</p>
           </article>
           <article>
-            <span>2</span>
-            <h3>Tạo hồ sơ người dùng</h3>
-            <p>Chuyển sở thích và lịch sử tương tác thành vector đặc trưng.</p>
+            <span>02</span>
+            <h3>Collaborative Filtering</h3>
+            <p>Huấn luyện latent factors từ tương tác khách hàng - sản phẩm trong 5 epoch.</p>
           </article>
           <article>
-            <span>3</span>
-            <h3>Tính điểm Hybrid</h3>
-            <p>Kết hợp Collaborative Filtering với Content-Based Filtering để giảm cold start.</p>
+            <span>03</span>
+            <h3>Content-Based</h3>
+            <p>So khớp danh mục yêu thích, độ phổ biến và mức giá sản phẩm.</p>
           </article>
           <article>
-            <span>4</span>
-            <h3>Hiển thị Top-N</h3>
-            <p>Lọc sản phẩm đã mua, hết hàng, sau đó trả danh sách gợi ý cho giao diện.</p>
+            <span>04</span>
+            <h3>Hybrid Ranking</h3>
+            <p>Trộn CF và CB bằng trọng số có thể chỉnh trực tiếp trên giao diện.</p>
           </article>
+        </div>
+        <div class="training-panel">
+          <div>
+            <h3>RMSE theo epoch</h3>
+            <div id="epochBars" class="epoch-bars"></div>
+          </div>
+          <div class="metric-list">
+            <div><span>Users</span><strong id="metricUsers">0</strong></div>
+            <div><span>Items</span><strong id="metricItems">0</strong></div>
+            <div><span>Interactions</span><strong id="metricInteractions">0</strong></div>
+          </div>
         </div>
       </section>
     </main>
 
+    <div class="modal" id="authModal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+        <button class="close-button" id="closeAuth" type="button" aria-label="Đóng">×</button>
+        <div class="auth-layout">
+          <div class="auth-copy">
+            <p class="eyebrow">Đăng nhập</p>
+            <h2 id="authTitle">Chào mừng trở lại</h2>
+            <p>Chọn hồ sơ khách hàng mẫu để hệ thống dùng lịch sử mua hàng từ dataset và tính gợi ý.</p>
+          </div>
+          <form class="auth-form">
+            <label>Email hoặc số điện thoại<input id="emailInput" type="text" value="khachhang@demo.vn" /></label>
+            <label>Mật khẩu<input id="passwordInput" type="password" value="12345678" /></label>
+            <label>Hồ sơ mẫu<select id="profileSelect"></select></label>
+            <button class="primary-button" id="submitLogin" type="button">Đăng nhập</button>
+            <button class="secondary-button full-width" type="button">Tạo tài khoản mới</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <aside class="cart-drawer" id="cartDrawer" aria-label="Giỏ hàng">
-      <div class="cart-header">
+      <div class="cart-head">
         <h2>Giỏ hàng</h2>
         <button id="closeCart" type="button" aria-label="Đóng giỏ hàng">×</button>
       </div>
-      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-items" id="cartItems"></div>
       <div class="cart-total">
         <span>Tạm tính</span>
         <strong id="cartTotal">0đ</strong>
       </div>
+      <button class="primary-button">Thanh toán</button>
     </aside>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <footer class="footer">
-      <p>ShopSmart mô phỏng ứng dụng mua sắm trực tuyến có sử dụng hệ thống gợi ý sản phẩm.</p>
-      <p>Nhóm 09 - IT6046.1</p>
-    </footer>
-
+    <script src="model_data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

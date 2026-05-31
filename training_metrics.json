@@ -1,0 +1,32 @@
+{
+  "dataset": "Olist Brazilian E-Commerce Public Dataset",
+  "epochs": 5,
+  "latentDim": 18,
+  "training": {
+    "users": 5000,
+    "items": 641,
+    "interactions": 5673
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "rmse": 0.29762
+    },
+    {
+      "epoch": 2,
+      "rmse": 0.27617
+    },
+    {
+      "epoch": 3,
+      "rmse": 0.25928
+    },
+    {
+      "epoch": 4,
+      "rmse": 0.24452
+    },
+    {
+      "epoch": 5,
+      "rmse": 0.23155
+    }
+  ]
+}

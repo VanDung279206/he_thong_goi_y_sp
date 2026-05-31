@@ -1,144 +1,56 @@
-const profiles = [
-  {
-    id: "tech",
-    label: "Công nghệ",
-    name: "Minh - mê công nghệ",
-    description: "Thường xem điện thoại, tai nghe, phụ kiện gaming và sản phẩm có đánh giá cao.",
-    interests: ["tech", "audio", "gaming"],
-    priceBias: 0.78,
-  },
-  {
-    id: "fashion",
-    label: "Thời trang",
-    name: "Linh - thích phối đồ",
-    description: "Quan tâm giày, túi, áo khoác và các sản phẩm thời trang theo mùa.",
-    interests: ["fashion", "shoe", "streetwear"],
-    priceBias: 0.62,
-  },
-  {
-    id: "beauty",
-    label: "Làm đẹp",
-    name: "An - chăm sóc cá nhân",
-    description: "Hay mua mỹ phẩm, skincare, sản phẩm tiện dụng hằng ngày và hàng mua kèm.",
-    interests: ["beauty", "skincare", "daily"],
-    priceBias: 0.54,
-  },
-];
+const data = window.MODEL_DATA;
 
-const products = [
-  { id: 1, name: "Tai nghe chống ồn AirBeat Pro", category: "Công nghệ", price: 1290000, rating: 4.8, sold: 1320, tags: ["tech", "audio"], color: "#0f766e", code: "AB", cf: 0.93, image: "🎧" },
-  { id: 2, name: "Điện thoại OLED 120Hz Nova X", category: "Công nghệ", price: 8990000, rating: 4.7, sold: 842, tags: ["tech", "phone"], color: "#24364b", code: "NX", cf: 0.87, image: "📱" },
-  { id: 3, name: "Bàn phím cơ RGB Compact", category: "Công nghệ", price: 890000, rating: 4.6, sold: 980, tags: ["tech", "gaming"], color: "#35636f", code: "KB", cf: 0.84, image: "⌨" },
-  { id: 4, name: "Giày sneaker trắng Urban", category: "Thời trang", price: 690000, rating: 4.9, sold: 2100, tags: ["fashion", "shoe", "streetwear"], color: "#d99b2b", code: "SN", cf: 0.91, image: "👟" },
-  { id: 5, name: "Áo khoác chống nắng nhẹ", category: "Thời trang", price: 420000, rating: 4.5, sold: 760, tags: ["fashion", "daily"], color: "#6d7d4e", code: "JK", cf: 0.8, image: "🧥" },
-  { id: 6, name: "Túi đeo chéo chống nước", category: "Thời trang", price: 350000, rating: 4.6, sold: 1184, tags: ["fashion", "streetwear"], color: "#8a4f7d", code: "BG", cf: 0.82, image: "👜" },
-  { id: 7, name: "Serum phục hồi da ban đêm", category: "Làm đẹp", price: 310000, rating: 4.9, sold: 2540, tags: ["beauty", "skincare"], color: "#c85d75", code: "SR", cf: 0.9, image: "🧴" },
-  { id: 8, name: "Kem chống nắng SPF50", category: "Làm đẹp", price: 250000, rating: 4.8, sold: 3012, tags: ["beauty", "daily", "skincare"], color: "#e08a42", code: "SP", cf: 0.92, image: "☀" },
-  { id: 9, name: "Máy rửa mặt mini Sonic", category: "Làm đẹp", price: 540000, rating: 4.4, sold: 640, tags: ["beauty", "tech"], color: "#3f7f91", code: "FC", cf: 0.76, image: "◌" },
-  { id: 10, name: "Bình giữ nhiệt Smart Cup", category: "Đời sống", price: 220000, rating: 4.7, sold: 1760, tags: ["daily", "home"], color: "#b65f45", code: "CP", cf: 0.74, image: "☕" },
-  { id: 11, name: "Đèn bàn LED chống mỏi mắt", category: "Đời sống", price: 460000, rating: 4.6, sold: 690, tags: ["home", "tech"], color: "#4d628f", code: "LD", cf: 0.73, image: "💡" },
-  { id: 12, name: "Sữa rửa mặt dịu nhẹ", category: "Làm đẹp", price: 180000, rating: 4.7, sold: 1890, tags: ["beauty", "skincare", "daily"], color: "#789c9c", code: "CL", cf: 0.86, image: "✦" },
-];
-
-let activeProfile = profiles[0];
-let activeCategory = "Tất cả";
-let selectedProductId = 1;
-let hybridWeight = 55;
-let cart = [];
-let behavior = {
-  viewed: [1, 2],
-  searched: "",
-  added: [],
+const state = {
+  activeProfileId: data.profiles[0]?.id,
+  activeCategory: "Tất cả",
+  selectedProductId: data.products[0]?.id,
+  hybridWeight: 55,
+  search: "",
+  cart: [],
+  loggedIn: false,
 };
 
-const formatPrice = (value) => new Intl.NumberFormat("vi-VN").format(value) + "đ";
+const money = new Intl.NumberFormat("vi-VN");
 
-function tagScore(product) {
-  const matches = product.tags.filter((tag) => activeProfile.interests.includes(tag)).length;
-  return matches / Math.max(product.tags.length, 1);
+function formatPrice(value) {
+  return `${money.format(value)}đ`;
 }
 
-function behaviorScore(product) {
-  const viewedTags = behavior.viewed
-    .map((id) => products.find((item) => item.id === id))
-    .filter(Boolean)
-    .flatMap((item) => item.tags);
-  const addedTags = behavior.added
-    .map((id) => products.find((item) => item.id === id))
-    .filter(Boolean)
-    .flatMap((item) => item.tags);
-  const signalTags = [...viewedTags, ...addedTags];
-  if (!signalTags.length) return 0;
-  const matches = product.tags.filter((tag) => signalTags.includes(tag)).length;
-  return Math.min(1, matches / product.tags.length + behavior.added.includes(product.id) * 0.2);
+function productById(id) {
+  return data.products.find((product) => product.id === id);
 }
 
-function collaborativeScore(product) {
-  const behaviorFit = behaviorScore(product);
-  const popularity = Math.min(product.sold / 3000, 1);
-  return product.cf * 0.68 + behaviorFit * 0.22 + popularity * 0.1;
+function activeProfile() {
+  return data.profiles.find((profile) => profile.id === state.activeProfileId) || data.profiles[0];
 }
 
-function contentBasedScore(product) {
-  const profileFit = tagScore(product);
-  const priceFit = 1 - Math.abs(product.price / 9000000 - activeProfile.priceBias) * 0.45;
-  return profileFit * 0.78 + priceFit * 0.22;
+function scoreFor(productId) {
+  const profile = activeProfile();
+  const score = profile.scores.find((item) => item.productId === productId);
+  if (score) return score;
+  return { productId, cf: 0.5, cb: 0.5, hybrid: 0.5 };
 }
 
-function hybridScore(product) {
-  const cfRatio = hybridWeight / 100;
-  const cbRatio = 1 - cfRatio;
-  return collaborativeScore(product) * cfRatio + contentBasedScore(product) * cbRatio;
+function hybridScore(productId) {
+  const score = scoreFor(productId);
+  const cfRatio = state.hybridWeight / 100;
+  return score.cf * cfRatio + score.cb * (1 - cfRatio);
 }
 
-function recommendationScore(product) {
-  const trend = Math.min(product.sold / 3000, 1);
-  const behaviorFit = behaviorScore(product);
-  return hybridScore(product) * 0.82 + behaviorFit * 0.1 + trend * 0.08;
+function sortedProducts() {
+  return [...data.products]
+    .map((product) => ({ ...product, score: hybridScore(product.id), rawScore: scoreFor(product.id) }))
+    .sort((a, b) => b.score - a.score);
 }
 
-function getRecommendations(limit = 4) {
-  return products
-    .map((product) => ({ ...product, score: recommendationScore(product) }))
-    .sort((a, b) => b.score - a.score)
-    .slice(0, limit);
-}
-
-function getSimilarProducts() {
-  const selected = products.find((product) => product.id === selectedProductId) || products[0];
-  return products
-    .filter((product) => product.id !== selected.id)
-    .map((product) => {
-      const overlap = product.tags.filter((tag) => selected.tags.includes(tag)).length;
-      const categoryBonus = product.category === selected.category ? 0.35 : 0;
-      return { ...product, score: overlap / Math.max(selected.tags.length, 1) + categoryBonus };
-    })
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 4);
-}
-
-function renderProfiles() {
-  const container = document.querySelector("#profileSwitcher");
-  container.innerHTML = profiles
-    .map((profile) => `<button class="${profile.id === activeProfile.id ? "active" : ""}" data-profile="${profile.id}" type="button">${profile.label}</button>`)
-    .join("");
-  container.querySelectorAll("button").forEach((button) => {
-    button.addEventListener("click", () => {
-      activeProfile = profiles.find((profile) => profile.id === button.dataset.profile);
-      render();
-    });
-  });
-}
-
-function productCard(product, context = "grid") {
-  const percent = Math.round((product.score ?? recommendationScore(product)) * 100);
-  const cf = Math.round(collaborativeScore(product) * 100);
-  const cb = Math.round(contentBasedScore(product) * 100);
+function productCard(product, compact = false) {
+  const score = product.rawScore || scoreFor(product.id);
+  const hybrid = Math.round((product.score ?? hybridScore(product.id)) * 100);
   return `
-    <article class="product-card ${context === "recommendation" ? "recommended" : ""}" data-product="${product.id}">
+    <article class="product-card">
       <button class="product-visual" style="background:${product.color}" data-view="${product.id}" type="button" aria-label="Xem ${product.name}">
-        <span>${product.image}</span>
-        <small>${product.code}</small>
+        <span>${product.icon}</span>
+        <small>${product.category}</small>
       </button>
       <div class="product-info">
         <div class="product-meta">
@@ -146,12 +58,15 @@ function productCard(product, context = "grid") {
           <strong>★ ${product.rating}</strong>
         </div>
         <h3>${product.name}</h3>
-        <p>${formatPrice(product.price)}</p>
-        <div class="model-scores">
-          <span>CF ${cf}%</span>
-          <span>CB ${cb}%</span>
-        </div>
-        <div class="score-meter" aria-label="Điểm gợi ý ${percent}%"><span style="width:${percent}%"></span></div>
+        <p class="price">${formatPrice(product.price)}</p>
+        ${compact ? "" : `
+          <div class="score-chips">
+            <span>CF ${Math.round(score.cf * 100)}%</span>
+            <span>CB ${Math.round(score.cb * 100)}%</span>
+          </div>
+          <div class="score-bar"><span style="width:${hybrid}%"></span></div>
+          <div class="score-row"><span>Hybrid</span><strong>${hybrid}%</strong></div>
+        `}
         <div class="card-actions">
           <button data-cart="${product.id}" type="button">Thêm giỏ</button>
           <button data-view="${product.id}" type="button">Xem</button>
@@ -161,153 +76,190 @@ function productCard(product, context = "grid") {
   `;
 }
 
-function renderRecommendations() {
-  const recs = getRecommendations(4);
-  document.querySelector("#recommendationGrid").innerHTML = recs.map((item) => productCard(item, "recommendation")).join("");
-  const avg = Math.round((recs.reduce((sum, item) => sum + item.score, 0) / recs.length) * 100);
-  document.querySelector("#fitScore").textContent = `${avg}%`;
-  document.querySelector("#fitBar").style.width = `${avg}%`;
-  document.querySelector("#heroScore").textContent = `${avg}%`;
-}
-
-function renderProducts() {
-  const search = document.querySelector("#searchInput").value.trim().toLowerCase();
-  const filtered = products.filter((product) => {
-    const inCategory = activeCategory === "Tất cả" || product.category === activeCategory;
-    const inSearch = !search || [product.name, product.category, ...product.tags].join(" ").toLowerCase().includes(search);
-    return inCategory && inSearch;
-  });
-  document.querySelector("#productGrid").innerHTML = filtered.map((item) => productCard({ ...item, score: recommendationScore(item) })).join("");
+function renderStats() {
+  document.querySelector("#statProducts").textContent = data.products.length;
+  document.querySelector("#statUsers").textContent = data.meta.training.users;
+  document.querySelector("#metricUsers").textContent = data.meta.training.users;
+  document.querySelector("#metricItems").textContent = data.meta.training.items;
+  document.querySelector("#metricInteractions").textContent = data.meta.training.interactions;
+  document.querySelector("#datasetName").textContent = data.meta.dataset;
 }
 
 function renderCategories() {
-  const categories = ["Tất cả", ...new Set(products.map((product) => product.category))];
-  const container = document.querySelector("#categoryTabs");
-  container.innerHTML = categories
-    .map((category) => `<button class="${category === activeCategory ? "active" : ""}" data-category="${category}" type="button">${category}</button>`)
+  const categories = ["Tất cả", ...new Set(data.products.map((product) => product.category))];
+  document.querySelector("#categoryStrip").innerHTML = categories
+    .filter((category) => category !== "Tất cả")
+    .slice(0, 6)
+    .map((category) => {
+      const count = data.products.filter((product) => product.category === category).length;
+      return `<button class="category-card" data-category="${category}" type="button"><span>${category.slice(0, 1)}</span><div><strong>${category}</strong><small>${count} sản phẩm</small></div></button>`;
+    })
     .join("");
-  container.querySelectorAll("button").forEach((button) => {
-    button.addEventListener("click", () => {
-      activeCategory = button.dataset.category;
-      render();
-    });
+
+  document.querySelector("#filterTabs").innerHTML = categories
+    .map((category) => `<button class="${category === state.activeCategory ? "active" : ""}" data-filter="${category}" type="button">${category}</button>`)
+    .join("");
+}
+
+function renderProfiles() {
+  const profile = activeProfile();
+  document.querySelector("#profileTabs").innerHTML = data.profiles
+    .map((item) => `<button class="${item.id === profile.id ? "active" : ""}" data-profile="${item.id}" type="button">${item.label}</button>`)
+    .join("");
+  document.querySelector("#profileSelect").innerHTML = data.profiles
+    .map((item) => `<option value="${item.id}" ${item.id === profile.id ? "selected" : ""}>${item.name} - ${item.label}</option>`)
+    .join("");
+  document.querySelector("#activeProfileName").textContent = state.loggedIn ? profile.name : "Khách vãng lai";
+  document.querySelector("#activeProfileDescription").textContent = state.loggedIn
+    ? profile.description
+    : "Đăng nhập để dùng hồ sơ hành vi từ dataset. Hiện hệ thống đang dùng hồ sơ mẫu.";
+  document.querySelector("#interestTags").innerHTML = profile.interests.map((tag) => `<span>${tag}</span>`).join("");
+}
+
+function renderHybridControl() {
+  const cf = state.hybridWeight;
+  const cb = 100 - cf;
+  document.querySelector("#weightLabel").textContent = `${cf}% CF / ${cb}% CB`;
+  document.querySelector("#formulaText").textContent = `Hybrid = ${(cf / 100).toFixed(2)} × CF + ${(cb / 100).toFixed(2)} × CB`;
+}
+
+function renderRecommendations() {
+  const products = sortedProducts().slice(0, 8);
+  document.querySelector("#recommendationGrid").innerHTML = products.map((product) => productCard(product)).join("");
+}
+
+function renderProducts() {
+  const filtered = sortedProducts().filter((product) => {
+    const categoryOk = state.activeCategory === "Tất cả" || product.category === state.activeCategory;
+    const text = `${product.name} ${product.category} ${product.rawCategory}`.toLowerCase();
+    return categoryOk && text.includes(state.search.toLowerCase());
   });
+  document.querySelector("#productGrid").innerHTML = filtered.slice(0, 24).map((product) => productCard(product)).join("");
 }
 
-function renderProfileInsight() {
-  document.querySelector("#profileDescription").textContent = activeProfile.description;
-  document.querySelector("#preferenceTags").innerHTML = activeProfile.interests.map((tag) => `<span>${tag}</span>`).join("");
-}
-
-function renderHybridModule() {
-  const cfRatio = hybridWeight / 100;
-  const cbRatio = 1 - cfRatio;
-  document.querySelector("#cfWeightText").textContent = `${hybridWeight}% CF`;
-  document.querySelector("#cbWeightText").textContent = `${100 - hybridWeight}% CB`;
-  document.querySelector("#hybridFormula").textContent = `${cfRatio.toFixed(2)} × CF + ${cbRatio.toFixed(2)} × CB`;
-
-  const rows = products
-    .map((product) => ({
-      ...product,
-      cfScore: collaborativeScore(product),
-      cbScore: contentBasedScore(product),
-      hybrid: hybridScore(product),
-    }))
-    .sort((a, b) => b.hybrid - a.hybrid)
-    .slice(0, 6);
-
-  document.querySelector("#hybridRows").innerHTML = rows
+function renderSimilar() {
+  const selected = productById(state.selectedProductId) || data.products[0];
+  const similar = data.products
+    .filter((product) => product.id !== selected.id)
     .map((product) => {
-      const cf = Math.round(product.cfScore * 100);
-      const cb = Math.round(product.cbScore * 100);
-      const hybrid = Math.round(product.hybrid * 100);
-      return `
-        <div class="hybrid-row">
-          <div>
-            <strong>${product.name}</strong>
-            <span>${product.category}</span>
-          </div>
-          <span>${cf}%</span>
-          <span>${cb}%</span>
-          <strong>${hybrid}%</strong>
-        </div>
-      `;
+      const sameCategory = product.category === selected.category ? 0.65 : 0;
+      const sameRaw = product.rawCategory === selected.rawCategory ? 0.25 : 0;
+      return { ...product, score: sameCategory + sameRaw + product.popularity * 0.1, rawScore: scoreFor(product.id) };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5);
+  document.querySelector("#similarNote").textContent = `Dựa trên sản phẩm vừa xem: ${selected.name}`;
+  document.querySelector("#similarGrid").innerHTML = similar.map((product) => productCard(product, true)).join("");
+}
+
+function renderEpochs() {
+  const maxRmse = Math.max(...data.meta.history.map((item) => item.rmse));
+  document.querySelector("#epochBars").innerHTML = data.meta.history
+    .map((item) => {
+      const width = Math.max(12, Math.round((item.rmse / maxRmse) * 100));
+      return `<div class="epoch-row"><span>Epoch ${item.epoch}</span><div class="epoch-track"><span style="width:${width}%"></span></div><strong>${item.rmse}</strong></div>`;
     })
     .join("");
 }
 
-function renderSimilar() {
-  const selected = products.find((product) => product.id === selectedProductId) || products[0];
-  document.querySelector("#similarNote").textContent = `Dựa trên sản phẩm vừa xem: ${selected.name}`;
-  document.querySelector("#similarGrid").innerHTML = getSimilarProducts().map((item) => productCard(item)).join("");
-}
-
 function renderCart() {
-  document.querySelector("#cartCount").textContent = cart.length;
-  const items = cart.map((id) => products.find((product) => product.id === id)).filter(Boolean);
+  document.querySelector("#cartCount").textContent = state.cart.length;
+  const items = state.cart.map(productById).filter(Boolean);
   document.querySelector("#cartItems").innerHTML = items.length
-    ? items.map((item) => `<div><span>${item.name}</span><strong>${formatPrice(item.price)}</strong></div>`).join("")
-    : `<p class="empty-cart">Chưa có sản phẩm nào.</p>`;
+    ? items.map((item) => `<div class="cart-item"><div><strong>${item.name}</strong><span>${item.category}</span></div><strong>${formatPrice(item.price)}</strong></div>`).join("")
+    : `<p class="empty">Giỏ hàng trống.</p>`;
   document.querySelector("#cartTotal").textContent = formatPrice(items.reduce((sum, item) => sum + item.price, 0));
 }
 
-function showToast(message) {
+function showToast(text) {
   const toast = document.querySelector("#toast");
-  toast.textContent = message;
+  toast.textContent = text;
   toast.classList.add("show");
-  window.clearTimeout(showToast.timer);
-  showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 1800);
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => toast.classList.remove("show"), 1800);
 }
 
-function trackView(productId) {
-  selectedProductId = productId;
-  behavior.viewed = [productId, ...behavior.viewed.filter((id) => id !== productId)].slice(0, 5);
-  const product = products.find((item) => item.id === productId);
-  showToast(`Đã ghi nhận lượt xem: ${product.name}`);
-  render();
-}
-
-function addToCart(productId) {
-  cart.push(productId);
-  behavior.added = [productId, ...behavior.added].slice(0, 6);
-  const product = products.find((item) => item.id === productId);
-  showToast(`Đã thêm vào giỏ: ${product.name}`);
-  render();
-}
-
-function attachProductEvents() {
-  document.querySelectorAll("[data-cart]").forEach((button) => {
-    button.addEventListener("click", () => addToCart(Number(button.dataset.cart)));
+function attachEvents() {
+  document.querySelectorAll("[data-profile]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeProfileId = button.dataset.profile;
+      state.loggedIn = true;
+      render();
+    });
+  });
+  document.querySelectorAll("[data-filter], [data-category]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeCategory = button.dataset.filter || button.dataset.category;
+      document.querySelector("#products").scrollIntoView({ behavior: "smooth" });
+      render();
+    });
   });
   document.querySelectorAll("[data-view]").forEach((button) => {
-    button.addEventListener("click", () => trackView(Number(button.dataset.view)));
+    button.addEventListener("click", () => {
+      state.selectedProductId = button.dataset.view;
+      const product = productById(state.selectedProductId);
+      showToast(`Đã xem ${product.name}. Gợi ý tương tự đã cập nhật.`);
+      renderSimilar();
+      attachEvents();
+    });
+  });
+  document.querySelectorAll("[data-cart]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.cart.push(button.dataset.cart);
+      const product = productById(button.dataset.cart);
+      showToast(`Đã thêm ${product.name} vào giỏ.`);
+      renderCart();
+    });
   });
 }
 
 function render() {
-  renderProfiles();
+  renderStats();
   renderCategories();
-  renderProfileInsight();
-  renderHybridModule();
+  renderProfiles();
+  renderHybridControl();
   renderRecommendations();
   renderProducts();
   renderSimilar();
+  renderEpochs();
   renderCart();
-  attachProductEvents();
+  attachEvents();
+}
+
+function openAuth() {
+  document.querySelector("#authModal").classList.add("open");
+  document.querySelector("#authModal").setAttribute("aria-hidden", "false");
+}
+
+function closeAuth() {
+  document.querySelector("#authModal").classList.remove("open");
+  document.querySelector("#authModal").setAttribute("aria-hidden", "true");
 }
 
 document.querySelector("#searchInput").addEventListener("input", (event) => {
-  behavior.searched = event.target.value;
+  state.search = event.target.value;
   renderProducts();
-  attachProductEvents();
+  attachEvents();
 });
 
 document.querySelector("#hybridWeight").addEventListener("input", (event) => {
-  hybridWeight = Number(event.target.value);
+  state.hybridWeight = Number(event.target.value);
   render();
 });
 
-document.querySelector(".cart-button").addEventListener("click", () => {
+document.querySelector("#loginButton").addEventListener("click", openAuth);
+document.querySelector("#heroLoginButton").addEventListener("click", openAuth);
+document.querySelector("#closeAuth").addEventListener("click", closeAuth);
+document.querySelector("#submitLogin").addEventListener("click", () => {
+  state.activeProfileId = document.querySelector("#profileSelect").value;
+  state.loggedIn = true;
+  document.querySelector("#loginButton").textContent = "Đã đăng nhập";
+  closeAuth();
+  showToast("Đăng nhập thành công. Gợi ý đã cá nhân hóa.");
+  render();
+});
+
+document.querySelector("#cartButton").addEventListener("click", () => {
   document.querySelector("#cartDrawer").classList.add("open");
 });
 
