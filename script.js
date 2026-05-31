@@ -8,6 +8,7 @@ const state = {
   search: "",
   cart: [],
   loggedIn: false,
+  role: "guest",
 };
 
 const money = new Intl.NumberFormat("vi-VN");
@@ -121,6 +122,10 @@ function renderHybridControl() {
   const cb = 100 - cf;
   document.querySelector("#weightLabel").textContent = `${cf}% CF / ${cb}% CB`;
   document.querySelector("#formulaText").textContent = `Hybrid = ${(cf / 100).toFixed(2)} × CF + ${(cb / 100).toFixed(2)} × CB`;
+  document.querySelector("#adminWeightLabel").textContent = `${cf}% CF / ${cb}% CB`;
+  document.querySelector("#adminFormulaText").textContent = `Hybrid = ${(cf / 100).toFixed(2)} × CF + ${(cb / 100).toFixed(2)} × CB`;
+  document.querySelector("#hybridWeight").value = cf;
+  document.querySelector("#adminHybridWeight").value = cf;
 }
 
 function renderRecommendations() {
@@ -160,6 +165,45 @@ function renderEpochs() {
       return `<div class="epoch-row"><span>Epoch ${item.epoch}</span><div class="epoch-track"><span style="width:${width}%"></span></div><strong>${item.rmse}</strong></div>`;
     })
     .join("");
+}
+
+function renderAdminDashboard() {
+  document.querySelector("#adminProductCount").textContent = data.products.length;
+  document.querySelector("#adminUserCount").textContent = data.meta.training.users;
+  document.querySelector("#adminInteractionCount").textContent = data.meta.training.interactions;
+
+  const top = sortedProducts().slice(0, 8);
+  document.querySelector("#adminTopProducts").innerHTML = top
+    .map((product, index) => {
+      const score = scoreFor(product.id);
+      return `
+        <div class="admin-row">
+          <span>${index + 1}</span>
+          <strong>${product.name}</strong>
+          <em>CF ${Math.round(score.cf * 100)}% · CB ${Math.round(score.cb * 100)}%</em>
+          <b>${Math.round(product.score * 100)}%</b>
+        </div>
+      `;
+    })
+    .join("");
+
+  const categoryCounts = [...new Set(data.products.map((product) => product.category))]
+    .map((category) => ({
+      category,
+      count: data.products.filter((product) => product.category === category).length,
+    }))
+    .sort((a, b) => b.count - a.count);
+
+  document.querySelector("#adminCategories").innerHTML = categoryCounts
+    .map((item) => `<div class="admin-row"><span>${item.category.slice(0, 1)}</span><strong>${item.category}</strong><em>${item.count} sản phẩm</em><b>${Math.round((item.count / data.products.length) * 100)}%</b></div>`)
+    .join("");
+}
+
+function applyRoleView() {
+  document.body.dataset.role = state.role;
+  const loginLabel = state.loggedIn ? (state.role === "admin" ? "Quản lý" : "Người dùng") : "Đăng nhập";
+  document.querySelector("#loginButton").textContent = loginLabel;
+  document.querySelector("#cartButton").disabled = state.role === "admin";
 }
 
 function renderCart() {
@@ -222,7 +266,9 @@ function render() {
   renderProducts();
   renderSimilar();
   renderEpochs();
+  renderAdminDashboard();
   renderCart();
+  applyRoleView();
   attachEvents();
 }
 
@@ -247,16 +293,22 @@ document.querySelector("#hybridWeight").addEventListener("input", (event) => {
   render();
 });
 
+document.querySelector("#adminHybridWeight").addEventListener("input", (event) => {
+  state.hybridWeight = Number(event.target.value);
+  render();
+});
+
 document.querySelector("#loginButton").addEventListener("click", openAuth);
 document.querySelector("#heroLoginButton").addEventListener("click", openAuth);
 document.querySelector("#closeAuth").addEventListener("click", closeAuth);
 document.querySelector("#submitLogin").addEventListener("click", () => {
   state.activeProfileId = document.querySelector("#profileSelect").value;
   state.loggedIn = true;
-  document.querySelector("#loginButton").textContent = "Đã đăng nhập";
+  state.role = document.querySelector("input[name='role']:checked").value;
   closeAuth();
-  showToast("Đăng nhập thành công. Gợi ý đã cá nhân hóa.");
+  showToast(state.role === "admin" ? "Đăng nhập quản lý thành công." : "Đăng nhập người dùng thành công. Gợi ý đã cá nhân hóa.");
   render();
+  document.querySelector(state.role === "admin" ? "#adminDashboard" : "#recommendations").scrollIntoView({ behavior: "smooth" });
 });
 
 document.querySelector("#cartButton").addEventListener("click", () => {

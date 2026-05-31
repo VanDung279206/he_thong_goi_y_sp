@@ -19,8 +19,9 @@
       </form>
 
       <nav class="nav-links" aria-label="Điều hướng">
-        <a href="#recommendations">Gợi ý</a>
-        <a href="#products">Sản phẩm</a>
+        <a class="user-only" href="#recommendations">Gợi ý</a>
+        <a class="user-only" href="#products">Sản phẩm</a>
+        <a class="admin-only" href="#adminDashboard">Quản lý</a>
         <a href="#model">Mô hình</a>
       </nav>
 
@@ -71,7 +72,64 @@
 
       <section class="category-strip" id="categoryStrip" aria-label="Danh mục nổi bật"></section>
 
-      <section id="recommendations" class="section">
+      <section id="adminDashboard" class="section admin-section admin-only">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Admin dashboard</p>
+            <h2>Giao diện người quản lý</h2>
+          </div>
+          <p class="section-note">Theo dõi dữ liệu train, danh mục, top sản phẩm và cấu hình hệ thống gợi ý.</p>
+        </div>
+        <div class="admin-grid">
+          <article>
+            <span>Sản phẩm</span>
+            <strong id="adminProductCount">0</strong>
+            <small>Sản phẩm đang hiển thị</small>
+          </article>
+          <article>
+            <span>Người dùng train</span>
+            <strong id="adminUserCount">0</strong>
+            <small>Từ dataset Olist</small>
+          </article>
+          <article>
+            <span>Tương tác</span>
+            <strong id="adminInteractionCount">0</strong>
+            <small>Dùng cho Matrix Factorization</small>
+          </article>
+          <article>
+            <span>Epoch</span>
+            <strong>5</strong>
+            <small>Huấn luyện CF</small>
+          </article>
+        </div>
+        <div class="admin-layout">
+          <div class="admin-panel">
+            <h3>Cấu hình Hybrid</h3>
+            <p>Quản lý có thể điều chỉnh tỷ lệ CF/CB để kiểm tra tác động lên ranking.</p>
+            <div class="weight-control">
+              <div>
+                <span>Trọng số hiện tại</span>
+                <strong id="adminWeightLabel">55% CF / 45% CB</strong>
+              </div>
+              <input id="adminHybridWeight" type="range" min="0" max="100" value="55" />
+            </div>
+            <div class="formula">
+              <span>Ranking formula</span>
+              <strong id="adminFormulaText">Hybrid = 0.55 × CF + 0.45 × CB</strong>
+            </div>
+          </div>
+          <div class="admin-panel">
+            <h3>Top sản phẩm theo Hybrid</h3>
+            <div class="admin-table" id="adminTopProducts"></div>
+          </div>
+          <div class="admin-panel">
+            <h3>Phân bố danh mục</h3>
+            <div class="admin-table" id="adminCategories"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recommendations" class="section user-only">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Hybrid recommendations</p>
@@ -102,7 +160,7 @@
         </div>
       </section>
 
-      <section id="products" class="section soft-section">
+      <section id="products" class="section soft-section user-only">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Gian hàng</p>
@@ -113,7 +171,7 @@
         <div class="product-grid" id="productGrid"></div>
       </section>
 
-      <section class="section">
+      <section class="section user-only">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Item similarity</p>
@@ -180,6 +238,10 @@
           <form class="auth-form">
             <label>Email hoặc số điện thoại<input id="emailInput" type="text" value="khachhang@demo.vn" /></label>
             <label>Mật khẩu<input id="passwordInput" type="password" value="12345678" /></label>
+            <div class="role-picker" aria-label="Chọn vai trò đăng nhập">
+              <label><input type="radio" name="role" value="user" checked /> Người dùng</label>
+              <label><input type="radio" name="role" value="admin" /> Quản lý</label>
+            </div>
             <label>Hồ sơ mẫu<select id="profileSelect"></select></label>
             <button class="primary-button" id="submitLogin" type="button">Đăng nhập</button>
             <button class="secondary-button full-width" type="button">Tạo tài khoản mới</button>
