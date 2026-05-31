@@ -241,6 +241,37 @@ def build_frontend_data(df: pd.DataFrame, model: dict, stats: dict, history: lis
             }
         ]
 
+    # Calculate similarity matrix among top 72 products based on trained SVD factors
+    similarities_payload = {}
+    for p_a in products_payload:
+        id_a = p_a["id"]
+        idx_a = model["item_map"].get(id_a)
+        if idx_a is None:
+            continue
+        factor_a = model["item_factors"][idx_a]
+        norm_a = float(np.linalg.norm(factor_a))
+        
+        sims = []
+        for p_b in products_payload:
+            id_b = p_b["id"]
+            if id_a == id_b:
+                continue
+            idx_b = model["item_map"].get(id_b)
+            if idx_b is None:
+                continue
+            factor_b = model["item_factors"][idx_b]
+            norm_b = float(np.linalg.norm(factor_b))
+            
+            dot_prod = float(np.dot(factor_a, factor_b))
+            cosine = dot_prod / (norm_a * norm_b + 1e-9)
+            # Map cosine [-1, 1] to [0, 1] range for UI display
+            score = float(np.clip((cosine + 1) / 2.0, 0.0, 1.0))
+            sims.append({"id": id_b, "sim": round(score, 4)})
+            
+        # Sort by similarity score descending, take top 10
+        sims = sorted(sims, key=lambda x: x["sim"], reverse=True)[:10]
+        similarities_payload[id_a] = sims
+
     for profile in user_profiles:
         raw_interests = set(profile["rawInterests"])
         scores = []
@@ -267,6 +298,7 @@ def build_frontend_data(df: pd.DataFrame, model: dict, stats: dict, history: lis
         },
         "products": products_payload,
         "profiles": user_profiles,
+        "similarities": similarities_payload,
     }
 
 

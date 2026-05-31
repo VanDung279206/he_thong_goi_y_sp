@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng nhập - SendoAI Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="login-page">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển chế độ tối" style="position: fixed; top: 20px; right: 20px; z-index: 100;">●</button>
     <main class="login-screen">
       <section class="login-hero">
         <a class="brand login-brand" href="index.html" aria-label="SendoAI Shop">
           <span class="brand-logo">S</span>
           <span>SendoAI Shop</span>
         </a>
-        <p class="eyebrow">Marketplace demo</p>
-        <h1>Đăng nhập để vào đúng giao diện</h1>
-        <p>
-          Người dùng sẽ được chuyển sang trang mua sắm và gợi ý sản phẩm. Quản lý sẽ
-          được chuyển sang dashboard theo dõi dữ liệu, mô hình và ranking.
-        </p>
+        <p class="eyebrow">Marketplace</p>
+        <h1>Đăng nhập</h1>
         <div class="hero-stats">
           <div><strong id="statProducts">0</strong><span>sản phẩm</span></div>
           <div><strong id="statUsers">0</strong><span>user train</span></div>
@@ -38,9 +38,8 @@
             <label><input type="radio" name="role" value="user" checked /> Người dùng</label>
             <label><input type="radio" name="role" value="admin" /> Quản lý</label>
           </div>
-          <label>Hồ sơ người dùng mẫu<select id="profileSelect"></select></label>
+          <label>Hồ sơ mẫu<select id="profileSelect"></select></label>
           <button class="primary-button" id="submitLogin" type="button">Đăng nhập</button>
-          <p class="form-note">Demo không xác thực backend. Vai trò được lưu trong localStorage để chuyển trang.</p>
         </form>
       </section>
     </main>

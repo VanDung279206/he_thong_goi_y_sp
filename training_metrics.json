@@ -4,29 +4,29 @@
   "latentDim": 18,
   "training": {
     "users": 5000,
-    "items": 641,
-    "interactions": 5673
+    "items": 640,
+    "interactions": 5671
   },
   "history": [
     {
       "epoch": 1,
-      "rmse": 0.29762
+      "rmse": 0.29545
     },
     {
       "epoch": 2,
-      "rmse": 0.27617
+      "rmse": 0.27474
     },
     {
       "epoch": 3,
-      "rmse": 0.25928
+      "rmse": 0.25796
     },
     {
       "epoch": 4,
-      "rmse": 0.24452
+      "rmse": 0.24367
     },
     {
       "epoch": 5,
-      "rmse": 0.23155
+      "rmse": 0.23087
     }
   ]
 }

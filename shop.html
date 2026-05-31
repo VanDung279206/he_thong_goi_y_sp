@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang người dùng - SendoAI Shop</title>
+    <title>Người dùng - SendoAI Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="shop">
     <header class="topbar">
       <a class="brand" href="shop.html" aria-label="SendoAI Shop"><span class="brand-logo">S</span><span>SendoAI Shop</span></a>
-      <form class="search" role="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Tìm sản phẩm, danh mục..." /></form>
+      <form class="search" role="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Tìm sản phẩm..." /></form>
       <nav class="nav-links" aria-label="Điều hướng">
         <a href="#recommendations">Gợi ý</a>
         <a href="#products">Sản phẩm</a>
         <a href="#model">Mô hình</a>
       </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển chế độ tối">●</button>
       <button class="ghost-button" id="logoutButton" type="button">Đăng xuất</button>
       <button class="cart-button" id="cartButton" type="button" aria-label="Mở giỏ hàng"><span>Giỏ hàng</span><strong id="cartCount">0</strong></button>
     </header>
@@ -22,18 +26,16 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">User shopping page</p>
-          <h1>Mua sắm với gợi ý sản phẩm cá nhân hóa</h1>
-          <p>Giao diện người dùng gồm danh mục, tìm kiếm, giỏ hàng, sản phẩm tương tự và danh sách gợi ý Hybrid CF + CB.</p>
+          <p class="eyebrow">Shopping</p>
+          <h1>Sản phẩm dành cho bạn</h1>
           <div class="hero-actions">
             <a class="primary-button" href="#recommendations">Xem gợi ý</a>
             <a class="secondary-button" href="#products">Xem sản phẩm</a>
           </div>
         </div>
         <div class="login-card">
-          <div class="login-card-header"><span>Hồ sơ hiện tại</span><strong id="activeProfileBadge">User</strong></div>
+          <div class="login-card-header"><span>Hồ sơ</span><strong id="activeProfileBadge">User</strong></div>
           <h3 id="activeProfileName">Khách hàng</h3>
-          <p id="activeProfileDescription"></p>
           <div class="tag-list" id="interestTags"></div>
         </div>
       </section>
@@ -42,15 +44,14 @@
 
       <section id="recommendations" class="section">
         <div class="section-heading">
-          <div><p class="eyebrow">Hybrid recommendations</p><h2>Gợi ý dành cho bạn</h2></div>
+          <div><p class="eyebrow">Hybrid</p><h2>Gợi ý</h2></div>
           <div class="profile-tabs" id="profileTabs"></div>
         </div>
         <div class="recommendation-shell">
           <aside class="profile-panel">
-            <h3>Cấu hình gợi ý</h3>
-            <p>Điều chỉnh trọng số để xem CF hoặc CB ảnh hưởng đến ranking.</p>
+            <h3>Trọng số</h3>
             <div class="weight-control">
-              <div><span>Trọng số Hybrid</span><strong id="weightLabel">55% CF / 45% CB</strong></div>
+              <div><span>Hybrid</span><strong id="weightLabel">55% CF / 45% CB</strong></div>
               <input id="hybridWeight" type="range" min="0" max="100" value="55" />
             </div>
             <div class="formula"><span>Công thức</span><strong id="formulaText">Hybrid = 0.55 × CF + 0.45 × CB</strong></div>
@@ -61,7 +62,7 @@
 
       <section id="products" class="section soft-section">
         <div class="section-heading">
-          <div><p class="eyebrow">Gian hàng</p><h2>Sản phẩm mới</h2></div>
+          <div><p class="eyebrow">Shop</p><h2>Sản phẩm</h2></div>
           <div class="filter-tabs" id="filterTabs"></div>
         </div>
         <div class="product-grid" id="productGrid"></div>
@@ -69,19 +70,18 @@
 
       <section class="section">
         <div class="section-heading">
-          <div><p class="eyebrow">Item similarity</p><h2>Sản phẩm tương tự</h2></div>
-          <p class="section-note" id="similarNote">Chọn một sản phẩm để xem gợi ý tương tự.</p>
+          <div><p class="eyebrow">Similarity</p><h2>Tương tự</h2></div>
         </div>
+        <p class="section-note" id="similarNote"></p>
         <div class="product-grid compact-grid" id="similarGrid"></div>
       </section>
 
       <section id="model" class="section model-section">
         <div class="section-heading">
-          <div><p class="eyebrow">Training report</p><h2>Thông tin mô hình</h2></div>
-          <p class="section-note">CF dùng Matrix Factorization, CB dùng danh mục, giá và độ phổ biến.</p>
+          <div><p class="eyebrow">Training</p><h2>Mô hình</h2></div>
         </div>
         <div class="training-panel">
-          <div><h3>RMSE theo epoch</h3><div id="epochBars" class="epoch-bars"></div></div>
+          <div><h3>RMSE</h3><div id="epochBars" class="epoch-bars"></div></div>
           <div class="metric-list">
             <div><span>Users</span><strong id="metricUsers">0</strong></div>
             <div><span>Items</span><strong id="metricItems">0</strong></div>

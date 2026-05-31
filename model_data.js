@@ -5,29 +5,29 @@ window.MODEL_DATA = {
     "latentDim": 18,
     "training": {
       "users": 5000,
-      "items": 641,
-      "interactions": 5673
+      "items": 640,
+      "interactions": 5671
     },
     "history": [
       {
         "epoch": 1,
-        "rmse": 0.29762
+        "rmse": 0.29545
       },
       {
         "epoch": 2,
-        "rmse": 0.27617
+        "rmse": 0.27474
       },
       {
         "epoch": 3,
-        "rmse": 0.25928
+        "rmse": 0.25796
       },
       {
         "epoch": 4,
-        "rmse": 0.24452
+        "rmse": 0.24367
       },
       {
         "epoch": 5,
-        "rmse": 0.23155
+        "rmse": 0.23087
       }
     ]
   },
@@ -985,436 +985,436 @@ window.MODEL_DATA = {
       ],
       "scores": [
         {
-          "productId": "f1c7f353075ce59d8a6f3cf58f419c9c",
-          "cf": 0.7485,
-          "cb": 0.7804,
-          "hybrid": 0.7629
-        },
-        {
           "productId": "99a4788cb24856965c36a24e339b6058",
-          "cf": 0.5662,
+          "cf": 0.6115,
           "cb": 0.9498,
-          "hybrid": 0.7388
+          "hybrid": 0.7637
         },
         {
-          "productId": "777d2e438a1b645f3aec9bd57e92672c",
-          "cf": 0.6257,
-          "cb": 0.8088,
-          "hybrid": 0.7081
-        },
-        {
-          "productId": "ec2d43cc59763ec91694573b31f1c29a",
-          "cf": 0.5799,
-          "cb": 0.832,
-          "hybrid": 0.6934
+          "productId": "f1c7f353075ce59d8a6f3cf58f419c9c",
+          "cf": 0.7406,
+          "cb": 0.7804,
+          "hybrid": 0.7585
         },
         {
           "productId": "06edb72f1e0c64b14c5b79353f7abea3",
-          "cf": 0.5617,
+          "cf": 0.6061,
           "cb": 0.8389,
-          "hybrid": 0.6864
+          "hybrid": 0.7108
+        },
+        {
+          "productId": "777d2e438a1b645f3aec9bd57e92672c",
+          "cf": 0.6142,
+          "cb": 0.8088,
+          "hybrid": 0.7018
+        },
+        {
+          "productId": "ec2d43cc59763ec91694573b31f1c29a",
+          "cf": 0.5538,
+          "cb": 0.832,
+          "hybrid": 0.679
         },
         {
           "productId": "35afc973633aaeb6b877ff57b2793310",
-          "cf": 0.5453,
+          "cf": 0.537,
           "cb": 0.828,
-          "hybrid": 0.6725
+          "hybrid": 0.6679
         },
         {
           "productId": "84f456958365164420cfc80fbe4c7fab",
-          "cf": 0.3827,
+          "cf": 0.4233,
           "cb": 0.8067,
-          "hybrid": 0.5735
-        },
-        {
-          "productId": "617186c3d97ea56c9c683a8a3974e8c1",
-          "cf": 0.7978,
-          "cb": 0.2129,
-          "hybrid": 0.5346
-        },
-        {
-          "productId": "389d119b48cf3043d311335e499d9c6b",
-          "cf": 0.693,
-          "cb": 0.3372,
-          "hybrid": 0.5329
-        },
-        {
-          "productId": "7ce94ab189134e2d3c05f496d635419c",
-          "cf": 0.7532,
-          "cb": 0.2446,
-          "hybrid": 0.5243
+          "hybrid": 0.5958
         },
         {
           "productId": "422879e10f46682990de24d770e7f83d",
-          "cf": 0.6375,
+          "cf": 0.6596,
           "cb": 0.3725,
-          "hybrid": 0.5182
-        },
-        {
-          "productId": "154e7e31ebfa092203795c972e5804a6",
-          "cf": 0.6787,
-          "cb": 0.307,
-          "hybrid": 0.5114
-        },
-        {
-          "productId": "2028bf1b01cafb2d2b1901fca4083222",
-          "cf": 0.7268,
-          "cb": 0.2396,
-          "hybrid": 0.5076
-        },
-        {
-          "productId": "601a360bd2a916ecef0e88de72a6531a",
-          "cf": 0.7545,
-          "cb": 0.2047,
-          "hybrid": 0.5071
-        },
-        {
-          "productId": "c6dd917a0be2a704582055949915ab32",
-          "cf": 0.7363,
-          "cb": 0.2166,
-          "hybrid": 0.5024
-        },
-        {
-          "productId": "6f3b5b605d91b7439c5e3f5a8dffeea7",
-          "cf": 0.7457,
-          "cb": 0.1939,
-          "hybrid": 0.4974
-        },
-        {
-          "productId": "53759a2ecddad2bb87a079a1f1519f73",
-          "cf": 0.6324,
-          "cb": 0.3304,
-          "hybrid": 0.4965
-        },
-        {
-          "productId": "0aabfb375647d9738ad0f7b4ea3653b1",
-          "cf": 0.6916,
-          "cb": 0.254,
-          "hybrid": 0.4947
-        },
-        {
-          "productId": "6cdd53843498f92890544667809f1595",
-          "cf": 0.7387,
-          "cb": 0.1888,
-          "hybrid": 0.4912
-        },
-        {
-          "productId": "3fbc0ef745950c7932d5f2a446189725",
-          "cf": 0.6887,
-          "cb": 0.2407,
-          "hybrid": 0.4871
-        },
-        {
-          "productId": "3dd2a17168ec895c781a9191c1e95ad7",
-          "cf": 0.6721,
-          "cb": 0.2558,
-          "hybrid": 0.4848
-        },
-        {
-          "productId": "437c05a395e9e47f9762e677a7068ce7",
-          "cf": 0.663,
-          "cb": 0.2492,
-          "hybrid": 0.4768
-        },
-        {
-          "productId": "78efe838c04bbc568be034082200ac20",
-          "cf": 0.6951,
-          "cb": 0.2095,
-          "hybrid": 0.4766
-        },
-        {
-          "productId": "a62e25e09e05e6faf31d90c6ec1aa3d1",
-          "cf": 0.6563,
-          "cb": 0.2545,
-          "hybrid": 0.4755
-        },
-        {
-          "productId": "e0cf79767c5b016251fe139915c59a26",
-          "cf": 0.6595,
-          "cb": 0.2501,
-          "hybrid": 0.4752
-        },
-        {
-          "productId": "c4baedd846ed09b85f78a781b522f126",
-          "cf": 0.6765,
-          "cb": 0.2276,
-          "hybrid": 0.4745
-        },
-        {
-          "productId": "2b4609f8948be18874494203496bc318",
-          "cf": 0.6387,
-          "cb": 0.2729,
-          "hybrid": 0.4741
-        },
-        {
-          "productId": "b0961721fd839e9982420e807758a2a6",
-          "cf": 0.6692,
-          "cb": 0.2347,
-          "hybrid": 0.4737
-        },
-        {
-          "productId": "7a10781637204d8d10485c71a6108a2e",
-          "cf": 0.7093,
-          "cb": 0.1839,
-          "hybrid": 0.4728
-        },
-        {
-          "productId": "7c1bd920dbdf22470b68bde975dd3ccf",
-          "cf": 0.6349,
-          "cb": 0.2742,
-          "hybrid": 0.4726
-        },
-        {
-          "productId": "cac9e5692471a0700418aa3400b9b2b1",
-          "cf": 0.6944,
-          "cb": 0.1991,
-          "hybrid": 0.4715
-        },
-        {
-          "productId": "42a2c92a0979a949ca4ea89ec5c7b934",
-          "cf": 0.6451,
-          "cb": 0.2556,
-          "hybrid": 0.4699
-        },
-        {
-          "productId": "d017a2151d543a9885604dc62a3d9dcc",
-          "cf": 0.6532,
-          "cb": 0.2439,
-          "hybrid": 0.469
-        },
-        {
-          "productId": "89321f94e35fc6d7903d36f74e351d40",
-          "cf": 0.6497,
-          "cb": 0.244,
-          "hybrid": 0.4672
+          "hybrid": 0.5304
         },
         {
           "productId": "aca2eb7d00ea1a7b8ebd4e68314663af",
-          "cf": 0.5348,
+          "cf": 0.63,
           "cb": 0.3827,
-          "hybrid": 0.4664
+          "hybrid": 0.5187
         },
         {
-          "productId": "8c292ca193d326152e335d77176746f0",
-          "cf": 0.6917,
-          "cb": 0.186,
-          "hybrid": 0.4641
+          "productId": "601a360bd2a916ecef0e88de72a6531a",
+          "cf": 0.7557,
+          "cb": 0.2047,
+          "hybrid": 0.5077
         },
         {
-          "productId": "29427de7f8a9ee983d9dbc51cec569b4",
-          "cf": 0.6733,
-          "cb": 0.2079,
-          "hybrid": 0.4639
+          "productId": "617186c3d97ea56c9c683a8a3974e8c1",
+          "cf": 0.7471,
+          "cb": 0.2129,
+          "hybrid": 0.5067
         },
         {
-          "productId": "5a848e4ab52fd5445cdc07aab1c40e48",
-          "cf": 0.6458,
-          "cb": 0.2366,
-          "hybrid": 0.4617
-        },
-        {
-          "productId": "54d9ac713e253fa1fae9c8003b011c2a",
-          "cf": 0.6381,
-          "cb": 0.2415,
-          "hybrid": 0.4597
-        },
-        {
-          "productId": "d1c427060a0f73f6b889a5c7c61f2ac4",
-          "cf": 0.5942,
-          "cb": 0.2851,
-          "hybrid": 0.4551
-        },
-        {
-          "productId": "0bcc3eeca39e1064258aa1e932269894",
-          "cf": 0.6249,
-          "cb": 0.2325,
-          "hybrid": 0.4483
-        },
-        {
-          "productId": "75d6b6963340c6063f7f4cfcccfe6a30",
-          "cf": 0.6312,
-          "cb": 0.2226,
-          "hybrid": 0.4473
-        },
-        {
-          "productId": "8c591ab0ca519558779df02023177f44",
-          "cf": 0.6264,
-          "cb": 0.2246,
-          "hybrid": 0.4456
-        },
-        {
-          "productId": "bb50f2e236e5eea0100680137654686c",
-          "cf": 0.6429,
-          "cb": 0.2036,
-          "hybrid": 0.4452
-        },
-        {
-          "productId": "d5991653e037ccb7af6ed7d94246b249",
-          "cf": 0.6493,
-          "cb": 0.1956,
-          "hybrid": 0.4451
-        },
-        {
-          "productId": "656e0eca68dcecf6a31b8ececfabe3e8",
-          "cf": 0.6215,
-          "cb": 0.227,
-          "hybrid": 0.444
-        },
-        {
-          "productId": "19c91ef95d509ea33eda93495c4d3481",
-          "cf": 0.6253,
-          "cb": 0.2214,
-          "hybrid": 0.4435
+          "productId": "0aabfb375647d9738ad0f7b4ea3653b1",
+          "cf": 0.7061,
+          "cb": 0.254,
+          "hybrid": 0.5027
         },
         {
           "productId": "cd48f265a63e13b762601f5f794c5fca",
-          "cf": 0.6168,
+          "cf": 0.7237,
           "cb": 0.2266,
-          "hybrid": 0.4412
+          "hybrid": 0.5
         },
         {
-          "productId": "4fe644d766c7566dbc46fb851363cb3b",
-          "cf": 0.6277,
-          "cb": 0.2117,
-          "hybrid": 0.4405
+          "productId": "154e7e31ebfa092203795c972e5804a6",
+          "cf": 0.6492,
+          "cb": 0.307,
+          "hybrid": 0.4952
         },
         {
-          "productId": "165f86fe8b799a708a20ee4ba125c289",
-          "cf": 0.647,
-          "cb": 0.1863,
-          "hybrid": 0.4397
+          "productId": "3fbc0ef745950c7932d5f2a446189725",
+          "cf": 0.6997,
+          "cb": 0.2407,
+          "hybrid": 0.4932
         },
         {
-          "productId": "461f43be3bdf8844e65b62d9ac2c7a5a",
-          "cf": 0.6278,
-          "cb": 0.2088,
-          "hybrid": 0.4392
+          "productId": "e0cf79767c5b016251fe139915c59a26",
+          "cf": 0.6891,
+          "cb": 0.2501,
+          "hybrid": 0.4916
         },
         {
-          "productId": "a92930c327948861c015c919a0bcb4a8",
-          "cf": 0.5997,
-          "cb": 0.2403,
-          "hybrid": 0.438
-        },
-        {
-          "productId": "368c6c730842d78016ad823897a372db",
-          "cf": 0.5201,
-          "cb": 0.3361,
-          "hybrid": 0.4373
-        },
-        {
-          "productId": "b532349fe46b38fbc7bb3914c1bdae07",
-          "cf": 0.5792,
-          "cb": 0.2603,
-          "hybrid": 0.4357
+          "productId": "389d119b48cf3043d311335e499d9c6b",
+          "cf": 0.6092,
+          "cb": 0.3372,
+          "hybrid": 0.4868
         },
         {
           "productId": "880be32f4db1d9f6e2bec38fb6ac23ab",
-          "cf": 0.6034,
+          "cf": 0.6894,
           "cb": 0.2299,
-          "hybrid": 0.4353
+          "hybrid": 0.4826
         },
         {
-          "productId": "9ecadb84c81da840dbf3564378b586e9",
-          "cf": 0.6008,
-          "cb": 0.2329,
-          "hybrid": 0.4352
+          "productId": "2b4609f8948be18874494203496bc318",
+          "cf": 0.6513,
+          "cb": 0.2729,
+          "hybrid": 0.481
         },
         {
-          "productId": "4fcb3d9a5f4871e8362dfedbdb02b064",
-          "cf": 0.6357,
-          "cb": 0.188,
-          "hybrid": 0.4342
-        },
-        {
-          "productId": "53b36df67ebb7c41585e8d54d6772e08",
-          "cf": 0.5495,
-          "cb": 0.2898,
-          "hybrid": 0.4326
-        },
-        {
-          "productId": "08574b074924071f4e201e151b152b4e",
-          "cf": 0.5904,
-          "cb": 0.2143,
-          "hybrid": 0.4212
-        },
-        {
-          "productId": "595fac2a385ac33a80bd5114aec74eb8",
-          "cf": 0.5848,
-          "cb": 0.2044,
-          "hybrid": 0.4136
-        },
-        {
-          "productId": "52c80cedd4e90108bf4fa6a206ef6b03",
-          "cf": 0.599,
-          "cb": 0.1854,
-          "hybrid": 0.4129
-        },
-        {
-          "productId": "e0d64dcfaa3b6db5c54ca298ae101d05",
-          "cf": 0.5673,
-          "cb": 0.2235,
-          "hybrid": 0.4126
-        },
-        {
-          "productId": "6c3effec7c8ddba466d4f03f982c7aa3",
-          "cf": 0.5469,
-          "cb": 0.237,
-          "hybrid": 0.4074
+          "productId": "6cdd53843498f92890544667809f1595",
+          "cf": 0.7182,
+          "cb": 0.1888,
+          "hybrid": 0.4799
         },
         {
           "productId": "4c2394abfbac7ff59ec7a420918562fa",
-          "cf": 0.5563,
+          "cf": 0.6798,
           "cb": 0.2232,
-          "hybrid": 0.4064
+          "hybrid": 0.4743
         },
         {
-          "productId": "eb8c629f70275fd1c4f809116cce1efc",
-          "cf": 0.5413,
-          "cb": 0.2322,
-          "hybrid": 0.4022
+          "productId": "54d9ac713e253fa1fae9c8003b011c2a",
+          "cf": 0.6589,
+          "cb": 0.2415,
+          "hybrid": 0.4711
         },
         {
-          "productId": "36f60d45225e60c7da4558b070ce4b60",
-          "cf": 0.5287,
-          "cb": 0.2233,
-          "hybrid": 0.3913
+          "productId": "53759a2ecddad2bb87a079a1f1519f73",
+          "cf": 0.5854,
+          "cb": 0.3304,
+          "hybrid": 0.4707
         },
         {
-          "productId": "e53e557d5a159f5aa2c5e995dfdf244b",
-          "cf": 0.5038,
-          "cb": 0.2483,
-          "hybrid": 0.3888
+          "productId": "4fcb3d9a5f4871e8362dfedbdb02b064",
+          "cf": 0.6993,
+          "cb": 0.188,
+          "hybrid": 0.4692
+        },
+        {
+          "productId": "29427de7f8a9ee983d9dbc51cec569b4",
+          "cf": 0.6793,
+          "cb": 0.2079,
+          "hybrid": 0.4672
+        },
+        {
+          "productId": "c4baedd846ed09b85f78a781b522f126",
+          "cf": 0.6621,
+          "cb": 0.2276,
+          "hybrid": 0.4666
+        },
+        {
+          "productId": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+          "cf": 0.6885,
+          "cb": 0.1939,
+          "hybrid": 0.4659
+        },
+        {
+          "productId": "437c05a395e9e47f9762e677a7068ce7",
+          "cf": 0.6401,
+          "cb": 0.2492,
+          "hybrid": 0.4642
+        },
+        {
+          "productId": "e0d64dcfaa3b6db5c54ca298ae101d05",
+          "cf": 0.6605,
+          "cb": 0.2235,
+          "hybrid": 0.4638
+        },
+        {
+          "productId": "d1c427060a0f73f6b889a5c7c61f2ac4",
+          "cf": 0.6089,
+          "cb": 0.2851,
+          "hybrid": 0.4632
+        },
+        {
+          "productId": "165f86fe8b799a708a20ee4ba125c289",
+          "cf": 0.6874,
+          "cb": 0.1863,
+          "hybrid": 0.4619
         },
         {
           "productId": "c6336fa91fbd87c359e44f5dca5a90ed",
-          "cf": 0.511,
+          "cf": 0.6529,
           "cb": 0.2276,
-          "hybrid": 0.3835
+          "hybrid": 0.4615
+        },
+        {
+          "productId": "53b36df67ebb7c41585e8d54d6772e08",
+          "cf": 0.5995,
+          "cb": 0.2898,
+          "hybrid": 0.4601
+        },
+        {
+          "productId": "7c1bd920dbdf22470b68bde975dd3ccf",
+          "cf": 0.6087,
+          "cb": 0.2742,
+          "hybrid": 0.4581
+        },
+        {
+          "productId": "368c6c730842d78016ad823897a372db",
+          "cf": 0.5558,
+          "cb": 0.3361,
+          "hybrid": 0.4569
+        },
+        {
+          "productId": "eb8c629f70275fd1c4f809116cce1efc",
+          "cf": 0.6398,
+          "cb": 0.2322,
+          "hybrid": 0.4564
+        },
+        {
+          "productId": "5a848e4ab52fd5445cdc07aab1c40e48",
+          "cf": 0.6349,
+          "cb": 0.2366,
+          "hybrid": 0.4557
+        },
+        {
+          "productId": "595fac2a385ac33a80bd5114aec74eb8",
+          "cf": 0.6613,
+          "cb": 0.2044,
+          "hybrid": 0.4557
+        },
+        {
+          "productId": "7ce94ab189134e2d3c05f496d635419c",
+          "cf": 0.6274,
+          "cb": 0.2446,
+          "hybrid": 0.4551
+        },
+        {
+          "productId": "cac9e5692471a0700418aa3400b9b2b1",
+          "cf": 0.6639,
+          "cb": 0.1991,
+          "hybrid": 0.4547
+        },
+        {
+          "productId": "8c591ab0ca519558779df02023177f44",
+          "cf": 0.6421,
+          "cb": 0.2246,
+          "hybrid": 0.4542
+        },
+        {
+          "productId": "7a10781637204d8d10485c71a6108a2e",
+          "cf": 0.6734,
+          "cb": 0.1839,
+          "hybrid": 0.4531
+        },
+        {
+          "productId": "461f43be3bdf8844e65b62d9ac2c7a5a",
+          "cf": 0.6507,
+          "cb": 0.2088,
+          "hybrid": 0.4518
+        },
+        {
+          "productId": "d5991653e037ccb7af6ed7d94246b249",
+          "cf": 0.6597,
+          "cb": 0.1956,
+          "hybrid": 0.4509
+        },
+        {
+          "productId": "2028bf1b01cafb2d2b1901fca4083222",
+          "cf": 0.6186,
+          "cb": 0.2396,
+          "hybrid": 0.448
+        },
+        {
+          "productId": "bb50f2e236e5eea0100680137654686c",
+          "cf": 0.6393,
+          "cb": 0.2036,
+          "hybrid": 0.4432
+        },
+        {
+          "productId": "656e0eca68dcecf6a31b8ececfabe3e8",
+          "cf": 0.6161,
+          "cb": 0.227,
+          "hybrid": 0.441
+        },
+        {
+          "productId": "89321f94e35fc6d7903d36f74e351d40",
+          "cf": 0.6019,
+          "cb": 0.244,
+          "hybrid": 0.4409
+        },
+        {
+          "productId": "c6dd917a0be2a704582055949915ab32",
+          "cf": 0.6236,
+          "cb": 0.2166,
+          "hybrid": 0.4405
+        },
+        {
+          "productId": "19c91ef95d509ea33eda93495c4d3481",
+          "cf": 0.618,
+          "cb": 0.2214,
+          "hybrid": 0.4395
+        },
+        {
+          "productId": "9ecadb84c81da840dbf3564378b586e9",
+          "cf": 0.6019,
+          "cb": 0.2329,
+          "hybrid": 0.4359
+        },
+        {
+          "productId": "08574b074924071f4e201e151b152b4e",
+          "cf": 0.6105,
+          "cb": 0.2143,
+          "hybrid": 0.4322
+        },
+        {
+          "productId": "42a2c92a0979a949ca4ea89ec5c7b934",
+          "cf": 0.5681,
+          "cb": 0.2556,
+          "hybrid": 0.4275
+        },
+        {
+          "productId": "6c3effec7c8ddba466d4f03f982c7aa3",
+          "cf": 0.5835,
+          "cb": 0.237,
+          "hybrid": 0.4275
+        },
+        {
+          "productId": "b0961721fd839e9982420e807758a2a6",
+          "cf": 0.5816,
+          "cb": 0.2347,
+          "hybrid": 0.4255
+        },
+        {
+          "productId": "0bcc3eeca39e1064258aa1e932269894",
+          "cf": 0.581,
+          "cb": 0.2325,
+          "hybrid": 0.4242
+        },
+        {
+          "productId": "3dd2a17168ec895c781a9191c1e95ad7",
+          "cf": 0.5559,
+          "cb": 0.2558,
+          "hybrid": 0.4209
+        },
+        {
+          "productId": "a92930c327948861c015c919a0bcb4a8",
+          "cf": 0.5664,
+          "cb": 0.2403,
+          "hybrid": 0.4197
+        },
+        {
+          "productId": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+          "cf": 0.5539,
+          "cb": 0.2545,
+          "hybrid": 0.4192
+        },
+        {
+          "productId": "b532349fe46b38fbc7bb3914c1bdae07",
+          "cf": 0.5487,
+          "cb": 0.2603,
+          "hybrid": 0.4189
+        },
+        {
+          "productId": "4fe644d766c7566dbc46fb851363cb3b",
+          "cf": 0.5815,
+          "cb": 0.2117,
+          "hybrid": 0.4151
+        },
+        {
+          "productId": "78efe838c04bbc568be034082200ac20",
+          "cf": 0.5819,
+          "cb": 0.2095,
+          "hybrid": 0.4143
+        },
+        {
+          "productId": "d017a2151d543a9885604dc62a3d9dcc",
+          "cf": 0.5482,
+          "cb": 0.2439,
+          "hybrid": 0.4113
+        },
+        {
+          "productId": "75d6b6963340c6063f7f4cfcccfe6a30",
+          "cf": 0.5554,
+          "cb": 0.2226,
+          "hybrid": 0.4056
+        },
+        {
+          "productId": "52c80cedd4e90108bf4fa6a206ef6b03",
+          "cf": 0.5597,
+          "cb": 0.1854,
+          "hybrid": 0.3913
+        },
+        {
+          "productId": "8c292ca193d326152e335d77176746f0",
+          "cf": 0.5525,
+          "cb": 0.186,
+          "hybrid": 0.3876
         },
         {
           "productId": "ee406bf28024d97771c4b1e8b7e8e219",
-          "cf": 0.5222,
+          "cf": 0.5418,
           "cb": 0.1879,
-          "hybrid": 0.3718
+          "hybrid": 0.3825
         },
         {
-          "productId": "43423cdffde7fda63d0414ed38c11a73",
-          "cf": 0.4618,
-          "cb": 0.2237,
-          "hybrid": 0.3547
+          "productId": "36f60d45225e60c7da4558b070ce4b60",
+          "cf": 0.4945,
+          "cb": 0.2233,
+          "hybrid": 0.3725
+        },
+        {
+          "productId": "e53e557d5a159f5aa2c5e995dfdf244b",
+          "cf": 0.4709,
+          "cb": 0.2483,
+          "hybrid": 0.3707
         },
         {
           "productId": "d285360f29ac7fd97640bf0baef03de0",
-          "cf": 0.4887,
+          "cf": 0.5123,
           "cb": 0.1755,
-          "hybrid": 0.3477
+          "hybrid": 0.3607
+        },
+        {
+          "productId": "43423cdffde7fda63d0414ed38c11a73",
+          "cf": 0.4289,
+          "cb": 0.2237,
+          "hybrid": 0.3366
         },
         {
           "productId": "b5e13c9a353102f79c6206ff5cb61a50",
-          "cf": 0.3472,
+          "cf": 0.3735,
           "cb": 0.2095,
-          "hybrid": 0.2853
+          "hybrid": 0.2997
         }
       ]
     },
@@ -1434,435 +1434,435 @@ window.MODEL_DATA = {
       "scores": [
         {
           "productId": "601a360bd2a916ecef0e88de72a6531a",
-          "cf": 0.9804,
+          "cf": 0.9603,
           "cb": 0.7951,
-          "hybrid": 0.897
-        },
-        {
-          "productId": "c6dd917a0be2a704582055949915ab32",
-          "cf": 0.9229,
-          "cb": 0.807,
-          "hybrid": 0.8708
+          "hybrid": 0.8859
         },
         {
           "productId": "29427de7f8a9ee983d9dbc51cec569b4",
-          "cf": 0.9064,
+          "cf": 0.9492,
           "cb": 0.7983,
-          "hybrid": 0.8578
-        },
-        {
-          "productId": "4fe644d766c7566dbc46fb851363cb3b",
-          "cf": 0.9014,
-          "cb": 0.8021,
-          "hybrid": 0.8567
+          "hybrid": 0.8813
         },
         {
           "productId": "54d9ac713e253fa1fae9c8003b011c2a",
-          "cf": 0.8527,
+          "cf": 0.8997,
           "cb": 0.8319,
-          "hybrid": 0.8433
+          "hybrid": 0.8692
         },
         {
           "productId": "165f86fe8b799a708a20ee4ba125c289",
-          "cf": 0.8155,
+          "cf": 0.9267,
           "cb": 0.7767,
-          "hybrid": 0.798
+          "hybrid": 0.8592
+        },
+        {
+          "productId": "c6dd917a0be2a704582055949915ab32",
+          "cf": 0.8542,
+          "cb": 0.807,
+          "hybrid": 0.833
+        },
+        {
+          "productId": "4fe644d766c7566dbc46fb851363cb3b",
+          "cf": 0.8041,
+          "cb": 0.8021,
+          "hybrid": 0.8032
         },
         {
           "productId": "ee406bf28024d97771c4b1e8b7e8e219",
-          "cf": 0.7591,
+          "cf": 0.8037,
           "cb": 0.7783,
-          "hybrid": 0.7678
-        },
-        {
-          "productId": "422879e10f46682990de24d770e7f83d",
-          "cf": 0.9043,
-          "cb": 0.3725,
-          "hybrid": 0.665
-        },
-        {
-          "productId": "154e7e31ebfa092203795c972e5804a6",
-          "cf": 0.9184,
-          "cb": 0.307,
-          "hybrid": 0.6433
-        },
-        {
-          "productId": "2028bf1b01cafb2d2b1901fca4083222",
-          "cf": 0.9723,
-          "cb": 0.2396,
-          "hybrid": 0.6426
-        },
-        {
-          "productId": "617186c3d97ea56c9c683a8a3974e8c1",
-          "cf": 0.9939,
-          "cb": 0.2129,
-          "hybrid": 0.6425
-        },
-        {
-          "productId": "6f3b5b605d91b7439c5e3f5a8dffeea7",
-          "cf": 0.9931,
-          "cb": 0.1939,
-          "hybrid": 0.6335
-        },
-        {
-          "productId": "7ce94ab189134e2d3c05f496d635419c",
-          "cf": 0.9462,
-          "cb": 0.2446,
-          "hybrid": 0.6305
-        },
-        {
-          "productId": "f1c7f353075ce59d8a6f3cf58f419c9c",
-          "cf": 0.9888,
-          "cb": 0.19,
-          "hybrid": 0.6294
-        },
-        {
-          "productId": "389d119b48cf3043d311335e499d9c6b",
-          "cf": 0.8542,
-          "cb": 0.3372,
-          "hybrid": 0.6215
-        },
-        {
-          "productId": "53759a2ecddad2bb87a079a1f1519f73",
-          "cf": 0.8574,
-          "cb": 0.3304,
-          "hybrid": 0.6202
-        },
-        {
-          "productId": "6cdd53843498f92890544667809f1595",
-          "cf": 0.9727,
-          "cb": 0.1888,
-          "hybrid": 0.62
-        },
-        {
-          "productId": "e0cf79767c5b016251fe139915c59a26",
-          "cf": 0.9069,
-          "cb": 0.2501,
-          "hybrid": 0.6113
-        },
-        {
-          "productId": "78efe838c04bbc568be034082200ac20",
-          "cf": 0.9401,
-          "cb": 0.2095,
-          "hybrid": 0.6113
-        },
-        {
-          "productId": "99a4788cb24856965c36a24e339b6058",
-          "cf": 0.808,
-          "cb": 0.3594,
-          "hybrid": 0.6061
-        },
-        {
-          "productId": "2b4609f8948be18874494203496bc318",
-          "cf": 0.8697,
-          "cb": 0.2729,
-          "hybrid": 0.6011
-        },
-        {
-          "productId": "3fbc0ef745950c7932d5f2a446189725",
-          "cf": 0.895,
-          "cb": 0.2407,
-          "hybrid": 0.6006
-        },
-        {
-          "productId": "bb50f2e236e5eea0100680137654686c",
-          "cf": 0.9214,
-          "cb": 0.2036,
-          "hybrid": 0.5984
-        },
-        {
-          "productId": "3dd2a17168ec895c781a9191c1e95ad7",
-          "cf": 0.8711,
-          "cb": 0.2558,
-          "hybrid": 0.5942
-        },
-        {
-          "productId": "437c05a395e9e47f9762e677a7068ce7",
-          "cf": 0.8752,
-          "cb": 0.2492,
-          "hybrid": 0.5935
-        },
-        {
-          "productId": "d017a2151d543a9885604dc62a3d9dcc",
-          "cf": 0.8777,
-          "cb": 0.2439,
-          "hybrid": 0.5925
-        },
-        {
-          "productId": "cac9e5692471a0700418aa3400b9b2b1",
-          "cf": 0.9141,
-          "cb": 0.1991,
-          "hybrid": 0.5924
-        },
-        {
-          "productId": "0aabfb375647d9738ad0f7b4ea3653b1",
-          "cf": 0.867,
-          "cb": 0.254,
-          "hybrid": 0.5912
-        },
-        {
-          "productId": "b0961721fd839e9982420e807758a2a6",
-          "cf": 0.881,
-          "cb": 0.2347,
-          "hybrid": 0.5902
+          "hybrid": 0.7923
         },
         {
           "productId": "aca2eb7d00ea1a7b8ebd4e68314663af",
-          "cf": 0.7432,
+          "cf": 0.8607,
           "cb": 0.3827,
-          "hybrid": 0.581
+          "hybrid": 0.6456
         },
         {
-          "productId": "d1c427060a0f73f6b889a5c7c61f2ac4",
-          "cf": 0.816,
-          "cb": 0.2851,
-          "hybrid": 0.5771
+          "productId": "389d119b48cf3043d311335e499d9c6b",
+          "cf": 0.8719,
+          "cb": 0.3372,
+          "hybrid": 0.6313
         },
         {
-          "productId": "7c1bd920dbdf22470b68bde975dd3ccf",
-          "cf": 0.8245,
-          "cb": 0.2742,
-          "hybrid": 0.5768
+          "productId": "422879e10f46682990de24d770e7f83d",
+          "cf": 0.8368,
+          "cb": 0.3725,
+          "hybrid": 0.6279
         },
         {
-          "productId": "d5991653e037ccb7af6ed7d94246b249",
-          "cf": 0.8865,
-          "cb": 0.1956,
-          "hybrid": 0.5756
+          "productId": "3fbc0ef745950c7932d5f2a446189725",
+          "cf": 0.9404,
+          "cb": 0.2407,
+          "hybrid": 0.6256
         },
         {
-          "productId": "5a848e4ab52fd5445cdc07aab1c40e48",
-          "cf": 0.8508,
-          "cb": 0.2366,
-          "hybrid": 0.5744
+          "productId": "154e7e31ebfa092203795c972e5804a6",
+          "cf": 0.8799,
+          "cb": 0.307,
+          "hybrid": 0.6221
         },
         {
-          "productId": "c4baedd846ed09b85f78a781b522f126",
-          "cf": 0.8568,
-          "cb": 0.2276,
-          "hybrid": 0.5737
+          "productId": "f1c7f353075ce59d8a6f3cf58f419c9c",
+          "cf": 0.9704,
+          "cb": 0.19,
+          "hybrid": 0.6192
         },
         {
-          "productId": "a62e25e09e05e6faf31d90c6ec1aa3d1",
-          "cf": 0.8345,
-          "cb": 0.2545,
-          "hybrid": 0.5735
+          "productId": "e0cf79767c5b016251fe139915c59a26",
+          "cf": 0.9173,
+          "cb": 0.2501,
+          "hybrid": 0.6171
         },
         {
-          "productId": "7a10781637204d8d10485c71a6108a2e",
-          "cf": 0.8907,
-          "cb": 0.1839,
-          "hybrid": 0.5726
+          "productId": "53759a2ecddad2bb87a079a1f1519f73",
+          "cf": 0.8467,
+          "cb": 0.3304,
+          "hybrid": 0.6144
         },
         {
-          "productId": "89321f94e35fc6d7903d36f74e351d40",
-          "cf": 0.8382,
-          "cb": 0.244,
-          "hybrid": 0.5708
+          "productId": "0aabfb375647d9738ad0f7b4ea3653b1",
+          "cf": 0.9051,
+          "cb": 0.254,
+          "hybrid": 0.6121
         },
         {
-          "productId": "656e0eca68dcecf6a31b8ececfabe3e8",
-          "cf": 0.8498,
-          "cb": 0.227,
-          "hybrid": 0.5696
+          "productId": "2b4609f8948be18874494203496bc318",
+          "cf": 0.8882,
+          "cb": 0.2729,
+          "hybrid": 0.6113
         },
         {
-          "productId": "53b36df67ebb7c41585e8d54d6772e08",
-          "cf": 0.7874,
-          "cb": 0.2898,
-          "hybrid": 0.5635
+          "productId": "617186c3d97ea56c9c683a8a3974e8c1",
+          "cf": 0.9341,
+          "cb": 0.2129,
+          "hybrid": 0.6096
         },
         {
-          "productId": "9ecadb84c81da840dbf3564378b586e9",
-          "cf": 0.8304,
-          "cb": 0.2329,
-          "hybrid": 0.5615
-        },
-        {
-          "productId": "461f43be3bdf8844e65b62d9ac2c7a5a",
-          "cf": 0.8485,
-          "cb": 0.2088,
-          "hybrid": 0.5606
-        },
-        {
-          "productId": "368c6c730842d78016ad823897a372db",
-          "cf": 0.7408,
-          "cb": 0.3361,
-          "hybrid": 0.5587
-        },
-        {
-          "productId": "0bcc3eeca39e1064258aa1e932269894",
-          "cf": 0.8244,
-          "cb": 0.2325,
-          "hybrid": 0.5581
-        },
-        {
-          "productId": "08574b074924071f4e201e151b152b4e",
-          "cf": 0.832,
-          "cb": 0.2143,
-          "hybrid": 0.5541
-        },
-        {
-          "productId": "880be32f4db1d9f6e2bec38fb6ac23ab",
-          "cf": 0.8183,
-          "cb": 0.2299,
-          "hybrid": 0.5535
-        },
-        {
-          "productId": "8c292ca193d326152e335d77176746f0",
-          "cf": 0.8517,
-          "cb": 0.186,
-          "hybrid": 0.5521
-        },
-        {
-          "productId": "cd48f265a63e13b762601f5f794c5fca",
-          "cf": 0.8157,
-          "cb": 0.2266,
-          "hybrid": 0.5506
-        },
-        {
-          "productId": "595fac2a385ac33a80bd5114aec74eb8",
-          "cf": 0.8307,
-          "cb": 0.2044,
-          "hybrid": 0.5488
-        },
-        {
-          "productId": "42a2c92a0979a949ca4ea89ec5c7b934",
-          "cf": 0.7868,
-          "cb": 0.2556,
-          "hybrid": 0.5478
-        },
-        {
-          "productId": "35afc973633aaeb6b877ff57b2793310",
-          "cf": 0.8002,
-          "cb": 0.2376,
-          "hybrid": 0.547
-        },
-        {
-          "productId": "ec2d43cc59763ec91694573b31f1c29a",
-          "cf": 0.7962,
-          "cb": 0.2416,
-          "hybrid": 0.5466
-        },
-        {
-          "productId": "19c91ef95d509ea33eda93495c4d3481",
-          "cf": 0.808,
-          "cb": 0.2214,
-          "hybrid": 0.544
+          "productId": "99a4788cb24856965c36a24e339b6058",
+          "cf": 0.8137,
+          "cb": 0.3594,
+          "hybrid": 0.6093
         },
         {
           "productId": "8c591ab0ca519558779df02023177f44",
-          "cf": 0.805,
+          "cf": 0.9196,
           "cb": 0.2246,
-          "hybrid": 0.5438
+          "hybrid": 0.6068
         },
         {
-          "productId": "75d6b6963340c6063f7f4cfcccfe6a30",
-          "cf": 0.7982,
-          "cb": 0.2226,
-          "hybrid": 0.5391
+          "productId": "7ce94ab189134e2d3c05f496d635419c",
+          "cf": 0.8944,
+          "cb": 0.2446,
+          "hybrid": 0.602
         },
         {
-          "productId": "777d2e438a1b645f3aec9bd57e92672c",
-          "cf": 0.7988,
-          "cb": 0.2184,
-          "hybrid": 0.5376
+          "productId": "437c05a395e9e47f9762e677a7068ce7",
+          "cf": 0.8887,
+          "cb": 0.2492,
+          "hybrid": 0.601
         },
         {
-          "productId": "6c3effec7c8ddba466d4f03f982c7aa3",
-          "cf": 0.7785,
-          "cb": 0.237,
-          "hybrid": 0.5348
+          "productId": "7c1bd920dbdf22470b68bde975dd3ccf",
+          "cf": 0.8683,
+          "cb": 0.2742,
+          "hybrid": 0.6009
+        },
+        {
+          "productId": "cd48f265a63e13b762601f5f794c5fca",
+          "cf": 0.9068,
+          "cb": 0.2266,
+          "hybrid": 0.6007
+        },
+        {
+          "productId": "d5991653e037ccb7af6ed7d94246b249",
+          "cf": 0.9262,
+          "cb": 0.1956,
+          "hybrid": 0.5974
+        },
+        {
+          "productId": "6cdd53843498f92890544667809f1595",
+          "cf": 0.9301,
+          "cb": 0.1888,
+          "hybrid": 0.5965
+        },
+        {
+          "productId": "880be32f4db1d9f6e2bec38fb6ac23ab",
+          "cf": 0.8944,
+          "cb": 0.2299,
+          "hybrid": 0.5954
+        },
+        {
+          "productId": "5a848e4ab52fd5445cdc07aab1c40e48",
+          "cf": 0.8666,
+          "cb": 0.2366,
+          "hybrid": 0.5831
+        },
+        {
+          "productId": "461f43be3bdf8844e65b62d9ac2c7a5a",
+          "cf": 0.8895,
+          "cb": 0.2088,
+          "hybrid": 0.5831
+        },
+        {
+          "productId": "08574b074924071f4e201e151b152b4e",
+          "cf": 0.8844,
+          "cb": 0.2143,
+          "hybrid": 0.5829
         },
         {
           "productId": "e0d64dcfaa3b6db5c54ca298ae101d05",
-          "cf": 0.7837,
+          "cf": 0.876,
           "cb": 0.2235,
-          "hybrid": 0.5316
+          "hybrid": 0.5824
         },
         {
-          "productId": "b532349fe46b38fbc7bb3914c1bdae07",
-          "cf": 0.7489,
-          "cb": 0.2603,
-          "hybrid": 0.529
-        },
-        {
-          "productId": "c6336fa91fbd87c359e44f5dca5a90ed",
-          "cf": 0.7756,
+          "productId": "c4baedd846ed09b85f78a781b522f126",
+          "cf": 0.871,
           "cb": 0.2276,
-          "hybrid": 0.529
+          "hybrid": 0.5815
         },
         {
-          "productId": "52c80cedd4e90108bf4fa6a206ef6b03",
-          "cf": 0.8078,
-          "cb": 0.1854,
-          "hybrid": 0.5277
+          "productId": "89321f94e35fc6d7903d36f74e351d40",
+          "cf": 0.8532,
+          "cb": 0.244,
+          "hybrid": 0.5791
         },
         {
-          "productId": "4c2394abfbac7ff59ec7a420918562fa",
-          "cf": 0.7731,
-          "cb": 0.2232,
-          "hybrid": 0.5256
+          "productId": "368c6c730842d78016ad823897a372db",
+          "cf": 0.7766,
+          "cb": 0.3361,
+          "hybrid": 0.5783
         },
         {
-          "productId": "eb8c629f70275fd1c4f809116cce1efc",
-          "cf": 0.7605,
-          "cb": 0.2322,
-          "hybrid": 0.5227
+          "productId": "19c91ef95d509ea33eda93495c4d3481",
+          "cf": 0.8667,
+          "cb": 0.2214,
+          "hybrid": 0.5763
         },
         {
-          "productId": "4fcb3d9a5f4871e8362dfedbdb02b064",
-          "cf": 0.7964,
-          "cb": 0.188,
-          "hybrid": 0.5226
+          "productId": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+          "cf": 0.8829,
+          "cb": 0.1939,
+          "hybrid": 0.5729
         },
         {
-          "productId": "a92930c327948861c015c919a0bcb4a8",
-          "cf": 0.744,
-          "cb": 0.2403,
-          "hybrid": 0.5173
+          "productId": "656e0eca68dcecf6a31b8ececfabe3e8",
+          "cf": 0.8547,
+          "cb": 0.227,
+          "hybrid": 0.5723
         },
         {
           "productId": "06edb72f1e0c64b14c5b79353f7abea3",
-          "cf": 0.7345,
+          "cf": 0.8331,
           "cb": 0.2485,
-          "hybrid": 0.5158
+          "hybrid": 0.57
+        },
+        {
+          "productId": "3dd2a17168ec895c781a9191c1e95ad7",
+          "cf": 0.8258,
+          "cb": 0.2558,
+          "hybrid": 0.5693
+        },
+        {
+          "productId": "cac9e5692471a0700418aa3400b9b2b1",
+          "cf": 0.871,
+          "cb": 0.1991,
+          "hybrid": 0.5686
+        },
+        {
+          "productId": "4fcb3d9a5f4871e8362dfedbdb02b064",
+          "cf": 0.8758,
+          "cb": 0.188,
+          "hybrid": 0.5663
+        },
+        {
+          "productId": "53b36df67ebb7c41585e8d54d6772e08",
+          "cf": 0.7915,
+          "cb": 0.2898,
+          "hybrid": 0.5658
+        },
+        {
+          "productId": "4c2394abfbac7ff59ec7a420918562fa",
+          "cf": 0.844,
+          "cb": 0.2232,
+          "hybrid": 0.5646
+        },
+        {
+          "productId": "9ecadb84c81da840dbf3564378b586e9",
+          "cf": 0.8307,
+          "cb": 0.2329,
+          "hybrid": 0.5617
+        },
+        {
+          "productId": "b0961721fd839e9982420e807758a2a6",
+          "cf": 0.8288,
+          "cb": 0.2347,
+          "hybrid": 0.5615
+        },
+        {
+          "productId": "7a10781637204d8d10485c71a6108a2e",
+          "cf": 0.8678,
+          "cb": 0.1839,
+          "hybrid": 0.56
+        },
+        {
+          "productId": "eb8c629f70275fd1c4f809116cce1efc",
+          "cf": 0.8268,
+          "cb": 0.2322,
+          "hybrid": 0.5592
+        },
+        {
+          "productId": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+          "cf": 0.8051,
+          "cb": 0.2545,
+          "hybrid": 0.5574
+        },
+        {
+          "productId": "b532349fe46b38fbc7bb3914c1bdae07",
+          "cf": 0.7973,
+          "cb": 0.2603,
+          "hybrid": 0.5556
+        },
+        {
+          "productId": "6c3effec7c8ddba466d4f03f982c7aa3",
+          "cf": 0.8127,
+          "cb": 0.237,
+          "hybrid": 0.5536
+        },
+        {
+          "productId": "35afc973633aaeb6b877ff57b2793310",
+          "cf": 0.8115,
+          "cb": 0.2376,
+          "hybrid": 0.5533
+        },
+        {
+          "productId": "d1c427060a0f73f6b889a5c7c61f2ac4",
+          "cf": 0.7708,
+          "cb": 0.2851,
+          "hybrid": 0.5522
+        },
+        {
+          "productId": "c6336fa91fbd87c359e44f5dca5a90ed",
+          "cf": 0.8091,
+          "cb": 0.2276,
+          "hybrid": 0.5474
+        },
+        {
+          "productId": "2028bf1b01cafb2d2b1901fca4083222",
+          "cf": 0.7973,
+          "cb": 0.2396,
+          "hybrid": 0.5463
+        },
+        {
+          "productId": "78efe838c04bbc568be034082200ac20",
+          "cf": 0.8111,
+          "cb": 0.2095,
+          "hybrid": 0.5404
+        },
+        {
+          "productId": "bb50f2e236e5eea0100680137654686c",
+          "cf": 0.8123,
+          "cb": 0.2036,
+          "hybrid": 0.5384
+        },
+        {
+          "productId": "595fac2a385ac33a80bd5114aec74eb8",
+          "cf": 0.8064,
+          "cb": 0.2044,
+          "hybrid": 0.5355
+        },
+        {
+          "productId": "ec2d43cc59763ec91694573b31f1c29a",
+          "cf": 0.7754,
+          "cb": 0.2416,
+          "hybrid": 0.5352
+        },
+        {
+          "productId": "777d2e438a1b645f3aec9bd57e92672c",
+          "cf": 0.7882,
+          "cb": 0.2184,
+          "hybrid": 0.5318
+        },
+        {
+          "productId": "75d6b6963340c6063f7f4cfcccfe6a30",
+          "cf": 0.7848,
+          "cb": 0.2226,
+          "hybrid": 0.5318
+        },
+        {
+          "productId": "0bcc3eeca39e1064258aa1e932269894",
+          "cf": 0.7759,
+          "cb": 0.2325,
+          "hybrid": 0.5313
+        },
+        {
+          "productId": "52c80cedd4e90108bf4fa6a206ef6b03",
+          "cf": 0.8038,
+          "cb": 0.1854,
+          "hybrid": 0.5255
         },
         {
           "productId": "e53e557d5a159f5aa2c5e995dfdf244b",
-          "cf": 0.7295,
+          "cf": 0.7462,
           "cb": 0.2483,
-          "hybrid": 0.5129
+          "hybrid": 0.5221
         },
         {
-          "productId": "d285360f29ac7fd97640bf0baef03de0",
-          "cf": 0.7868,
-          "cb": 0.1755,
-          "hybrid": 0.5117
+          "productId": "42a2c92a0979a949ca4ea89ec5c7b934",
+          "cf": 0.7395,
+          "cb": 0.2556,
+          "hybrid": 0.5217
+        },
+        {
+          "productId": "8c292ca193d326152e335d77176746f0",
+          "cf": 0.7886,
+          "cb": 0.186,
+          "hybrid": 0.5174
         },
         {
           "productId": "36f60d45225e60c7da4558b070ce4b60",
-          "cf": 0.7203,
+          "cf": 0.7558,
           "cb": 0.2233,
-          "hybrid": 0.4967
+          "hybrid": 0.5162
         },
         {
-          "productId": "84f456958365164420cfc80fbe4c7fab",
-          "cf": 0.6241,
-          "cb": 0.2163,
-          "hybrid": 0.4406
+          "productId": "a92930c327948861c015c919a0bcb4a8",
+          "cf": 0.7374,
+          "cb": 0.2403,
+          "hybrid": 0.5137
         },
         {
-          "productId": "43423cdffde7fda63d0414ed38c11a73",
-          "cf": 0.5954,
-          "cb": 0.2237,
-          "hybrid": 0.4281
+          "productId": "d017a2151d543a9885604dc62a3d9dcc",
+          "cf": 0.7174,
+          "cb": 0.2439,
+          "hybrid": 0.5043
+        },
+        {
+          "productId": "d285360f29ac7fd97640bf0baef03de0",
+          "cf": 0.7436,
+          "cb": 0.1755,
+          "hybrid": 0.4879
         },
         {
           "productId": "b5e13c9a353102f79c6206ff5cb61a50",
-          "cf": 0.5476,
+          "cf": 0.697,
           "cb": 0.2095,
-          "hybrid": 0.3955
+          "hybrid": 0.4776
+        },
+        {
+          "productId": "43423cdffde7fda63d0414ed38c11a73",
+          "cf": 0.6638,
+          "cb": 0.2237,
+          "hybrid": 0.4658
+        },
+        {
+          "productId": "84f456958365164420cfc80fbe4c7fab",
+          "cf": 0.636,
+          "cb": 0.2163,
+          "hybrid": 0.4471
         }
       ]
     },
@@ -1882,435 +1882,435 @@ window.MODEL_DATA = {
       "scores": [
         {
           "productId": "99a4788cb24856965c36a24e339b6058",
-          "cf": 0.7028,
+          "cf": 0.6869,
           "cb": 0.9498,
-          "hybrid": 0.8139
+          "hybrid": 0.8052
         },
         {
           "productId": "f1c7f353075ce59d8a6f3cf58f419c9c",
-          "cf": 0.8334,
+          "cf": 0.8218,
           "cb": 0.7804,
-          "hybrid": 0.8095
-        },
-        {
-          "productId": "35afc973633aaeb6b877ff57b2793310",
-          "cf": 0.6993,
-          "cb": 0.828,
-          "hybrid": 0.7572
-        },
-        {
-          "productId": "777d2e438a1b645f3aec9bd57e92672c",
-          "cf": 0.7129,
-          "cb": 0.8088,
-          "hybrid": 0.756
+          "hybrid": 0.8032
         },
         {
           "productId": "06edb72f1e0c64b14c5b79353f7abea3",
-          "cf": 0.6664,
+          "cf": 0.7651,
           "cb": 0.8389,
-          "hybrid": 0.744
+          "hybrid": 0.7983
+        },
+        {
+          "productId": "777d2e438a1b645f3aec9bd57e92672c",
+          "cf": 0.7577,
+          "cb": 0.8088,
+          "hybrid": 0.7807
+        },
+        {
+          "productId": "35afc973633aaeb6b877ff57b2793310",
+          "cf": 0.6962,
+          "cb": 0.828,
+          "hybrid": 0.7555
         },
         {
           "productId": "ec2d43cc59763ec91694573b31f1c29a",
-          "cf": 0.6657,
+          "cf": 0.6926,
           "cb": 0.832,
-          "hybrid": 0.7406
+          "hybrid": 0.7554
         },
         {
           "productId": "84f456958365164420cfc80fbe4c7fab",
-          "cf": 0.554,
+          "cf": 0.5094,
           "cb": 0.8067,
-          "hybrid": 0.6677
-        },
-        {
-          "productId": "422879e10f46682990de24d770e7f83d",
-          "cf": 0.7903,
-          "cb": 0.3725,
-          "hybrid": 0.6023
-        },
-        {
-          "productId": "389d119b48cf3043d311335e499d9c6b",
-          "cf": 0.7743,
-          "cb": 0.3372,
-          "hybrid": 0.5776
-        },
-        {
-          "productId": "7ce94ab189134e2d3c05f496d635419c",
-          "cf": 0.8455,
-          "cb": 0.2446,
-          "hybrid": 0.5751
-        },
-        {
-          "productId": "154e7e31ebfa092203795c972e5804a6",
-          "cf": 0.7926,
-          "cb": 0.307,
-          "hybrid": 0.5741
-        },
-        {
-          "productId": "6f3b5b605d91b7439c5e3f5a8dffeea7",
-          "cf": 0.8802,
-          "cb": 0.1939,
-          "hybrid": 0.5713
-        },
-        {
-          "productId": "601a360bd2a916ecef0e88de72a6531a",
-          "cf": 0.869,
-          "cb": 0.2047,
-          "hybrid": 0.57
-        },
-        {
-          "productId": "6cdd53843498f92890544667809f1595",
-          "cf": 0.8802,
-          "cb": 0.1888,
-          "hybrid": 0.5691
-        },
-        {
-          "productId": "2028bf1b01cafb2d2b1901fca4083222",
-          "cf": 0.8292,
-          "cb": 0.2396,
-          "hybrid": 0.5639
-        },
-        {
-          "productId": "5a848e4ab52fd5445cdc07aab1c40e48",
-          "cf": 0.8281,
-          "cb": 0.2366,
-          "hybrid": 0.5619
-        },
-        {
-          "productId": "d017a2151d543a9885604dc62a3d9dcc",
-          "cf": 0.8064,
-          "cb": 0.2439,
-          "hybrid": 0.5532
-        },
-        {
-          "productId": "c4baedd846ed09b85f78a781b522f126",
-          "cf": 0.8177,
-          "cb": 0.2276,
-          "hybrid": 0.5522
-        },
-        {
-          "productId": "aca2eb7d00ea1a7b8ebd4e68314663af",
-          "cf": 0.6866,
-          "cb": 0.3827,
-          "hybrid": 0.5498
-        },
-        {
-          "productId": "880be32f4db1d9f6e2bec38fb6ac23ab",
-          "cf": 0.8014,
-          "cb": 0.2299,
-          "hybrid": 0.5442
-        },
-        {
-          "productId": "3fbc0ef745950c7932d5f2a446189725",
-          "cf": 0.7883,
-          "cb": 0.2407,
-          "hybrid": 0.5419
-        },
-        {
-          "productId": "3dd2a17168ec895c781a9191c1e95ad7",
-          "cf": 0.7725,
-          "cb": 0.2558,
-          "hybrid": 0.54
-        },
-        {
-          "productId": "bb50f2e236e5eea0100680137654686c",
-          "cf": 0.8142,
-          "cb": 0.2036,
-          "hybrid": 0.5394
-        },
-        {
-          "productId": "617186c3d97ea56c9c683a8a3974e8c1",
-          "cf": 0.8058,
-          "cb": 0.2129,
-          "hybrid": 0.539
-        },
-        {
-          "productId": "e0cf79767c5b016251fe139915c59a26",
-          "cf": 0.7748,
-          "cb": 0.2501,
-          "hybrid": 0.5387
-        },
-        {
-          "productId": "656e0eca68dcecf6a31b8ececfabe3e8",
-          "cf": 0.7874,
-          "cb": 0.227,
-          "hybrid": 0.5352
-        },
-        {
-          "productId": "c6dd917a0be2a704582055949915ab32",
-          "cf": 0.7953,
-          "cb": 0.2166,
-          "hybrid": 0.5349
-        },
-        {
-          "productId": "53759a2ecddad2bb87a079a1f1519f73",
-          "cf": 0.702,
-          "cb": 0.3304,
-          "hybrid": 0.5348
-        },
-        {
-          "productId": "7c1bd920dbdf22470b68bde975dd3ccf",
-          "cf": 0.7407,
-          "cb": 0.2742,
-          "hybrid": 0.5308
-        },
-        {
-          "productId": "b0961721fd839e9982420e807758a2a6",
-          "cf": 0.7706,
-          "cb": 0.2347,
-          "hybrid": 0.5295
-        },
-        {
-          "productId": "78efe838c04bbc568be034082200ac20",
-          "cf": 0.7914,
-          "cb": 0.2095,
-          "hybrid": 0.5295
-        },
-        {
-          "productId": "54d9ac713e253fa1fae9c8003b011c2a",
-          "cf": 0.7611,
-          "cb": 0.2415,
-          "hybrid": 0.5273
+          "hybrid": 0.6432
         },
         {
           "productId": "2b4609f8948be18874494203496bc318",
-          "cf": 0.7346,
+          "cf": 0.8354,
           "cb": 0.2729,
-          "hybrid": 0.5268
+          "hybrid": 0.5823
         },
         {
-          "productId": "0aabfb375647d9738ad0f7b4ea3653b1",
-          "cf": 0.7459,
-          "cb": 0.254,
-          "hybrid": 0.5245
-        },
-        {
-          "productId": "29427de7f8a9ee983d9dbc51cec569b4",
-          "cf": 0.7831,
-          "cb": 0.2079,
-          "hybrid": 0.5243
+          "productId": "617186c3d97ea56c9c683a8a3974e8c1",
+          "cf": 0.8764,
+          "cb": 0.2129,
+          "hybrid": 0.5778
         },
         {
           "productId": "437c05a395e9e47f9762e677a7068ce7",
-          "cf": 0.7483,
+          "cf": 0.8448,
           "cb": 0.2492,
-          "hybrid": 0.5237
+          "hybrid": 0.5768
         },
         {
-          "productId": "19c91ef95d509ea33eda93495c4d3481",
-          "cf": 0.7586,
-          "cb": 0.2214,
-          "hybrid": 0.5169
+          "productId": "e0cf79767c5b016251fe139915c59a26",
+          "cf": 0.8293,
+          "cb": 0.2501,
+          "hybrid": 0.5687
         },
         {
-          "productId": "8c591ab0ca519558779df02023177f44",
-          "cf": 0.7449,
-          "cb": 0.2246,
-          "hybrid": 0.5108
+          "productId": "3fbc0ef745950c7932d5f2a446189725",
+          "cf": 0.8341,
+          "cb": 0.2407,
+          "hybrid": 0.5671
         },
         {
-          "productId": "cac9e5692471a0700418aa3400b9b2b1",
-          "cf": 0.7636,
-          "cb": 0.1991,
-          "hybrid": 0.5095
+          "productId": "154e7e31ebfa092203795c972e5804a6",
+          "cf": 0.7773,
+          "cb": 0.307,
+          "hybrid": 0.5657
         },
         {
-          "productId": "d1c427060a0f73f6b889a5c7c61f2ac4",
-          "cf": 0.6906,
-          "cb": 0.2851,
-          "hybrid": 0.5081
+          "productId": "54d9ac713e253fa1fae9c8003b011c2a",
+          "cf": 0.828,
+          "cb": 0.2415,
+          "hybrid": 0.5641
         },
         {
-          "productId": "595fac2a385ac33a80bd5114aec74eb8",
-          "cf": 0.7547,
-          "cb": 0.2044,
-          "hybrid": 0.507
+          "productId": "29427de7f8a9ee983d9dbc51cec569b4",
+          "cf": 0.8556,
+          "cb": 0.2079,
+          "hybrid": 0.5641
         },
         {
-          "productId": "53b36df67ebb7c41585e8d54d6772e08",
-          "cf": 0.683,
-          "cb": 0.2898,
-          "hybrid": 0.506
+          "productId": "0aabfb375647d9738ad0f7b4ea3653b1",
+          "cf": 0.8173,
+          "cb": 0.254,
+          "hybrid": 0.5638
+        },
+        {
+          "productId": "aca2eb7d00ea1a7b8ebd4e68314663af",
+          "cf": 0.7112,
+          "cb": 0.3827,
+          "hybrid": 0.5634
+        },
+        {
+          "productId": "422879e10f46682990de24d770e7f83d",
+          "cf": 0.7194,
+          "cb": 0.3725,
+          "hybrid": 0.5633
+        },
+        {
+          "productId": "7ce94ab189134e2d3c05f496d635419c",
+          "cf": 0.8077,
+          "cb": 0.2446,
+          "hybrid": 0.5543
+        },
+        {
+          "productId": "601a360bd2a916ecef0e88de72a6531a",
+          "cf": 0.8391,
+          "cb": 0.2047,
+          "hybrid": 0.5536
+        },
+        {
+          "productId": "53759a2ecddad2bb87a079a1f1519f73",
+          "cf": 0.7332,
+          "cb": 0.3304,
+          "hybrid": 0.5519
+        },
+        {
+          "productId": "389d119b48cf3043d311335e499d9c6b",
+          "cf": 0.7269,
+          "cb": 0.3372,
+          "hybrid": 0.5516
+        },
+        {
+          "productId": "880be32f4db1d9f6e2bec38fb6ac23ab",
+          "cf": 0.803,
+          "cb": 0.2299,
+          "hybrid": 0.5451
+        },
+        {
+          "productId": "c6dd917a0be2a704582055949915ab32",
+          "cf": 0.8115,
+          "cb": 0.2166,
+          "hybrid": 0.5438
         },
         {
           "productId": "d5991653e037ccb7af6ed7d94246b249",
-          "cf": 0.7537,
+          "cf": 0.824,
           "cb": 0.1956,
-          "hybrid": 0.5026
+          "hybrid": 0.5412
         },
         {
-          "productId": "08574b074924071f4e201e151b152b4e",
-          "cf": 0.7356,
-          "cb": 0.2143,
-          "hybrid": 0.501
-        },
-        {
-          "productId": "cd48f265a63e13b762601f5f794c5fca",
-          "cf": 0.7238,
-          "cb": 0.2266,
-          "hybrid": 0.5001
-        },
-        {
-          "productId": "a62e25e09e05e6faf31d90c6ec1aa3d1",
-          "cf": 0.7006,
-          "cb": 0.2545,
-          "hybrid": 0.4999
-        },
-        {
-          "productId": "89321f94e35fc6d7903d36f74e351d40",
-          "cf": 0.7085,
-          "cb": 0.244,
-          "hybrid": 0.4995
-        },
-        {
-          "productId": "75d6b6963340c6063f7f4cfcccfe6a30",
-          "cf": 0.7249,
-          "cb": 0.2226,
-          "hybrid": 0.4988
-        },
-        {
-          "productId": "368c6c730842d78016ad823897a372db",
-          "cf": 0.63,
-          "cb": 0.3361,
-          "hybrid": 0.4977
-        },
-        {
-          "productId": "8c292ca193d326152e335d77176746f0",
-          "cf": 0.7509,
-          "cb": 0.186,
-          "hybrid": 0.4967
-        },
-        {
-          "productId": "9ecadb84c81da840dbf3564378b586e9",
-          "cf": 0.7024,
-          "cb": 0.2329,
-          "hybrid": 0.4911
-        },
-        {
-          "productId": "4fcb3d9a5f4871e8362dfedbdb02b064",
-          "cf": 0.7376,
-          "cb": 0.188,
-          "hybrid": 0.4903
-        },
-        {
-          "productId": "4fe644d766c7566dbc46fb851363cb3b",
-          "cf": 0.7181,
-          "cb": 0.2117,
-          "hybrid": 0.4902
-        },
-        {
-          "productId": "461f43be3bdf8844e65b62d9ac2c7a5a",
-          "cf": 0.7181,
-          "cb": 0.2088,
-          "hybrid": 0.4889
-        },
-        {
-          "productId": "eb8c629f70275fd1c4f809116cce1efc",
-          "cf": 0.6969,
-          "cb": 0.2322,
-          "hybrid": 0.4878
+          "productId": "8c591ab0ca519558779df02023177f44",
+          "cf": 0.792,
+          "cb": 0.2246,
+          "hybrid": 0.5367
         },
         {
           "productId": "e0d64dcfaa3b6db5c54ca298ae101d05",
-          "cf": 0.6952,
+          "cf": 0.7905,
           "cb": 0.2235,
-          "hybrid": 0.4829
+          "hybrid": 0.5353
         },
         {
-          "productId": "42a2c92a0979a949ca4ea89ec5c7b934",
-          "cf": 0.6668,
-          "cb": 0.2556,
-          "hybrid": 0.4818
-        },
-        {
-          "productId": "b532349fe46b38fbc7bb3914c1bdae07",
-          "cf": 0.6622,
-          "cb": 0.2603,
-          "hybrid": 0.4813
-        },
-        {
-          "productId": "7a10781637204d8d10485c71a6108a2e",
-          "cf": 0.7232,
-          "cb": 0.1839,
-          "hybrid": 0.4805
-        },
-        {
-          "productId": "4c2394abfbac7ff59ec7a420918562fa",
-          "cf": 0.6902,
-          "cb": 0.2232,
-          "hybrid": 0.4801
+          "productId": "cd48f265a63e13b762601f5f794c5fca",
+          "cf": 0.7863,
+          "cb": 0.2266,
+          "hybrid": 0.5344
         },
         {
           "productId": "c6336fa91fbd87c359e44f5dca5a90ed",
-          "cf": 0.6816,
+          "cf": 0.7848,
           "cb": 0.2276,
-          "hybrid": 0.4773
+          "hybrid": 0.5341
         },
         {
-          "productId": "0bcc3eeca39e1064258aa1e932269894",
-          "cf": 0.6755,
-          "cb": 0.2325,
-          "hybrid": 0.4761
+          "productId": "6cdd53843498f92890544667809f1595",
+          "cf": 0.8122,
+          "cb": 0.1888,
+          "hybrid": 0.5317
+        },
+        {
+          "productId": "7c1bd920dbdf22470b68bde975dd3ccf",
+          "cf": 0.739,
+          "cb": 0.2742,
+          "hybrid": 0.5298
+        },
+        {
+          "productId": "d1c427060a0f73f6b889a5c7c61f2ac4",
+          "cf": 0.7265,
+          "cb": 0.2851,
+          "hybrid": 0.5279
+        },
+        {
+          "productId": "53b36df67ebb7c41585e8d54d6772e08",
+          "cf": 0.7223,
+          "cb": 0.2898,
+          "hybrid": 0.5277
         },
         {
           "productId": "165f86fe8b799a708a20ee4ba125c289",
-          "cf": 0.7108,
+          "cf": 0.8031,
           "cb": 0.1863,
-          "hybrid": 0.4747
-        },
-        {
-          "productId": "52c80cedd4e90108bf4fa6a206ef6b03",
-          "cf": 0.7011,
-          "cb": 0.1854,
-          "hybrid": 0.469
-        },
-        {
-          "productId": "e53e557d5a159f5aa2c5e995dfdf244b",
-          "cf": 0.649,
-          "cb": 0.2483,
-          "hybrid": 0.4687
-        },
-        {
-          "productId": "a92930c327948861c015c919a0bcb4a8",
-          "cf": 0.6387,
-          "cb": 0.2403,
-          "hybrid": 0.4594
+          "hybrid": 0.5255
         },
         {
           "productId": "6c3effec7c8ddba466d4f03f982c7aa3",
-          "cf": 0.6362,
+          "cf": 0.7614,
           "cb": 0.237,
-          "hybrid": 0.4566
+          "hybrid": 0.5254
         },
         {
-          "productId": "36f60d45225e60c7da4558b070ce4b60",
-          "cf": 0.6369,
-          "cb": 0.2233,
-          "hybrid": 0.4508
+          "productId": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+          "cf": 0.795,
+          "cb": 0.1939,
+          "hybrid": 0.5245
+        },
+        {
+          "productId": "7a10781637204d8d10485c71a6108a2e",
+          "cf": 0.8007,
+          "cb": 0.1839,
+          "hybrid": 0.5231
+        },
+        {
+          "productId": "368c6c730842d78016ad823897a372db",
+          "cf": 0.6711,
+          "cb": 0.3361,
+          "hybrid": 0.5204
+        },
+        {
+          "productId": "4c2394abfbac7ff59ec7a420918562fa",
+          "cf": 0.7616,
+          "cb": 0.2232,
+          "hybrid": 0.5193
+        },
+        {
+          "productId": "19c91ef95d509ea33eda93495c4d3481",
+          "cf": 0.7629,
+          "cb": 0.2214,
+          "hybrid": 0.5192
+        },
+        {
+          "productId": "08574b074924071f4e201e151b152b4e",
+          "cf": 0.7684,
+          "cb": 0.2143,
+          "hybrid": 0.5191
+        },
+        {
+          "productId": "461f43be3bdf8844e65b62d9ac2c7a5a",
+          "cf": 0.7708,
+          "cb": 0.2088,
+          "hybrid": 0.5179
+        },
+        {
+          "productId": "cac9e5692471a0700418aa3400b9b2b1",
+          "cf": 0.775,
+          "cb": 0.1991,
+          "hybrid": 0.5159
+        },
+        {
+          "productId": "5a848e4ab52fd5445cdc07aab1c40e48",
+          "cf": 0.744,
+          "cb": 0.2366,
+          "hybrid": 0.5157
+        },
+        {
+          "productId": "9ecadb84c81da840dbf3564378b586e9",
+          "cf": 0.7467,
+          "cb": 0.2329,
+          "hybrid": 0.5155
+        },
+        {
+          "productId": "656e0eca68dcecf6a31b8ececfabe3e8",
+          "cf": 0.7417,
+          "cb": 0.227,
+          "hybrid": 0.5101
+        },
+        {
+          "productId": "3dd2a17168ec895c781a9191c1e95ad7",
+          "cf": 0.709,
+          "cb": 0.2558,
+          "hybrid": 0.5051
+        },
+        {
+          "productId": "c4baedd846ed09b85f78a781b522f126",
+          "cf": 0.7293,
+          "cb": 0.2276,
+          "hybrid": 0.5036
+        },
+        {
+          "productId": "4fcb3d9a5f4871e8362dfedbdb02b064",
+          "cf": 0.7539,
+          "cb": 0.188,
+          "hybrid": 0.4992
+        },
+        {
+          "productId": "2028bf1b01cafb2d2b1901fca4083222",
+          "cf": 0.7047,
+          "cb": 0.2396,
+          "hybrid": 0.4955
+        },
+        {
+          "productId": "b532349fe46b38fbc7bb3914c1bdae07",
+          "cf": 0.6865,
+          "cb": 0.2603,
+          "hybrid": 0.4947
+        },
+        {
+          "productId": "78efe838c04bbc568be034082200ac20",
+          "cf": 0.7249,
+          "cb": 0.2095,
+          "hybrid": 0.493
+        },
+        {
+          "productId": "89321f94e35fc6d7903d36f74e351d40",
+          "cf": 0.6961,
+          "cb": 0.244,
+          "hybrid": 0.4927
+        },
+        {
+          "productId": "eb8c629f70275fd1c4f809116cce1efc",
+          "cf": 0.7057,
+          "cb": 0.2322,
+          "hybrid": 0.4926
+        },
+        {
+          "productId": "0bcc3eeca39e1064258aa1e932269894",
+          "cf": 0.7004,
+          "cb": 0.2325,
+          "hybrid": 0.4898
+        },
+        {
+          "productId": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+          "cf": 0.682,
+          "cb": 0.2545,
+          "hybrid": 0.4896
+        },
+        {
+          "productId": "595fac2a385ac33a80bd5114aec74eb8",
+          "cf": 0.7204,
+          "cb": 0.2044,
+          "hybrid": 0.4882
+        },
+        {
+          "productId": "b0961721fd839e9982420e807758a2a6",
+          "cf": 0.6882,
+          "cb": 0.2347,
+          "hybrid": 0.4841
+        },
+        {
+          "productId": "bb50f2e236e5eea0100680137654686c",
+          "cf": 0.7017,
+          "cb": 0.2036,
+          "hybrid": 0.4775
+        },
+        {
+          "productId": "42a2c92a0979a949ca4ea89ec5c7b934",
+          "cf": 0.65,
+          "cb": 0.2556,
+          "hybrid": 0.4725
+        },
+        {
+          "productId": "d017a2151d543a9885604dc62a3d9dcc",
+          "cf": 0.6582,
+          "cb": 0.2439,
+          "hybrid": 0.4717
+        },
+        {
+          "productId": "a92930c327948861c015c919a0bcb4a8",
+          "cf": 0.6551,
+          "cb": 0.2403,
+          "hybrid": 0.4684
         },
         {
           "productId": "d285360f29ac7fd97640bf0baef03de0",
-          "cf": 0.6302,
+          "cf": 0.7077,
           "cb": 0.1755,
-          "hybrid": 0.4256
+          "hybrid": 0.4682
         },
         {
-          "productId": "43423cdffde7fda63d0414ed38c11a73",
-          "cf": 0.5876,
-          "cb": 0.2237,
-          "hybrid": 0.4238
+          "productId": "e53e557d5a159f5aa2c5e995dfdf244b",
+          "cf": 0.6459,
+          "cb": 0.2483,
+          "hybrid": 0.467
+        },
+        {
+          "productId": "52c80cedd4e90108bf4fa6a206ef6b03",
+          "cf": 0.6914,
+          "cb": 0.1854,
+          "hybrid": 0.4637
+        },
+        {
+          "productId": "75d6b6963340c6063f7f4cfcccfe6a30",
+          "cf": 0.661,
+          "cb": 0.2226,
+          "hybrid": 0.4637
         },
         {
           "productId": "ee406bf28024d97771c4b1e8b7e8e219",
-          "cf": 0.6093,
+          "cf": 0.686,
           "cb": 0.1879,
-          "hybrid": 0.4197
+          "hybrid": 0.4619
+        },
+        {
+          "productId": "8c292ca193d326152e335d77176746f0",
+          "cf": 0.6814,
+          "cb": 0.186,
+          "hybrid": 0.4585
+        },
+        {
+          "productId": "4fe644d766c7566dbc46fb851363cb3b",
+          "cf": 0.659,
+          "cb": 0.2117,
+          "hybrid": 0.4577
+        },
+        {
+          "productId": "36f60d45225e60c7da4558b070ce4b60",
+          "cf": 0.6168,
+          "cb": 0.2233,
+          "hybrid": 0.4397
+        },
+        {
+          "productId": "43423cdffde7fda63d0414ed38c11a73",
+          "cf": 0.6151,
+          "cb": 0.2237,
+          "hybrid": 0.439
         },
         {
           "productId": "b5e13c9a353102f79c6206ff5cb61a50",
-          "cf": 0.417,
+          "cf": 0.5619,
           "cb": 0.2095,
-          "hybrid": 0.3236
+          "hybrid": 0.4033
         }
       ]
     },
@@ -2330,437 +2330,3463 @@ window.MODEL_DATA = {
       "scores": [
         {
           "productId": "99a4788cb24856965c36a24e339b6058",
-          "cf": 0.8137,
+          "cf": 0.8703,
           "cb": 0.9498,
-          "hybrid": 0.875
+          "hybrid": 0.9061
         },
         {
           "productId": "f1c7f353075ce59d8a6f3cf58f419c9c",
-          "cf": 0.9074,
+          "cf": 0.916,
           "cb": 0.7804,
-          "hybrid": 0.8502
-        },
-        {
-          "productId": "777d2e438a1b645f3aec9bd57e92672c",
-          "cf": 0.8637,
-          "cb": 0.8088,
-          "hybrid": 0.839
-        },
-        {
-          "productId": "ec2d43cc59763ec91694573b31f1c29a",
-          "cf": 0.8311,
-          "cb": 0.832,
-          "hybrid": 0.8315
+          "hybrid": 0.855
         },
         {
           "productId": "06edb72f1e0c64b14c5b79353f7abea3",
-          "cf": 0.8163,
+          "cf": 0.867,
           "cb": 0.8389,
-          "hybrid": 0.8264
+          "hybrid": 0.8543
         },
         {
           "productId": "35afc973633aaeb6b877ff57b2793310",
-          "cf": 0.7965,
+          "cf": 0.8374,
           "cb": 0.828,
-          "hybrid": 0.8107
+          "hybrid": 0.8331
+        },
+        {
+          "productId": "777d2e438a1b645f3aec9bd57e92672c",
+          "cf": 0.8385,
+          "cb": 0.8088,
+          "hybrid": 0.8251
+        },
+        {
+          "productId": "ec2d43cc59763ec91694573b31f1c29a",
+          "cf": 0.8099,
+          "cb": 0.832,
+          "hybrid": 0.8198
         },
         {
           "productId": "84f456958365164420cfc80fbe4c7fab",
-          "cf": 0.6513,
+          "cf": 0.6355,
           "cb": 0.8067,
-          "hybrid": 0.7212
-        },
-        {
-          "productId": "389d119b48cf3043d311335e499d9c6b",
-          "cf": 0.9175,
-          "cb": 0.3372,
-          "hybrid": 0.6564
+          "hybrid": 0.7125
         },
         {
           "productId": "422879e10f46682990de24d770e7f83d",
-          "cf": 0.8713,
+          "cf": 0.8867,
           "cb": 0.3725,
-          "hybrid": 0.6469
-        },
-        {
-          "productId": "6f3b5b605d91b7439c5e3f5a8dffeea7",
-          "cf": 0.997,
-          "cb": 0.1939,
-          "hybrid": 0.6356
-        },
-        {
-          "productId": "7ce94ab189134e2d3c05f496d635419c",
-          "cf": 0.9448,
-          "cb": 0.2446,
-          "hybrid": 0.6297
-        },
-        {
-          "productId": "6cdd53843498f92890544667809f1595",
-          "cf": 0.9903,
-          "cb": 0.1888,
-          "hybrid": 0.6296
-        },
-        {
-          "productId": "2028bf1b01cafb2d2b1901fca4083222",
-          "cf": 0.9485,
-          "cb": 0.2396,
-          "hybrid": 0.6295
-        },
-        {
-          "productId": "601a360bd2a916ecef0e88de72a6531a",
-          "cf": 0.9629,
-          "cb": 0.2047,
-          "hybrid": 0.6217
-        },
-        {
-          "productId": "617186c3d97ea56c9c683a8a3974e8c1",
-          "cf": 0.9553,
-          "cb": 0.2129,
-          "hybrid": 0.6212
-        },
-        {
-          "productId": "2b4609f8948be18874494203496bc318",
-          "cf": 0.9034,
-          "cb": 0.2729,
-          "hybrid": 0.6197
-        },
-        {
-          "productId": "e0cf79767c5b016251fe139915c59a26",
-          "cf": 0.9193,
-          "cb": 0.2501,
-          "hybrid": 0.6181
-        },
-        {
-          "productId": "0aabfb375647d9738ad0f7b4ea3653b1",
-          "cf": 0.9141,
-          "cb": 0.254,
-          "hybrid": 0.6171
-        },
-        {
-          "productId": "154e7e31ebfa092203795c972e5804a6",
-          "cf": 0.8693,
-          "cb": 0.307,
-          "hybrid": 0.6162
-        },
-        {
-          "productId": "5a848e4ab52fd5445cdc07aab1c40e48",
-          "cf": 0.9262,
-          "cb": 0.2366,
-          "hybrid": 0.6159
-        },
-        {
-          "productId": "437c05a395e9e47f9762e677a7068ce7",
-          "cf": 0.9128,
-          "cb": 0.2492,
-          "hybrid": 0.6142
-        },
-        {
-          "productId": "c6dd917a0be2a704582055949915ab32",
-          "cf": 0.934,
-          "cb": 0.2166,
-          "hybrid": 0.6112
-        },
-        {
-          "productId": "cac9e5692471a0700418aa3400b9b2b1",
-          "cf": 0.9422,
-          "cb": 0.1991,
-          "hybrid": 0.6078
+          "hybrid": 0.6553
         },
         {
           "productId": "aca2eb7d00ea1a7b8ebd4e68314663af",
-          "cf": 0.7917,
+          "cf": 0.8597,
           "cb": 0.3827,
-          "hybrid": 0.6076
+          "hybrid": 0.645
         },
         {
-          "productId": "53759a2ecddad2bb87a079a1f1519f73",
-          "cf": 0.8341,
-          "cb": 0.3304,
-          "hybrid": 0.6074
+          "productId": "617186c3d97ea56c9c683a8a3974e8c1",
+          "cf": 0.9838,
+          "cb": 0.2129,
+          "hybrid": 0.6369
         },
         {
           "productId": "3fbc0ef745950c7932d5f2a446189725",
-          "cf": 0.9057,
+          "cf": 0.9549,
           "cb": 0.2407,
-          "hybrid": 0.6065
+          "hybrid": 0.6335
         },
         {
-          "productId": "c4baedd846ed09b85f78a781b522f126",
-          "cf": 0.9162,
-          "cb": 0.2276,
-          "hybrid": 0.6063
-        },
-        {
-          "productId": "3dd2a17168ec895c781a9191c1e95ad7",
-          "cf": 0.8894,
-          "cb": 0.2558,
-          "hybrid": 0.6043
-        },
-        {
-          "productId": "7c1bd920dbdf22470b68bde975dd3ccf",
-          "cf": 0.8739,
-          "cb": 0.2742,
-          "hybrid": 0.604
-        },
-        {
-          "productId": "d1c427060a0f73f6b889a5c7c61f2ac4",
-          "cf": 0.8584,
-          "cb": 0.2851,
-          "hybrid": 0.6004
-        },
-        {
-          "productId": "7a10781637204d8d10485c71a6108a2e",
-          "cf": 0.9396,
-          "cb": 0.1839,
-          "hybrid": 0.5995
-        },
-        {
-          "productId": "b0961721fd839e9982420e807758a2a6",
-          "cf": 0.8922,
-          "cb": 0.2347,
-          "hybrid": 0.5963
-        },
-        {
-          "productId": "8c292ca193d326152e335d77176746f0",
-          "cf": 0.9281,
-          "cb": 0.186,
-          "hybrid": 0.5942
-        },
-        {
-          "productId": "e0d64dcfaa3b6db5c54ca298ae101d05",
-          "cf": 0.8884,
-          "cb": 0.2235,
-          "hybrid": 0.5892
-        },
-        {
-          "productId": "29427de7f8a9ee983d9dbc51cec569b4",
-          "cf": 0.899,
-          "cb": 0.2079,
-          "hybrid": 0.588
-        },
-        {
-          "productId": "368c6c730842d78016ad823897a372db",
-          "cf": 0.7917,
-          "cb": 0.3361,
-          "hybrid": 0.5867
-        },
-        {
-          "productId": "78efe838c04bbc568be034082200ac20",
-          "cf": 0.8934,
-          "cb": 0.2095,
-          "hybrid": 0.5856
-        },
-        {
-          "productId": "19c91ef95d509ea33eda93495c4d3481",
-          "cf": 0.8771,
-          "cb": 0.2214,
-          "hybrid": 0.5821
-        },
-        {
-          "productId": "54d9ac713e253fa1fae9c8003b011c2a",
-          "cf": 0.8607,
-          "cb": 0.2415,
-          "hybrid": 0.5821
-        },
-        {
-          "productId": "4fcb3d9a5f4871e8362dfedbdb02b064",
-          "cf": 0.9024,
-          "cb": 0.188,
-          "hybrid": 0.5809
-        },
-        {
-          "productId": "656e0eca68dcecf6a31b8ececfabe3e8",
-          "cf": 0.8671,
-          "cb": 0.227,
-          "hybrid": 0.5791
-        },
-        {
-          "productId": "d017a2151d543a9885604dc62a3d9dcc",
-          "cf": 0.8504,
-          "cb": 0.2439,
-          "hybrid": 0.5775
+          "productId": "601a360bd2a916ecef0e88de72a6531a",
+          "cf": 0.9801,
+          "cb": 0.2047,
+          "hybrid": 0.6312
         },
         {
           "productId": "880be32f4db1d9f6e2bec38fb6ac23ab",
-          "cf": 0.8566,
+          "cf": 0.959,
           "cb": 0.2299,
-          "hybrid": 0.5746
+          "hybrid": 0.6309
         },
         {
-          "productId": "89321f94e35fc6d7903d36f74e351d40",
-          "cf": 0.8423,
-          "cb": 0.244,
-          "hybrid": 0.5731
+          "productId": "389d119b48cf3043d311335e499d9c6b",
+          "cf": 0.861,
+          "cb": 0.3372,
+          "hybrid": 0.6253
         },
         {
-          "productId": "d5991653e037ccb7af6ed7d94246b249",
+          "productId": "e0cf79767c5b016251fe139915c59a26",
+          "cf": 0.9306,
+          "cb": 0.2501,
+          "hybrid": 0.6244
+        },
+        {
+          "productId": "154e7e31ebfa092203795c972e5804a6",
           "cf": 0.8815,
-          "cb": 0.1956,
-          "hybrid": 0.5728
-        },
-        {
-          "productId": "461f43be3bdf8844e65b62d9ac2c7a5a",
-          "cf": 0.87,
-          "cb": 0.2088,
-          "hybrid": 0.5725
-        },
-        {
-          "productId": "a62e25e09e05e6faf31d90c6ec1aa3d1",
-          "cf": 0.8274,
-          "cb": 0.2545,
-          "hybrid": 0.5696
-        },
-        {
-          "productId": "bb50f2e236e5eea0100680137654686c",
-          "cf": 0.8673,
-          "cb": 0.2036,
-          "hybrid": 0.5686
-        },
-        {
-          "productId": "a92930c327948861c015c919a0bcb4a8",
-          "cf": 0.8367,
-          "cb": 0.2403,
-          "hybrid": 0.5683
-        },
-        {
-          "productId": "42a2c92a0979a949ca4ea89ec5c7b934",
-          "cf": 0.8232,
-          "cb": 0.2556,
-          "hybrid": 0.5678
+          "cb": 0.307,
+          "hybrid": 0.623
         },
         {
           "productId": "cd48f265a63e13b762601f5f794c5fca",
-          "cf": 0.8464,
+          "cf": 0.936,
           "cb": 0.2266,
-          "hybrid": 0.5675
+          "hybrid": 0.6168
         },
         {
-          "productId": "0bcc3eeca39e1064258aa1e932269894",
-          "cf": 0.8413,
-          "cb": 0.2325,
-          "hybrid": 0.5673
+          "productId": "437c05a395e9e47f9762e677a7068ce7",
+          "cf": 0.9164,
+          "cb": 0.2492,
+          "hybrid": 0.6162
         },
         {
-          "productId": "8c591ab0ca519558779df02023177f44",
-          "cf": 0.8458,
-          "cb": 0.2246,
-          "hybrid": 0.5663
+          "productId": "29427de7f8a9ee983d9dbc51cec569b4",
+          "cf": 0.9474,
+          "cb": 0.2079,
+          "hybrid": 0.6146
         },
         {
-          "productId": "75d6b6963340c6063f7f4cfcccfe6a30",
-          "cf": 0.8468,
-          "cb": 0.2226,
-          "hybrid": 0.5659
+          "productId": "0aabfb375647d9738ad0f7b4ea3653b1",
+          "cf": 0.9071,
+          "cb": 0.254,
+          "hybrid": 0.6132
         },
         {
-          "productId": "165f86fe8b799a708a20ee4ba125c289",
-          "cf": 0.8697,
-          "cb": 0.1863,
-          "hybrid": 0.5622
+          "productId": "2b4609f8948be18874494203496bc318",
+          "cf": 0.8894,
+          "cb": 0.2729,
+          "hybrid": 0.6119
+        },
+        {
+          "productId": "461f43be3bdf8844e65b62d9ac2c7a5a",
+          "cf": 0.9366,
+          "cb": 0.2088,
+          "hybrid": 0.6091
+        },
+        {
+          "productId": "c4baedd846ed09b85f78a781b522f126",
+          "cf": 0.9159,
+          "cb": 0.2276,
+          "hybrid": 0.6062
+        },
+        {
+          "productId": "cac9e5692471a0700418aa3400b9b2b1",
+          "cf": 0.9327,
+          "cb": 0.1991,
+          "hybrid": 0.6026
+        },
+        {
+          "productId": "19c91ef95d509ea33eda93495c4d3481",
+          "cf": 0.9083,
+          "cb": 0.2214,
+          "hybrid": 0.5992
+        },
+        {
+          "productId": "d1c427060a0f73f6b889a5c7c61f2ac4",
+          "cf": 0.8544,
+          "cb": 0.2851,
+          "hybrid": 0.5982
+        },
+        {
+          "productId": "7ce94ab189134e2d3c05f496d635419c",
+          "cf": 0.8867,
+          "cb": 0.2446,
+          "hybrid": 0.5977
+        },
+        {
+          "productId": "6cdd53843498f92890544667809f1595",
+          "cf": 0.928,
+          "cb": 0.1888,
+          "hybrid": 0.5954
+        },
+        {
+          "productId": "53759a2ecddad2bb87a079a1f1519f73",
+          "cf": 0.8113,
+          "cb": 0.3304,
+          "hybrid": 0.5949
+        },
+        {
+          "productId": "368c6c730842d78016ad823897a372db",
+          "cf": 0.7975,
+          "cb": 0.3361,
+          "hybrid": 0.5899
         },
         {
           "productId": "53b36df67ebb7c41585e8d54d6772e08",
-          "cf": 0.7828,
-          "cb": 0.2898,
-          "hybrid": 0.5609
-        },
-        {
-          "productId": "595fac2a385ac33a80bd5114aec74eb8",
-          "cf": 0.8479,
-          "cb": 0.2044,
-          "hybrid": 0.5583
-        },
-        {
-          "productId": "08574b074924071f4e201e151b152b4e",
-          "cf": 0.8393,
-          "cb": 0.2143,
-          "hybrid": 0.558
-        },
-        {
-          "productId": "b532349fe46b38fbc7bb3914c1bdae07",
-          "cf": 0.8,
-          "cb": 0.2603,
-          "hybrid": 0.5571
-        },
-        {
-          "productId": "4fe644d766c7566dbc46fb851363cb3b",
           "cf": 0.8331,
-          "cb": 0.2117,
-          "hybrid": 0.5534
+          "cb": 0.2898,
+          "hybrid": 0.5886
         },
         {
-          "productId": "9ecadb84c81da840dbf3564378b586e9",
-          "cf": 0.7896,
-          "cb": 0.2329,
-          "hybrid": 0.5391
+          "productId": "b0961721fd839e9982420e807758a2a6",
+          "cf": 0.8754,
+          "cb": 0.2347,
+          "hybrid": 0.5871
+        },
+        {
+          "productId": "7c1bd920dbdf22470b68bde975dd3ccf",
+          "cf": 0.8383,
+          "cb": 0.2742,
+          "hybrid": 0.5844
+        },
+        {
+          "productId": "bb50f2e236e5eea0100680137654686c",
+          "cf": 0.8943,
+          "cb": 0.2036,
+          "hybrid": 0.5835
+        },
+        {
+          "productId": "8c591ab0ca519558779df02023177f44",
+          "cf": 0.8767,
+          "cb": 0.2246,
+          "hybrid": 0.5833
+        },
+        {
+          "productId": "54d9ac713e253fa1fae9c8003b011c2a",
+          "cf": 0.8613,
+          "cb": 0.2415,
+          "hybrid": 0.5824
+        },
+        {
+          "productId": "2028bf1b01cafb2d2b1901fca4083222",
+          "cf": 0.8612,
+          "cb": 0.2396,
+          "hybrid": 0.5815
         },
         {
           "productId": "c6336fa91fbd87c359e44f5dca5a90ed",
-          "cf": 0.794,
+          "cf": 0.8708,
           "cb": 0.2276,
-          "hybrid": 0.5391
+          "hybrid": 0.5814
         },
         {
-          "productId": "6c3effec7c8ddba466d4f03f982c7aa3",
-          "cf": 0.7771,
-          "cb": 0.237,
-          "hybrid": 0.534
-        },
-        {
-          "productId": "eb8c629f70275fd1c4f809116cce1efc",
-          "cf": 0.7786,
-          "cb": 0.2322,
-          "hybrid": 0.5327
+          "productId": "165f86fe8b799a708a20ee4ba125c289",
+          "cf": 0.903,
+          "cb": 0.1863,
+          "hybrid": 0.5805
         },
         {
           "productId": "4c2394abfbac7ff59ec7a420918562fa",
-          "cf": 0.7807,
+          "cf": 0.8716,
           "cb": 0.2232,
-          "hybrid": 0.5298
+          "hybrid": 0.5798
         },
         {
-          "productId": "52c80cedd4e90108bf4fa6a206ef6b03",
-          "cf": 0.8072,
-          "cb": 0.1854,
-          "hybrid": 0.5274
+          "productId": "75d6b6963340c6063f7f4cfcccfe6a30",
+          "cf": 0.8703,
+          "cb": 0.2226,
+          "hybrid": 0.5788
         },
         {
-          "productId": "36f60d45225e60c7da4558b070ce4b60",
-          "cf": 0.7605,
-          "cb": 0.2233,
-          "hybrid": 0.5188
+          "productId": "656e0eca68dcecf6a31b8ececfabe3e8",
+          "cf": 0.864,
+          "cb": 0.227,
+          "hybrid": 0.5773
         },
         {
-          "productId": "e53e557d5a159f5aa2c5e995dfdf244b",
-          "cf": 0.7318,
-          "cb": 0.2483,
-          "hybrid": 0.5142
+          "productId": "9ecadb84c81da840dbf3564378b586e9",
+          "cf": 0.8573,
+          "cb": 0.2329,
+          "hybrid": 0.5763
         },
         {
-          "productId": "d285360f29ac7fd97640bf0baef03de0",
-          "cf": 0.7448,
-          "cb": 0.1755,
-          "hybrid": 0.4886
+          "productId": "08574b074924071f4e201e151b152b4e",
+          "cf": 0.872,
+          "cb": 0.2143,
+          "hybrid": 0.5761
+        },
+        {
+          "productId": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+          "cf": 0.8886,
+          "cb": 0.1939,
+          "hybrid": 0.576
+        },
+        {
+          "productId": "e0d64dcfaa3b6db5c54ca298ae101d05",
+          "cf": 0.8633,
+          "cb": 0.2235,
+          "hybrid": 0.5754
+        },
+        {
+          "productId": "7a10781637204d8d10485c71a6108a2e",
+          "cf": 0.8943,
+          "cb": 0.1839,
+          "hybrid": 0.5746
+        },
+        {
+          "productId": "c6dd917a0be2a704582055949915ab32",
+          "cf": 0.8658,
+          "cb": 0.2166,
+          "hybrid": 0.5736
+        },
+        {
+          "productId": "4fcb3d9a5f4871e8362dfedbdb02b064",
+          "cf": 0.8858,
+          "cb": 0.188,
+          "hybrid": 0.5718
+        },
+        {
+          "productId": "89321f94e35fc6d7903d36f74e351d40",
+          "cf": 0.8365,
+          "cb": 0.244,
+          "hybrid": 0.5699
+        },
+        {
+          "productId": "6c3effec7c8ddba466d4f03f982c7aa3",
+          "cf": 0.8378,
+          "cb": 0.237,
+          "hybrid": 0.5675
+        },
+        {
+          "productId": "595fac2a385ac33a80bd5114aec74eb8",
+          "cf": 0.8527,
+          "cb": 0.2044,
+          "hybrid": 0.5609
+        },
+        {
+          "productId": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+          "cf": 0.8106,
+          "cb": 0.2545,
+          "hybrid": 0.5604
+        },
+        {
+          "productId": "78efe838c04bbc568be034082200ac20",
+          "cf": 0.8444,
+          "cb": 0.2095,
+          "hybrid": 0.5587
+        },
+        {
+          "productId": "0bcc3eeca39e1064258aa1e932269894",
+          "cf": 0.8251,
+          "cb": 0.2325,
+          "hybrid": 0.5584
+        },
+        {
+          "productId": "42a2c92a0979a949ca4ea89ec5c7b934",
+          "cf": 0.7992,
+          "cb": 0.2556,
+          "hybrid": 0.5546
+        },
+        {
+          "productId": "5a848e4ab52fd5445cdc07aab1c40e48",
+          "cf": 0.8141,
+          "cb": 0.2366,
+          "hybrid": 0.5542
+        },
+        {
+          "productId": "eb8c629f70275fd1c4f809116cce1efc",
+          "cf": 0.8173,
+          "cb": 0.2322,
+          "hybrid": 0.554
+        },
+        {
+          "productId": "4fe644d766c7566dbc46fb851363cb3b",
+          "cf": 0.8299,
+          "cb": 0.2117,
+          "hybrid": 0.5517
+        },
+        {
+          "productId": "d5991653e037ccb7af6ed7d94246b249",
+          "cf": 0.8382,
+          "cb": 0.1956,
+          "hybrid": 0.549
+        },
+        {
+          "productId": "3dd2a17168ec895c781a9191c1e95ad7",
+          "cf": 0.7877,
+          "cb": 0.2558,
+          "hybrid": 0.5484
+        },
+        {
+          "productId": "b532349fe46b38fbc7bb3914c1bdae07",
+          "cf": 0.7782,
+          "cb": 0.2603,
+          "hybrid": 0.5451
+        },
+        {
+          "productId": "a92930c327948861c015c919a0bcb4a8",
+          "cf": 0.7796,
+          "cb": 0.2403,
+          "hybrid": 0.5369
+        },
+        {
+          "productId": "8c292ca193d326152e335d77176746f0",
+          "cf": 0.8034,
+          "cb": 0.186,
+          "hybrid": 0.5255
         },
         {
           "productId": "ee406bf28024d97771c4b1e8b7e8e219",
-          "cf": 0.7034,
+          "cf": 0.7902,
           "cb": 0.1879,
-          "hybrid": 0.4714
+          "hybrid": 0.5192
+        },
+        {
+          "productId": "e53e557d5a159f5aa2c5e995dfdf244b",
+          "cf": 0.7279,
+          "cb": 0.2483,
+          "hybrid": 0.5121
+        },
+        {
+          "productId": "52c80cedd4e90108bf4fa6a206ef6b03",
+          "cf": 0.7743,
+          "cb": 0.1854,
+          "hybrid": 0.5093
+        },
+        {
+          "productId": "d017a2151d543a9885604dc62a3d9dcc",
+          "cf": 0.6987,
+          "cb": 0.2439,
+          "hybrid": 0.4941
+        },
+        {
+          "productId": "d285360f29ac7fd97640bf0baef03de0",
+          "cf": 0.7459,
+          "cb": 0.1755,
+          "hybrid": 0.4893
+        },
+        {
+          "productId": "36f60d45225e60c7da4558b070ce4b60",
+          "cf": 0.7009,
+          "cb": 0.2233,
+          "hybrid": 0.486
         },
         {
           "productId": "43423cdffde7fda63d0414ed38c11a73",
-          "cf": 0.6503,
+          "cf": 0.6374,
           "cb": 0.2237,
-          "hybrid": 0.4583
+          "hybrid": 0.4513
         },
         {
           "productId": "b5e13c9a353102f79c6206ff5cb61a50",
-          "cf": 0.5858,
+          "cf": 0.6344,
           "cb": 0.2095,
-          "hybrid": 0.4165
+          "hybrid": 0.4432
         }
       ]
     }
-  ]
+  ],
+  "similarities": {
+    "aca2eb7d00ea1a7b8ebd4e68314663af": [
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.7484
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.7408
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.7334
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.7109
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.7098
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.6984
+      },
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.67
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.6664
+      },
+      {
+        "id": "595fac2a385ac33a80bd5114aec74eb8",
+        "sim": 0.6606
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.6541
+      }
+    ],
+    "99a4788cb24856965c36a24e339b6058": [
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.7647
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.7374
+      },
+      {
+        "id": "368c6c730842d78016ad823897a372db",
+        "sim": 0.6707
+      },
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.6582
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.6427
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.6376
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.6361
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.6211
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.6193
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6146
+      }
+    ],
+    "422879e10f46682990de24d770e7f83d": [
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.7438
+      },
+      {
+        "id": "595fac2a385ac33a80bd5114aec74eb8",
+        "sim": 0.7345
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.7237
+      },
+      {
+        "id": "eb8c629f70275fd1c4f809116cce1efc",
+        "sim": 0.7136
+      },
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.697
+      },
+      {
+        "id": "c6336fa91fbd87c359e44f5dca5a90ed",
+        "sim": 0.6726
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.67
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.6482
+      },
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.6418
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.6335
+      }
+    ],
+    "389d119b48cf3043d311335e499d9c6b": [
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.8026
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.7408
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.7388
+      },
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.6838
+      },
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.6685
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6639
+      },
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.6553
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.6246
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.6238
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.6234
+      }
+    ],
+    "368c6c730842d78016ad823897a372db": [
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.7812
+      },
+      {
+        "id": "ee406bf28024d97771c4b1e8b7e8e219",
+        "sim": 0.7312
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.6964
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.6872
+      },
+      {
+        "id": "99a4788cb24856965c36a24e339b6058",
+        "sim": 0.6707
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.635
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.6327
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.6312
+      },
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.6138
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.6066
+      }
+    ],
+    "53759a2ecddad2bb87a079a1f1519f73": [
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.7261
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.7249
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.6881
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.6778
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.6513
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.6427
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.6409
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.6405
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.6299
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.6277
+      }
+    ],
+    "d1c427060a0f73f6b889a5c7c61f2ac4": [
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.7758
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.7536
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.7052
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.7032
+      },
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.6843
+      },
+      {
+        "id": "52c80cedd4e90108bf4fa6a206ef6b03",
+        "sim": 0.6675
+      },
+      {
+        "id": "a92930c327948861c015c919a0bcb4a8",
+        "sim": 0.6582
+      },
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.6418
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.628
+      },
+      {
+        "id": "c6336fa91fbd87c359e44f5dca5a90ed",
+        "sim": 0.6262
+      }
+    ],
+    "53b36df67ebb7c41585e8d54d6772e08": [
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.7832
+      },
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.7678
+      },
+      {
+        "id": "eb8c629f70275fd1c4f809116cce1efc",
+        "sim": 0.754
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.7382
+      },
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.697
+      },
+      {
+        "id": "c6336fa91fbd87c359e44f5dca5a90ed",
+        "sim": 0.6941
+      },
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.667
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.6489
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.6397
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.6338
+      }
+    ],
+    "154e7e31ebfa092203795c972e5804a6": [
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.758
+      },
+      {
+        "id": "8c591ab0ca519558779df02023177f44",
+        "sim": 0.7387
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.7153
+      },
+      {
+        "id": "656e0eca68dcecf6a31b8ececfabe3e8",
+        "sim": 0.7029
+      },
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.6941
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.6865
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.6657
+      },
+      {
+        "id": "53759a2ecddad2bb87a079a1f1519f73",
+        "sim": 0.6513
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.6482
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.6463
+      }
+    ],
+    "3dd2a17168ec895c781a9191c1e95ad7": [
+      {
+        "id": "368c6c730842d78016ad823897a372db",
+        "sim": 0.7812
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.7217
+      },
+      {
+        "id": "08574b074924071f4e201e151b152b4e",
+        "sim": 0.6715
+      },
+      {
+        "id": "ee406bf28024d97771c4b1e8b7e8e219",
+        "sim": 0.6708
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.6325
+      },
+      {
+        "id": "8c292ca193d326152e335d77176746f0",
+        "sim": 0.624
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.6203
+      },
+      {
+        "id": "b5e13c9a353102f79c6206ff5cb61a50",
+        "sim": 0.616
+      },
+      {
+        "id": "53759a2ecddad2bb87a079a1f1519f73",
+        "sim": 0.6129
+      },
+      {
+        "id": "e0d64dcfaa3b6db5c54ca298ae101d05",
+        "sim": 0.608
+      }
+    ],
+    "2b4609f8948be18874494203496bc318": [
+      {
+        "id": "53759a2ecddad2bb87a079a1f1519f73",
+        "sim": 0.7249
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.7178
+      },
+      {
+        "id": "ec2d43cc59763ec91694573b31f1c29a",
+        "sim": 0.7134
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.712
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.711
+      },
+      {
+        "id": "c6dd917a0be2a704582055949915ab32",
+        "sim": 0.7014
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.6934
+      },
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.6844
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.6822
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.6743
+      }
+    ],
+    "7c1bd920dbdf22470b68bde975dd3ccf": [
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.8026
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.7334
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.6951
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.666
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.655
+      },
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.6512
+      },
+      {
+        "id": "54d9ac713e253fa1fae9c8003b011c2a",
+        "sim": 0.6492
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.6397
+      },
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.6308
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.618
+      }
+    ],
+    "a62e25e09e05e6faf31d90c6ec1aa3d1": [
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.7748
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.7442
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.721
+      },
+      {
+        "id": "ee406bf28024d97771c4b1e8b7e8e219",
+        "sim": 0.7105
+      },
+      {
+        "id": "8c591ab0ca519558779df02023177f44",
+        "sim": 0.7014
+      },
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.6918
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6815
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.6661
+      },
+      {
+        "id": "08574b074924071f4e201e151b152b4e",
+        "sim": 0.6524
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6456
+      }
+    ],
+    "5a848e4ab52fd5445cdc07aab1c40e48": [
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.7463
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.7406
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.7176
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.7106
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.7101
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.7098
+      },
+      {
+        "id": "54d9ac713e253fa1fae9c8003b011c2a",
+        "sim": 0.6929
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.6482
+      },
+      {
+        "id": "53759a2ecddad2bb87a079a1f1519f73",
+        "sim": 0.6427
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.6365
+      }
+    ],
+    "bb50f2e236e5eea0100680137654686c": [
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.8344
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.769
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.7673
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.7546
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.7529
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.7442
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.7289
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.7247
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.7118
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.7003
+      }
+    ],
+    "e0d64dcfaa3b6db5c54ca298ae101d05": [
+      {
+        "id": "0aabfb375647d9738ad0f7b4ea3653b1",
+        "sim": 0.7423
+      },
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.7208
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.6538
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.6421
+      },
+      {
+        "id": "52c80cedd4e90108bf4fa6a206ef6b03",
+        "sim": 0.6407
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.6399
+      },
+      {
+        "id": "a92930c327948861c015c919a0bcb4a8",
+        "sim": 0.6316
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.6263
+      },
+      {
+        "id": "8c292ca193d326152e335d77176746f0",
+        "sim": 0.6124
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.6104
+      }
+    ],
+    "42a2c92a0979a949ca4ea89ec5c7b934": [
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.7758
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.7022
+      },
+      {
+        "id": "0aabfb375647d9738ad0f7b4ea3653b1",
+        "sim": 0.6831
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.6808
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.6681
+      },
+      {
+        "id": "2028bf1b01cafb2d2b1901fca4083222",
+        "sim": 0.6646
+      },
+      {
+        "id": "d017a2151d543a9885604dc62a3d9dcc",
+        "sim": 0.657
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.6512
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.65
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.6376
+      }
+    ],
+    "e53e557d5a159f5aa2c5e995dfdf244b": [
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.793
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.7261
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.7102
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.6838
+      },
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.6573
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.6512
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.6471
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.6467
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.6461
+      },
+      {
+        "id": "b5e13c9a353102f79c6206ff5cb61a50",
+        "sim": 0.6426
+      }
+    ],
+    "b532349fe46b38fbc7bb3914c1bdae07": [
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.8077
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.7972
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.7151
+      },
+      {
+        "id": "54d9ac713e253fa1fae9c8003b011c2a",
+        "sim": 0.6541
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.6528
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.6499
+      },
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.6406
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6341
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.6281
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.6262
+      }
+    ],
+    "35afc973633aaeb6b877ff57b2793310": [
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.793
+      },
+      {
+        "id": "b5e13c9a353102f79c6206ff5cb61a50",
+        "sim": 0.7644
+      },
+      {
+        "id": "99a4788cb24856965c36a24e339b6058",
+        "sim": 0.7374
+      },
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.7372
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.7273
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.7153
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.7132
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.7099
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.698
+      },
+      {
+        "id": "08574b074924071f4e201e151b152b4e",
+        "sim": 0.6455
+      }
+    ],
+    "a92930c327948861c015c919a0bcb4a8": [
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.7094
+      },
+      {
+        "id": "ec2d43cc59763ec91694573b31f1c29a",
+        "sim": 0.6615
+      },
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.6582
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.6492
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.6318
+      },
+      {
+        "id": "e0d64dcfaa3b6db5c54ca298ae101d05",
+        "sim": 0.6316
+      },
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.6138
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.6119
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.5963
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.5962
+      }
+    ],
+    "6cdd53843498f92890544667809f1595": [
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.7778
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.6976
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.69
+      },
+      {
+        "id": "f1c7f353075ce59d8a6f3cf58f419c9c",
+        "sim": 0.6788
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.6639
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6578
+      },
+      {
+        "id": "c6336fa91fbd87c359e44f5dca5a90ed",
+        "sim": 0.6475
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.6456
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.6409
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.636
+      }
+    ],
+    "19c91ef95d509ea33eda93495c4d3481": [
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.8677
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.817
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.8119
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.7328
+      },
+      {
+        "id": "8c591ab0ca519558779df02023177f44",
+        "sim": 0.728
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.7118
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.7116
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.7016
+      },
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.6921
+      },
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.6916
+      }
+    ],
+    "437c05a395e9e47f9762e677a7068ce7": [
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.786
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.7184
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.7088
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.7087
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.6916
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.6902
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6844
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6452
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.6447
+      },
+      {
+        "id": "c6dd917a0be2a704582055949915ab32",
+        "sim": 0.6394
+      }
+    ],
+    "f1c7f353075ce59d8a6f3cf58f419c9c": [
+      {
+        "id": "d017a2151d543a9885604dc62a3d9dcc",
+        "sim": 0.7516
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.6907
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6788
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.6577
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.6357
+      },
+      {
+        "id": "595fac2a385ac33a80bd5114aec74eb8",
+        "sim": 0.6332
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.6326
+      },
+      {
+        "id": "54d9ac713e253fa1fae9c8003b011c2a",
+        "sim": 0.5822
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.5796
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.5784
+      }
+    ],
+    "3fbc0ef745950c7932d5f2a446189725": [
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.8119
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.7629
+      },
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.7412
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.7383
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.7289
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.6943
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.6873
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.6815
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.6777
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6636
+      }
+    ],
+    "c4baedd846ed09b85f78a781b522f126": [
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.769
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.7223
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.721
+      },
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.7088
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.6887
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.6649
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.6636
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6588
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.6571
+      },
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.6498
+      }
+    ],
+    "461f43be3bdf8844e65b62d9ac2c7a5a": [
+      {
+        "id": "ec2d43cc59763ec91694573b31f1c29a",
+        "sim": 0.8098
+      },
+      {
+        "id": "8c292ca193d326152e335d77176746f0",
+        "sim": 0.7719
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.7629
+      },
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.7539
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.7529
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.7309
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.7204
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.711
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.69
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.683
+      }
+    ],
+    "7a10781637204d8d10485c71a6108a2e": [
+      {
+        "id": "595fac2a385ac33a80bd5114aec74eb8",
+        "sim": 0.771
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.7379
+      },
+      {
+        "id": "54d9ac713e253fa1fae9c8003b011c2a",
+        "sim": 0.7342
+      },
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.7151
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.7101
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.7047
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.6984
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.6819
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6743
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.6635
+      }
+    ],
+    "06edb72f1e0c64b14c5b79353f7abea3": [
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.7328
+      },
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.7184
+      },
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.7172
+      },
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.7105
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.6865
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.683
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.6819
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.6797
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.6705
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6491
+      }
+    ],
+    "0aabfb375647d9738ad0f7b4ea3653b1": [
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.7675
+      },
+      {
+        "id": "e0d64dcfaa3b6db5c54ca298ae101d05",
+        "sim": 0.7423
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.7052
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.6831
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.64
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.6256
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.6033
+      },
+      {
+        "id": "99a4788cb24856965c36a24e339b6058",
+        "sim": 0.6016
+      },
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.5987
+      },
+      {
+        "id": "a92930c327948861c015c919a0bcb4a8",
+        "sim": 0.5935
+      }
+    ],
+    "8c591ab0ca519558779df02023177f44": [
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.8015
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.7387
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.728
+      },
+      {
+        "id": "b5e13c9a353102f79c6206ff5cb61a50",
+        "sim": 0.7127
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.7014
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.6993
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.6692
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.6542
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6498
+      },
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.6263
+      }
+    ],
+    "d017a2151d543a9885604dc62a3d9dcc": [
+      {
+        "id": "f1c7f353075ce59d8a6f3cf58f419c9c",
+        "sim": 0.7516
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.7017
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.657
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.6426
+      },
+      {
+        "id": "595fac2a385ac33a80bd5114aec74eb8",
+        "sim": 0.6375
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.6372
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6343
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.6271
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.6139
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.6101
+      }
+    ],
+    "e0cf79767c5b016251fe139915c59a26": [
+      {
+        "id": "c6dd917a0be2a704582055949915ab32",
+        "sim": 0.7311
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.6947
+      },
+      {
+        "id": "b5e13c9a353102f79c6206ff5cb61a50",
+        "sim": 0.6842
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.6601
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6428
+      },
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.6397
+      },
+      {
+        "id": "368c6c730842d78016ad823897a372db",
+        "sim": 0.635
+      },
+      {
+        "id": "ec2d43cc59763ec91694573b31f1c29a",
+        "sim": 0.6312
+      },
+      {
+        "id": "eb8c629f70275fd1c4f809116cce1efc",
+        "sim": 0.6244
+      },
+      {
+        "id": "52c80cedd4e90108bf4fa6a206ef6b03",
+        "sim": 0.622
+      }
+    ],
+    "2028bf1b01cafb2d2b1901fca4083222": [
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.6646
+      },
+      {
+        "id": "8c292ca193d326152e335d77176746f0",
+        "sim": 0.6537
+      },
+      {
+        "id": "c6dd917a0be2a704582055949915ab32",
+        "sim": 0.637
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.6349
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.6347
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.6328
+      },
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.6097
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.6082
+      },
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.6031
+      },
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.5932
+      }
+    ],
+    "656e0eca68dcecf6a31b8ececfabe3e8": [
+      {
+        "id": "ee406bf28024d97771c4b1e8b7e8e219",
+        "sim": 0.8375
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.7029
+      },
+      {
+        "id": "595fac2a385ac33a80bd5114aec74eb8",
+        "sim": 0.6905
+      },
+      {
+        "id": "08574b074924071f4e201e151b152b4e",
+        "sim": 0.6829
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.6792
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.6515
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.6467
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.6409
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.6335
+      },
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.6199
+      }
+    ],
+    "ec2d43cc59763ec91694573b31f1c29a": [
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.8098
+      },
+      {
+        "id": "b5e13c9a353102f79c6206ff5cb61a50",
+        "sim": 0.7811
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.7776
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.7134
+      },
+      {
+        "id": "cac9e5692471a0700418aa3400b9b2b1",
+        "sim": 0.7046
+      },
+      {
+        "id": "a92930c327948861c015c919a0bcb4a8",
+        "sim": 0.6615
+      },
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.644
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.6314
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.6312
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.6293
+      }
+    ],
+    "b0961721fd839e9982420e807758a2a6": [
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.8077
+      },
+      {
+        "id": "99a4788cb24856965c36a24e339b6058",
+        "sim": 0.7647
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.7383
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.7379
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.7309
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.7116
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.7109
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.7008
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.698
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.691
+      }
+    ],
+    "36f60d45225e60c7da4558b070ce4b60": [
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.7406
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.7388
+      },
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.7061
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6976
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.6752
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.6708
+      },
+      {
+        "id": "c6336fa91fbd87c359e44f5dca5a90ed",
+        "sim": 0.6649
+      },
+      {
+        "id": "08574b074924071f4e201e151b152b4e",
+        "sim": 0.6593
+      },
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.6281
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.6278
+      }
+    ],
+    "4c2394abfbac7ff59ec7a420918562fa": [
+      {
+        "id": "53759a2ecddad2bb87a079a1f1519f73",
+        "sim": 0.7261
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.7003
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.6907
+      },
+      {
+        "id": "8c292ca193d326152e335d77176746f0",
+        "sim": 0.6663
+      },
+      {
+        "id": "d017a2151d543a9885604dc62a3d9dcc",
+        "sim": 0.6426
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.6365
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.6335
+      },
+      {
+        "id": "368c6c730842d78016ad823897a372db",
+        "sim": 0.6327
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6318
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.6278
+      }
+    ],
+    "d285360f29ac7fd97640bf0baef03de0": [
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.786
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.7329
+      },
+      {
+        "id": "c6dd917a0be2a704582055949915ab32",
+        "sim": 0.7252
+      },
+      {
+        "id": "e0d64dcfaa3b6db5c54ca298ae101d05",
+        "sim": 0.7208
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.7105
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.692
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.6619
+      },
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.6573
+      },
+      {
+        "id": "54d9ac713e253fa1fae9c8003b011c2a",
+        "sim": 0.6566
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.6508
+      }
+    ],
+    "c6dd917a0be2a704582055949915ab32": [
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.7311
+      },
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.7252
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.7014
+      },
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.679
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.6637
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.6528
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6447
+      },
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.6394
+      },
+      {
+        "id": "2028bf1b01cafb2d2b1901fca4083222",
+        "sim": 0.637
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.6236
+      }
+    ],
+    "601a360bd2a916ecef0e88de72a6531a": [
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.7237
+      },
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.7217
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.6947
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.6833
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.6644
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.6636
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.6552
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.65
+      },
+      {
+        "id": "2028bf1b01cafb2d2b1901fca4083222",
+        "sim": 0.6347
+      },
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.6338
+      }
+    ],
+    "89321f94e35fc6d7903d36f74e351d40": [
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.7223
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.6833
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.6644
+      },
+      {
+        "id": "f1c7f353075ce59d8a6f3cf58f419c9c",
+        "sim": 0.6577
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.6541
+      },
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.6517
+      },
+      {
+        "id": "53759a2ecddad2bb87a079a1f1519f73",
+        "sim": 0.6405
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.6246
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.6238
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.6218
+      }
+    ],
+    "52c80cedd4e90108bf4fa6a206ef6b03": [
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.6675
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.662
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.6512
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.6494
+      },
+      {
+        "id": "e0d64dcfaa3b6db5c54ca298ae101d05",
+        "sim": 0.6407
+      },
+      {
+        "id": "8c292ca193d326152e335d77176746f0",
+        "sim": 0.6326
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.6273
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6223
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.622
+      },
+      {
+        "id": "eb8c629f70275fd1c4f809116cce1efc",
+        "sim": 0.616
+      }
+    ],
+    "6f3b5b605d91b7439c5e3f5a8dffeea7": [
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.75
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.7154
+      },
+      {
+        "id": "d017a2151d543a9885604dc62a3d9dcc",
+        "sim": 0.7017
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.69
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.6897
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.6887
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6873
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.6644
+      },
+      {
+        "id": "c6dd917a0be2a704582055949915ab32",
+        "sim": 0.6637
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.639
+      }
+    ],
+    "0bcc3eeca39e1064258aa1e932269894": [
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.7832
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.7612
+      },
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.7438
+      },
+      {
+        "id": "595fac2a385ac33a80bd5114aec74eb8",
+        "sim": 0.7163
+      },
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.7052
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.7008
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.6635
+      },
+      {
+        "id": "52c80cedd4e90108bf4fa6a206ef6b03",
+        "sim": 0.662
+      },
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.6619
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.6552
+      }
+    ],
+    "54d9ac713e253fa1fae9c8003b011c2a": [
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.7342
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.6929
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.6911
+      },
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.6566
+      },
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.6541
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.6492
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.6488
+      },
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.634
+      },
+      {
+        "id": "eb8c629f70275fd1c4f809116cce1efc",
+        "sim": 0.6125
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.6104
+      }
+    ],
+    "08574b074924071f4e201e151b152b4e": [
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.7444
+      },
+      {
+        "id": "ee406bf28024d97771c4b1e8b7e8e219",
+        "sim": 0.7114
+      },
+      {
+        "id": "656e0eca68dcecf6a31b8ececfabe3e8",
+        "sim": 0.6829
+      },
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.6744
+      },
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.6715
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.6593
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.6592
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.6524
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.6455
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.6367
+      }
+    ],
+    "84f456958365164420cfc80fbe4c7fab": [
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.7778
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.7748
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.75
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.7247
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.7176
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.7024
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.6708
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.6681
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.6571
+      },
+      {
+        "id": "52c80cedd4e90108bf4fa6a206ef6b03",
+        "sim": 0.6494
+      }
+    ],
+    "165f86fe8b799a708a20ee4ba125c289": [
+      {
+        "id": "ee406bf28024d97771c4b1e8b7e8e219",
+        "sim": 0.7937
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.721
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.7063
+      },
+      {
+        "id": "368c6c730842d78016ad823897a372db",
+        "sim": 0.6964
+      },
+      {
+        "id": "f1c7f353075ce59d8a6f3cf58f419c9c",
+        "sim": 0.6907
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6409
+      },
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.6325
+      },
+      {
+        "id": "d017a2151d543a9885604dc62a3d9dcc",
+        "sim": 0.6271
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.6216
+      },
+      {
+        "id": "99a4788cb24856965c36a24e339b6058",
+        "sim": 0.6193
+      }
+    ],
+    "4fe644d766c7566dbc46fb851363cb3b": [
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.7484
+      },
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.7095
+      },
+      {
+        "id": "a92930c327948861c015c919a0bcb4a8",
+        "sim": 0.7094
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.6685
+      },
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.667
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.6585
+      },
+      {
+        "id": "89321f94e35fc6d7903d36f74e351d40",
+        "sim": 0.6517
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.6481
+      },
+      {
+        "id": "ec2d43cc59763ec91694573b31f1c29a",
+        "sim": 0.644
+      },
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.6406
+      }
+    ],
+    "595fac2a385ac33a80bd5114aec74eb8": [
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.771
+      },
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.7345
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.7163
+      },
+      {
+        "id": "656e0eca68dcecf6a31b8ececfabe3e8",
+        "sim": 0.6905
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.6606
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.6447
+      },
+      {
+        "id": "d017a2151d543a9885604dc62a3d9dcc",
+        "sim": 0.6375
+      },
+      {
+        "id": "f1c7f353075ce59d8a6f3cf58f419c9c",
+        "sim": 0.6332
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.6325
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.617
+      }
+    ],
+    "7ce94ab189134e2d3c05f496d635419c": [
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.758
+      },
+      {
+        "id": "08574b074924071f4e201e151b152b4e",
+        "sim": 0.7444
+      },
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.7261
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.7114
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.7099
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.7021
+      },
+      {
+        "id": "8c591ab0ca519558779df02023177f44",
+        "sim": 0.6993
+      },
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.6903
+      },
+      {
+        "id": "656e0eca68dcecf6a31b8ececfabe3e8",
+        "sim": 0.6792
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.6789
+      }
+    ],
+    "d5991653e037ccb7af6ed7d94246b249": [
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.7463
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.712
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.704
+      },
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.6897
+      },
+      {
+        "id": "53759a2ecddad2bb87a079a1f1519f73",
+        "sim": 0.6881
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.6664
+      },
+      {
+        "id": "8c591ab0ca519558779df02023177f44",
+        "sim": 0.6542
+      },
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.6528
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.6403
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.6397
+      }
+    ],
+    "78efe838c04bbc568be034082200ac20": [
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.7612
+      },
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.7536
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.7132
+      },
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.6821
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.6789
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.6644
+      },
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.6585
+      },
+      {
+        "id": "656e0eca68dcecf6a31b8ececfabe3e8",
+        "sim": 0.6515
+      },
+      {
+        "id": "52c80cedd4e90108bf4fa6a206ef6b03",
+        "sim": 0.6512
+      },
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.6467
+      }
+    ],
+    "880be32f4db1d9f6e2bec38fb6ac23ab": [
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.8677
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.8344
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.7547
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.7539
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.7456
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.7412
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.7172
+      },
+      {
+        "id": "c6dd917a0be2a704582055949915ab32",
+        "sim": 0.679
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.666
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.6498
+      }
+    ],
+    "29427de7f8a9ee983d9dbc51cec569b4": [
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.817
+      },
+      {
+        "id": "8c591ab0ca519558779df02023177f44",
+        "sim": 0.8015
+      },
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.7456
+      },
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.7329
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.7273
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.7114
+      },
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.7102
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.6951
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6943
+      },
+      {
+        "id": "b5e13c9a353102f79c6206ff5cb61a50",
+        "sim": 0.6797
+      }
+    ],
+    "6c3effec7c8ddba466d4f03f982c7aa3": [
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.7972
+      },
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.7382
+      },
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.7032
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.691
+      },
+      {
+        "id": "c6336fa91fbd87c359e44f5dca5a90ed",
+        "sim": 0.6592
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.655
+      },
+      {
+        "id": "54d9ac713e253fa1fae9c8003b011c2a",
+        "sim": 0.6488
+      },
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.6447
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.6358
+      },
+      {
+        "id": "0bcc3eeca39e1064258aa1e932269894",
+        "sim": 0.6356
+      }
+    ],
+    "9ecadb84c81da840dbf3564378b586e9": [
+      {
+        "id": "75d6b6963340c6063f7f4cfcccfe6a30",
+        "sim": 0.7794
+      },
+      {
+        "id": "43423cdffde7fda63d0414ed38c11a73",
+        "sim": 0.7614
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.7372
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.7061
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.6941
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.6903
+      },
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.6843
+      },
+      {
+        "id": "78efe838c04bbc568be034082200ac20",
+        "sim": 0.6821
+      },
+      {
+        "id": "08574b074924071f4e201e151b152b4e",
+        "sim": 0.6744
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.6213
+      }
+    ],
+    "617186c3d97ea56c9c683a8a3974e8c1": [
+      {
+        "id": "ec2d43cc59763ec91694573b31f1c29a",
+        "sim": 0.7776
+      },
+      {
+        "id": "880be32f4db1d9f6e2bec38fb6ac23ab",
+        "sim": 0.7547
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.7204
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.7086
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.7047
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.7016
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6934
+      },
+      {
+        "id": "3fbc0ef745950c7932d5f2a446189725",
+        "sim": 0.6777
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.6744
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.6708
+      }
+    ],
+    "eb8c629f70275fd1c4f809116cce1efc": [
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.754
+      },
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.7136
+      },
+      {
+        "id": "c6336fa91fbd87c359e44f5dca5a90ed",
+        "sim": 0.7079
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.7034
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.6511
+      },
+      {
+        "id": "601a360bd2a916ecef0e88de72a6531a",
+        "sim": 0.63
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.6244
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.6188
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.6187
+      },
+      {
+        "id": "52c80cedd4e90108bf4fa6a206ef6b03",
+        "sim": 0.616
+      }
+    ],
+    "777d2e438a1b645f3aec9bd57e92672c": [
+      {
+        "id": "6f3b5b605d91b7439c5e3f5a8dffeea7",
+        "sim": 0.7154
+      },
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.7087
+      },
+      {
+        "id": "617186c3d97ea56c9c683a8a3974e8c1",
+        "sim": 0.7086
+      },
+      {
+        "id": "d285360f29ac7fd97640bf0baef03de0",
+        "sim": 0.692
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.6822
+      },
+      {
+        "id": "c6336fa91fbd87c359e44f5dca5a90ed",
+        "sim": 0.6546
+      },
+      {
+        "id": "c6dd917a0be2a704582055949915ab32",
+        "sim": 0.6528
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.6512
+      },
+      {
+        "id": "53759a2ecddad2bb87a079a1f1519f73",
+        "sim": 0.6409
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.6403
+      }
+    ],
+    "c6336fa91fbd87c359e44f5dca5a90ed": [
+      {
+        "id": "eb8c629f70275fd1c4f809116cce1efc",
+        "sim": 0.7079
+      },
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.6941
+      },
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.6726
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.6649
+      },
+      {
+        "id": "7a10781637204d8d10485c71a6108a2e",
+        "sim": 0.6609
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.6592
+      },
+      {
+        "id": "777d2e438a1b645f3aec9bd57e92672c",
+        "sim": 0.6546
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6475
+      },
+      {
+        "id": "d1c427060a0f73f6b889a5c7c61f2ac4",
+        "sim": 0.6262
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.622
+      }
+    ],
+    "cd48f265a63e13b762601f5f794c5fca": [
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.7546
+      },
+      {
+        "id": "c4baedd846ed09b85f78a781b522f126",
+        "sim": 0.721
+      },
+      {
+        "id": "0aabfb375647d9738ad0f7b4ea3653b1",
+        "sim": 0.7052
+      },
+      {
+        "id": "eb8c629f70275fd1c4f809116cce1efc",
+        "sim": 0.7034
+      },
+      {
+        "id": "84f456958365164420cfc80fbe4c7fab",
+        "sim": 0.7024
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.6907
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.6808
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.6661
+      },
+      {
+        "id": "99a4788cb24856965c36a24e339b6058",
+        "sim": 0.6361
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.629
+      }
+    ],
+    "43423cdffde7fda63d0414ed38c11a73": [
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.7614
+      },
+      {
+        "id": "5a848e4ab52fd5445cdc07aab1c40e48",
+        "sim": 0.7106
+      },
+      {
+        "id": "d5991653e037ccb7af6ed7d94246b249",
+        "sim": 0.704
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.7021
+      },
+      {
+        "id": "54d9ac713e253fa1fae9c8003b011c2a",
+        "sim": 0.6911
+      },
+      {
+        "id": "36f60d45225e60c7da4558b070ce4b60",
+        "sim": 0.6752
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.6727
+      },
+      {
+        "id": "8c591ab0ca519558779df02023177f44",
+        "sim": 0.6692
+      },
+      {
+        "id": "7c1bd920dbdf22470b68bde975dd3ccf",
+        "sim": 0.666
+      },
+      {
+        "id": "154e7e31ebfa092203795c972e5804a6",
+        "sim": 0.6657
+      }
+    ],
+    "75d6b6963340c6063f7f4cfcccfe6a30": [
+      {
+        "id": "9ecadb84c81da840dbf3564378b586e9",
+        "sim": 0.7794
+      },
+      {
+        "id": "53b36df67ebb7c41585e8d54d6772e08",
+        "sim": 0.7678
+      },
+      {
+        "id": "4fe644d766c7566dbc46fb851363cb3b",
+        "sim": 0.7095
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.6921
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.6918
+      },
+      {
+        "id": "99a4788cb24856965c36a24e339b6058",
+        "sim": 0.6582
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.6553
+      },
+      {
+        "id": "aca2eb7d00ea1a7b8ebd4e68314663af",
+        "sim": 0.6511
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.6501
+      },
+      {
+        "id": "6c3effec7c8ddba466d4f03f982c7aa3",
+        "sim": 0.6447
+      }
+    ],
+    "b5e13c9a353102f79c6206ff5cb61a50": [
+      {
+        "id": "ec2d43cc59763ec91694573b31f1c29a",
+        "sim": 0.7811
+      },
+      {
+        "id": "35afc973633aaeb6b877ff57b2793310",
+        "sim": 0.7644
+      },
+      {
+        "id": "8c591ab0ca519558779df02023177f44",
+        "sim": 0.7127
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.6842
+      },
+      {
+        "id": "29427de7f8a9ee983d9dbc51cec569b4",
+        "sim": 0.6797
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.6609
+      },
+      {
+        "id": "b0961721fd839e9982420e807758a2a6",
+        "sim": 0.6432
+      },
+      {
+        "id": "e53e557d5a159f5aa2c5e995dfdf244b",
+        "sim": 0.6426
+      },
+      {
+        "id": "ee406bf28024d97771c4b1e8b7e8e219",
+        "sim": 0.6352
+      },
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.616
+      }
+    ],
+    "ee406bf28024d97771c4b1e8b7e8e219": [
+      {
+        "id": "656e0eca68dcecf6a31b8ececfabe3e8",
+        "sim": 0.8375
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.7937
+      },
+      {
+        "id": "368c6c730842d78016ad823897a372db",
+        "sim": 0.7312
+      },
+      {
+        "id": "08574b074924071f4e201e151b152b4e",
+        "sim": 0.7114
+      },
+      {
+        "id": "a62e25e09e05e6faf31d90c6ec1aa3d1",
+        "sim": 0.7105
+      },
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.6708
+      },
+      {
+        "id": "b5e13c9a353102f79c6206ff5cb61a50",
+        "sim": 0.6352
+      },
+      {
+        "id": "4fcb3d9a5f4871e8362dfedbdb02b064",
+        "sim": 0.6087
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.6078
+      },
+      {
+        "id": "7ce94ab189134e2d3c05f496d635419c",
+        "sim": 0.6008
+      }
+    ],
+    "8c292ca193d326152e335d77176746f0": [
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.7719
+      },
+      {
+        "id": "4c2394abfbac7ff59ec7a420918562fa",
+        "sim": 0.6663
+      },
+      {
+        "id": "2028bf1b01cafb2d2b1901fca4083222",
+        "sim": 0.6537
+      },
+      {
+        "id": "52c80cedd4e90108bf4fa6a206ef6b03",
+        "sim": 0.6326
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.6312
+      },
+      {
+        "id": "6cdd53843498f92890544667809f1595",
+        "sim": 0.6272
+      },
+      {
+        "id": "3dd2a17168ec895c781a9191c1e95ad7",
+        "sim": 0.624
+      },
+      {
+        "id": "e0d64dcfaa3b6db5c54ca298ae101d05",
+        "sim": 0.6124
+      },
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.6064
+      },
+      {
+        "id": "389d119b48cf3043d311335e499d9c6b",
+        "sim": 0.6063
+      }
+    ],
+    "4fcb3d9a5f4871e8362dfedbdb02b064": [
+      {
+        "id": "0aabfb375647d9738ad0f7b4ea3653b1",
+        "sim": 0.7675
+      },
+      {
+        "id": "165f86fe8b799a708a20ee4ba125c289",
+        "sim": 0.7063
+      },
+      {
+        "id": "42a2c92a0979a949ca4ea89ec5c7b934",
+        "sim": 0.7022
+      },
+      {
+        "id": "eb8c629f70275fd1c4f809116cce1efc",
+        "sim": 0.6511
+      },
+      {
+        "id": "422879e10f46682990de24d770e7f83d",
+        "sim": 0.6482
+      },
+      {
+        "id": "2028bf1b01cafb2d2b1901fca4083222",
+        "sim": 0.6349
+      },
+      {
+        "id": "368c6c730842d78016ad823897a372db",
+        "sim": 0.6312
+      },
+      {
+        "id": "cd48f265a63e13b762601f5f794c5fca",
+        "sim": 0.629
+      },
+      {
+        "id": "d017a2151d543a9885604dc62a3d9dcc",
+        "sim": 0.6139
+      },
+      {
+        "id": "ee406bf28024d97771c4b1e8b7e8e219",
+        "sim": 0.6087
+      }
+    ],
+    "cac9e5692471a0700418aa3400b9b2b1": [
+      {
+        "id": "bb50f2e236e5eea0100680137654686c",
+        "sim": 0.7673
+      },
+      {
+        "id": "2b4609f8948be18874494203496bc318",
+        "sim": 0.7178
+      },
+      {
+        "id": "ec2d43cc59763ec91694573b31f1c29a",
+        "sim": 0.7046
+      },
+      {
+        "id": "437c05a395e9e47f9762e677a7068ce7",
+        "sim": 0.6902
+      },
+      {
+        "id": "461f43be3bdf8844e65b62d9ac2c7a5a",
+        "sim": 0.69
+      },
+      {
+        "id": "368c6c730842d78016ad823897a372db",
+        "sim": 0.6872
+      },
+      {
+        "id": "06edb72f1e0c64b14c5b79353f7abea3",
+        "sim": 0.6797
+      },
+      {
+        "id": "e0cf79767c5b016251fe139915c59a26",
+        "sim": 0.6601
+      },
+      {
+        "id": "b532349fe46b38fbc7bb3914c1bdae07",
+        "sim": 0.6499
+      },
+      {
+        "id": "19c91ef95d509ea33eda93495c4d3481",
+        "sim": 0.6443
+      }
+    ]
+  }
 };
