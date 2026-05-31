@@ -13,6 +13,14 @@ Web bán sản phẩm kiểu marketplace có đăng nhập mẫu và hệ thốn
 
 Kết quả train hiện tại nằm trong `training_metrics.json`, dữ liệu cho frontend nằm trong `model_data.js`.
 
+## Luồng giao diện
+
+- `index.html`: trang đăng nhập, chọn vai trò.
+- `shop.html`: giao diện người dùng sau khi đăng nhập vai trò `Người dùng`.
+- `admin.html`: giao diện quản lý sau khi đăng nhập vai trò `Quản lý`.
+
+Nếu mở trực tiếp `shop.html` hoặc `admin.html` khi chưa có vai trò phù hợp trong `localStorage`, trang sẽ tự chuyển về `index.html`.
+
 ## Chạy local
 
 Mở trực tiếp `index.html` bằng trình duyệt.

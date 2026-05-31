@@ -163,6 +163,40 @@ a {
     linear-gradient(180deg, #fff7f4 0%, #f6f7fb 100%);
 }
 
+.login-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(238, 77, 45, 0.16), transparent 30%),
+    linear-gradient(135deg, #fff7f4 0%, #f6f7fb 68%);
+}
+
+.login-screen {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+  align-items: center;
+  gap: clamp(28px, 5vw, 70px);
+  min-height: 100vh;
+  padding: clamp(28px, 6vw, 76px);
+}
+
+.login-hero {
+  max-width: 760px;
+}
+
+.login-brand {
+  margin-bottom: 42px;
+}
+
+.auth-page-card {
+  padding: 28px;
+}
+
+.form-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .hero-copy {
   max-width: 780px;
 }
@@ -923,6 +957,7 @@ body[data-role="guest"] .admin-only {
   }
 
   .hero,
+  .login-screen,
   .recommendation-shell,
   .training-panel,
   .admin-layout {
@@ -977,6 +1012,7 @@ body[data-role="guest"] .admin-only {
   }
 
   .hero-copy,
+  .login-hero,
   .login-card,
   .section-heading,
   .recommendation-shell,

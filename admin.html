@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang quản lý - SendoAI Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="admin">
+    <header class="topbar">
+      <a class="brand" href="admin.html" aria-label="SendoAI Admin"><span class="brand-logo">S</span><span>SendoAI Admin</span></a>
+      <form class="search" role="search"><span aria-hidden="true">⌕</span><input id="adminSearchInput" type="search" placeholder="Tìm sản phẩm trong dashboard..." /></form>
+      <nav class="nav-links" aria-label="Điều hướng">
+        <a href="#adminDashboard">Dashboard</a>
+        <a href="#model">Mô hình</a>
+      </nav>
+      <button class="ghost-button" id="logoutButton" type="button">Đăng xuất</button>
+    </header>
+
+    <main>
+      <section id="adminDashboard" class="section admin-section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Admin dashboard</p><h1>Giao diện người quản lý</h1></div>
+          <p class="section-note">Theo dõi dữ liệu train, danh mục, top sản phẩm và cấu hình hệ thống gợi ý.</p>
+        </div>
+        <div class="admin-grid">
+          <article><span>Sản phẩm</span><strong id="adminProductCount">0</strong><small>Sản phẩm đang hiển thị</small></article>
+          <article><span>Người dùng train</span><strong id="adminUserCount">0</strong><small>Từ dataset Olist</small></article>
+          <article><span>Tương tác</span><strong id="adminInteractionCount">0</strong><small>Dùng cho Matrix Factorization</small></article>
+          <article><span>Epoch</span><strong>5</strong><small>Huấn luyện CF</small></article>
+        </div>
+        <div class="admin-layout">
+          <div class="admin-panel">
+            <h3>Cấu hình Hybrid</h3>
+            <p>Quản lý điều chỉnh tỷ lệ CF/CB để kiểm tra tác động lên ranking.</p>
+            <div class="weight-control">
+              <div><span>Trọng số hiện tại</span><strong id="adminWeightLabel">55% CF / 45% CB</strong></div>
+              <input id="adminHybridWeight" type="range" min="0" max="100" value="55" />
+            </div>
+            <div class="formula"><span>Ranking formula</span><strong id="adminFormulaText">Hybrid = 0.55 × CF + 0.45 × CB</strong></div>
+          </div>
+          <div class="admin-panel">
+            <h3>Top sản phẩm theo Hybrid</h3>
+            <div class="admin-table" id="adminTopProducts"></div>
+          </div>
+          <div class="admin-panel">
+            <h3>Phân bố danh mục</h3>
+            <div class="admin-table" id="adminCategories"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="model" class="section model-section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Training report</p><h2>Hệ thống gợi ý đã huấn luyện</h2></div>
+          <p class="section-note">Dataset Olist, CF Matrix Factorization 5 epoch, kết hợp Content-Based.</p>
+        </div>
+        <div class="training-panel">
+          <div><h3>RMSE theo epoch</h3><div id="epochBars" class="epoch-bars"></div></div>
+          <div class="metric-list">
+            <div><span>Users</span><strong id="metricUsers">0</strong></div>
+            <div><span>Items</span><strong id="metricItems">0</strong></div>
+            <div><span>Interactions</span><strong id="metricInteractions">0</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="model_data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
